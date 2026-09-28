@@ -1,0 +1,957 @@
+2026-06-05 05:50:20,494 - INFO - Directories and config files initialized successfully
+2026-06-05 05:52:58,302 - INFO - Processing camera: cam61, operation: start
+2026-06-05 05:52:58,390 - INFO - Container cam61-rtsp not found, skipping delete
+2026-06-05 05:52:58,409 - INFO - Container cam61-anomaly not found, skipping delete
+2026-06-05 05:52:58,469 - INFO - Container cam61-face not found, skipping delete
+2026-06-05 05:52:58,487 - INFO - Container cam61-anpr not found, skipping delete
+2026-06-05 05:52:58,488 - INFO - Creating container cam61-rtsp with volume mount: :/Aksha
+2026-06-05 05:52:58,623 - ERROR - Failed to create container cam61-rtsp: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.47/containers/create?name=cam61-rtsp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/app/main.py", line 291, in create_deployment_object
+    client.containers.run(
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 876, in run
+    container = self.create(image=image, command=command,
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/usr/local/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+2026-06-05 05:52:58,632 - ERROR - Camera pod operation failed: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.47/containers/create?name=cam61-rtsp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/app/main.py", line 410, in camera_pod
+    create_deployment_object(client, it)
+  File "/usr/src/app/app/main.py", line 291, in create_deployment_object
+    client.containers.run(
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 876, in run
+    container = self.create(image=image, command=command,
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/usr/local/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+2026-06-05 05:55:28,701 - INFO - Processing camera: cam61, operation: stop
+2026-06-05 05:55:28,913 - INFO - Container cam61-rtsp not found, skipping delete
+2026-06-05 05:55:29,310 - INFO - Container cam61-anomaly not found, skipping delete
+2026-06-05 05:55:29,634 - INFO - Container cam61-face not found, skipping delete
+2026-06-05 05:55:29,665 - INFO - Container cam61-anpr not found, skipping delete
+2026-06-05 05:55:29,689 - INFO - Updated rtsplinks.json for camera: cam61
+2026-06-05 05:55:41,792 - INFO - Processing camera: cam61, operation: start
+2026-06-05 05:55:41,797 - INFO - Container cam61-rtsp not found, skipping delete
+2026-06-05 05:55:41,827 - INFO - Container cam61-anomaly not found, skipping delete
+2026-06-05 05:55:41,833 - INFO - Container cam61-face not found, skipping delete
+2026-06-05 05:55:41,838 - INFO - Container cam61-anpr not found, skipping delete
+2026-06-05 05:55:41,838 - INFO - Creating container cam61-rtsp with volume mount: :/Aksha
+2026-06-05 05:55:41,902 - ERROR - Failed to create container cam61-rtsp: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.47/containers/create?name=cam61-rtsp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/app/main.py", line 291, in create_deployment_object
+    client.containers.run(
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 876, in run
+    container = self.create(image=image, command=command,
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/usr/local/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+2026-06-05 05:55:41,904 - ERROR - Camera pod operation failed: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.47/containers/create?name=cam61-rtsp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/app/main.py", line 410, in camera_pod
+    create_deployment_object(client, it)
+  File "/usr/src/app/app/main.py", line 291, in create_deployment_object
+    client.containers.run(
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 876, in run
+    container = self.create(image=image, command=command,
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/usr/local/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+2026-06-05 05:58:14,783 - INFO - Processing camera: cam61, operation: stop
+2026-06-05 05:58:14,790 - INFO - Container cam61-rtsp not found, skipping delete
+2026-06-05 05:58:14,798 - INFO - Container cam61-anomaly not found, skipping delete
+2026-06-05 05:58:14,805 - INFO - Container cam61-face not found, skipping delete
+2026-06-05 05:58:14,869 - INFO - Container cam61-anpr not found, skipping delete
+2026-06-05 05:58:14,895 - INFO - Updated rtsplinks.json for camera: cam61
+2026-06-05 05:59:38,660 - INFO - Processing camera: cam61, operation: start
+2026-06-05 05:59:38,667 - INFO - Container cam61-rtsp not found, skipping delete
+2026-06-05 05:59:38,673 - INFO - Container cam61-anomaly not found, skipping delete
+2026-06-05 05:59:38,696 - INFO - Container cam61-face not found, skipping delete
+2026-06-05 05:59:38,702 - INFO - Container cam61-anpr not found, skipping delete
+2026-06-05 05:59:38,703 - INFO - Creating container cam61-rtsp with volume mount: :/Aksha
+2026-06-05 05:59:38,771 - ERROR - Failed to create container cam61-rtsp: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.47/containers/create?name=cam61-rtsp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/app/main.py", line 291, in create_deployment_object
+    client.containers.run(
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 876, in run
+    container = self.create(image=image, command=command,
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/usr/local/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+2026-06-05 05:59:38,773 - ERROR - Camera pod operation failed: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.47/containers/create?name=cam61-rtsp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/app/main.py", line 410, in camera_pod
+    create_deployment_object(client, it)
+  File "/usr/src/app/app/main.py", line 291, in create_deployment_object
+    client.containers.run(
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 876, in run
+    container = self.create(image=image, command=command,
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/usr/local/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+2026-06-05 06:01:12,681 - INFO - Processing camera: cam61, operation: stop
+2026-06-05 06:01:12,685 - INFO - Container cam61-rtsp not found, skipping delete
+2026-06-05 06:01:12,690 - INFO - Container cam61-anomaly not found, skipping delete
+2026-06-05 06:01:12,694 - INFO - Container cam61-face not found, skipping delete
+2026-06-05 06:01:12,701 - INFO - Container cam61-anpr not found, skipping delete
+2026-06-05 06:01:12,722 - INFO - Updated rtsplinks.json for camera: cam61
+2026-06-05 09:37:12,661 - INFO - Directories and config files initialized successfully
+2026-06-05 09:39:59,817 - INFO - Processing camera: cam61, operation: start
+2026-06-05 09:39:59,828 - INFO - Container cam61-rtsp not found, skipping delete
+2026-06-05 09:39:59,837 - INFO - Container cam61-anomaly not found, skipping delete
+2026-06-05 09:39:59,846 - INFO - Container cam61-face not found, skipping delete
+2026-06-05 09:39:59,857 - INFO - Container cam61-anpr not found, skipping delete
+2026-06-05 09:39:59,857 - INFO - Creating container cam61-rtsp with volume mount: :/Aksha
+2026-06-05 09:39:59,911 - ERROR - Failed to create container cam61-rtsp: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.47/containers/create?name=cam61-rtsp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/app/main.py", line 291, in create_deployment_object
+    client.containers.run(
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 876, in run
+    container = self.create(image=image, command=command,
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/usr/local/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+2026-06-05 09:39:59,916 - ERROR - Camera pod operation failed: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.47/containers/create?name=cam61-rtsp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/app/main.py", line 410, in camera_pod
+    create_deployment_object(client, it)
+  File "/usr/src/app/app/main.py", line 291, in create_deployment_object
+    client.containers.run(
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 876, in run
+    container = self.create(image=image, command=command,
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/usr/local/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+2026-06-05 09:41:09,591 - INFO - Processing camera: cam61, operation: stop
+2026-06-05 09:41:09,755 - INFO - Container cam61-rtsp not found, skipping delete
+2026-06-05 09:41:10,076 - INFO - Container cam61-anomaly not found, skipping delete
+2026-06-05 09:41:10,762 - INFO - Container cam61-face not found, skipping delete
+2026-06-05 09:41:10,772 - INFO - Container cam61-anpr not found, skipping delete
+2026-06-05 09:41:10,778 - INFO - Updated rtsplinks.json for camera: cam61
+2026-06-05 09:51:27,754 - INFO - Processing camera: cam61, operation: start
+2026-06-05 09:51:27,767 - INFO - Container cam61-rtsp not found, skipping delete
+2026-06-05 09:51:27,779 - INFO - Container cam61-anomaly not found, skipping delete
+2026-06-05 09:51:27,789 - INFO - Container cam61-face not found, skipping delete
+2026-06-05 09:51:27,798 - INFO - Container cam61-anpr not found, skipping delete
+2026-06-05 09:51:27,798 - INFO - Creating container cam61-rtsp with volume mount: :/Aksha
+2026-06-05 09:51:27,838 - ERROR - Failed to create container cam61-rtsp: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.47/containers/create?name=cam61-rtsp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/app/main.py", line 291, in create_deployment_object
+    client.containers.run(
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 876, in run
+    container = self.create(image=image, command=command,
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/usr/local/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+2026-06-05 09:51:27,838 - ERROR - Camera pod operation failed: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.47/containers/create?name=cam61-rtsp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/app/main.py", line 410, in camera_pod
+    create_deployment_object(client, it)
+  File "/usr/src/app/app/main.py", line 291, in create_deployment_object
+    client.containers.run(
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 876, in run
+    container = self.create(image=image, command=command,
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/usr/local/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+2026-06-05 10:14:44,943 - INFO - Directories and config files initialized successfully
+2026-06-05 10:16:24,178 - INFO - Processing camera: cam61, operation: stop
+2026-06-05 10:16:24,217 - INFO - Container cam61-rtsp not found, skipping delete
+2026-06-05 10:16:24,239 - INFO - Container cam61-anomaly not found, skipping delete
+2026-06-05 10:16:24,331 - INFO - Container cam61-face not found, skipping delete
+2026-06-05 10:16:24,345 - INFO - Container cam61-anpr not found, skipping delete
+2026-06-05 10:16:24,435 - INFO - Updated rtsplinks.json for camera: cam61
+2026-06-05 11:14:30,432 - INFO - Processing camera: cam61, operation: start
+2026-06-05 11:14:30,527 - INFO - Container cam61-rtsp not found, skipping delete
+2026-06-05 11:14:30,532 - INFO - Container cam61-anomaly not found, skipping delete
+2026-06-05 11:14:30,539 - INFO - Container cam61-face not found, skipping delete
+2026-06-05 11:14:30,547 - INFO - Container cam61-anpr not found, skipping delete
+2026-06-05 11:14:30,611 - INFO - Creating container cam61-rtsp with volume mount: :/Aksha
+2026-06-05 11:14:30,733 - ERROR - Failed to create container cam61-rtsp: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.47/containers/create?name=cam61-rtsp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/app/main.py", line 291, in create_deployment_object
+    client.containers.run(
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 876, in run
+    container = self.create(image=image, command=command,
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/usr/local/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+2026-06-05 11:14:30,747 - ERROR - Camera pod operation failed: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http+docker://localhost/v1.47/containers/create?name=cam61-rtsp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/app/main.py", line 410, in camera_pod
+    create_deployment_object(client, it)
+  File "/usr/src/app/app/main.py", line 291, in create_deployment_object
+    client.containers.run(
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 876, in run
+    container = self.create(image=image, command=command,
+  File "/usr/local/lib/python3.10/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/usr/local/lib/python3.10/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/usr/local/lib/python3.10/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 500 Server Error for http+docker://localhost/v1.47/containers/create?name=cam61-rtsp: Internal Server Error ("invalid volume specification: ':/Aksha:rw'")
+2026-06-06 07:00:37,237 - INFO - Directories and config files initialized successfully
+2026-06-06 07:19:16,586 - INFO - Processing camera: cam61, operation: restart
+2026-06-06 07:19:16,596 - INFO - Container cam61-rtsp not found, skipping restart
+2026-06-06 07:19:16,601 - INFO - Container cam61-anomaly not found, skipping restart
+2026-06-06 07:19:16,606 - INFO - Container cam61-face not found, skipping restart
+2026-06-06 07:19:16,613 - INFO - Container cam61-anpr not found, skipping restart
+2026-07-08 19:39:49,728 - INFO - Controller starting | main_dir=/Aksha | host_dir=/home/algo38/Desktop/anvay/Aksha-Version-2.1-PPE/deployment/Aksha
+2026-07-08 19:39:49,977 - INFO - Docker client initialised successfully
+2026-07-08 19:39:49,977 - INFO - Kafka server resolved | KAFKA_SERVER=broker:9092
+2026-07-08 19:39:49,998 - INFO - Directories and config files initialized successfully
+2026-07-08 19:45:17,255 - INFO - GET /health — checking Docker connectivity
+2026-07-08 19:45:17,258 - INFO - Health check passed | docker=connected
+2026-07-08 19:58:20,366 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-08 19:58:20,370 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-08 19:58:20,370 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-08 19:58:20,372 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-08 19:58:20,372 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-08 19:58:23,167 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-08 19:58:23,167 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-08 19:58:23,170 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-08 19:58:23,171 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-08 19:58:23,171 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-08 21:24:34,099 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-08 21:24:34,101 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-08 21:24:34,101 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-08 21:24:46,767 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-08 21:24:46,975 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-08 21:24:46,975 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-08 21:24:46,976 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-08 21:24:46,976 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-08 21:24:46,976 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-09 13:22:49,919 - INFO - Controller starting | main_dir=/Aksha | host_dir=/home/algo38/Desktop/anvay/Aksha-Version-2.1-PPE/deployment/Aksha
+2026-07-09 13:22:49,931 - INFO - Docker client initialised successfully
+2026-07-09 13:22:49,931 - INFO - Kafka server resolved | KAFKA_SERVER=broker:9092
+2026-07-09 13:22:49,936 - INFO - Directories and config files initialized successfully
+2026-07-09 13:23:19,343 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-09 13:23:19,346 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-09 13:23:19,346 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-09 13:23:19,347 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-09 13:23:19,347 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-09 13:23:38,611 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-09 13:23:38,611 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-09 13:23:38,836 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-09 13:23:38,837 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-09 13:23:38,837 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-09 13:32:39,247 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-09 13:32:39,252 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-09 13:32:39,252 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-09 13:32:54,047 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-09 13:32:54,092 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-09 13:32:54,093 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-09 13:32:54,095 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-09 13:32:54,095 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-09 13:32:54,095 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-09 15:58:25,752 - INFO - Controller starting | main_dir=/Aksha | host_dir=/home/algo38/Desktop/anvay/Aksha-Version-2.1-PPE/deployment/Aksha
+2026-07-09 15:58:25,766 - INFO - Docker client initialised successfully
+2026-07-09 15:58:25,766 - INFO - Kafka server resolved | KAFKA_SERVER=broker:9092
+2026-07-09 15:58:25,772 - INFO - Directories and config files initialized successfully
+2026-07-09 15:58:55,860 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-09 15:58:55,862 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-09 15:58:55,862 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-09 15:58:55,864 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-09 15:58:55,864 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-09 15:59:14,512 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-09 15:59:14,519 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-09 15:59:14,526 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-09 15:59:14,526 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-09 15:59:14,526 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-09 16:05:14,025 - INFO - POST /Surveillance | operation=restart | camera_count=1
+2026-07-09 16:05:14,027 - INFO - Processing camera | camera=ppe_test_cam1 | operation=restart
+2026-07-09 16:05:14,028 - INFO - [RESTART] camera=ppe_test_cam1 | mode=deepstream_nvinfer
+2026-07-09 16:05:14,028 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-09 16:05:14,033 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-09 16:05:14,034 - INFO - [RESTART] Complete | camera=ppe_test_cam1
+2026-07-09 16:05:14,037 - WARNING - Reload signal failed | service=deepstream_batch | batch_id=1: HTTPConnectionPool(host='deepstream-batch', port=8080): Max retries exceeded with url: /reload (Caused by NameResolutionError("HTTPConnection(host='deepstream-batch', port=8080): Failed to resolve 'deepstream-batch' ([Errno -3] Temporary failure in name resolution)"))
+2026-07-09 16:05:14,037 - INFO - Reload sent | service=deepstream_batch | containers=[1] | cameras=1
+2026-07-09 16:05:14,037 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'restarted'}]
+2026-07-09 16:05:24,226 - INFO - POST /Surveillance | operation=restart | camera_count=1
+2026-07-09 16:05:24,227 - INFO - Processing camera | camera=ppe_test_cam1 | operation=restart
+2026-07-09 16:05:24,227 - INFO - [RESTART] camera=ppe_test_cam1 | mode=deepstream_nvinfer
+2026-07-09 16:05:24,227 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-09 16:05:24,228 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-09 16:05:24,228 - INFO - [RESTART] Complete | camera=ppe_test_cam1
+2026-07-09 16:05:24,230 - WARNING - Reload signal failed | service=deepstream_batch | batch_id=1: HTTPConnectionPool(host='deepstream-batch', port=8080): Max retries exceeded with url: /reload (Caused by NameResolutionError("HTTPConnection(host='deepstream-batch', port=8080): Failed to resolve 'deepstream-batch' ([Errno -3] Temporary failure in name resolution)"))
+2026-07-09 16:05:24,230 - INFO - Reload sent | service=deepstream_batch | containers=[1] | cameras=1
+2026-07-09 16:05:24,230 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'restarted'}]
+2026-07-09 16:05:34,026 - INFO - POST /Surveillance | operation=restart | camera_count=1
+2026-07-09 16:05:34,028 - INFO - Processing camera | camera=ppe_test_cam1 | operation=restart
+2026-07-09 16:05:34,028 - INFO - [RESTART] camera=ppe_test_cam1 | mode=deepstream_nvinfer
+2026-07-09 16:05:34,028 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-09 16:05:34,029 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-09 16:05:34,029 - INFO - [RESTART] Complete | camera=ppe_test_cam1
+2026-07-09 16:05:34,031 - WARNING - Reload signal failed | service=deepstream_batch | batch_id=1: HTTPConnectionPool(host='deepstream-batch', port=8080): Max retries exceeded with url: /reload (Caused by NameResolutionError("HTTPConnection(host='deepstream-batch', port=8080): Failed to resolve 'deepstream-batch' ([Errno -3] Temporary failure in name resolution)"))
+2026-07-09 16:05:34,031 - INFO - Reload sent | service=deepstream_batch | containers=[1] | cameras=1
+2026-07-09 16:05:34,031 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'restarted'}]
+2026-07-09 17:00:28,529 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-09 17:00:28,530 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-09 17:00:28,530 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-09 17:00:40,863 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-09 17:00:41,007 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-09 17:00:41,007 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-09 17:00:41,008 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-09 17:00:41,008 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-09 17:00:41,008 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-09 17:00:48,665 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-09 17:00:48,667 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-09 17:00:48,668 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-09 17:00:48,669 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-09 17:00:48,669 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-09 17:00:51,504 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-09 17:00:51,504 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-09 17:00:51,505 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-09 17:00:51,505 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-09 17:00:51,505 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-09 17:30:49,350 - INFO - POST /Surveillance | operation=restart | camera_count=1
+2026-07-09 17:30:49,356 - INFO - Processing camera | camera=ppe_test_cam1 | operation=restart
+2026-07-09 17:30:49,357 - INFO - [RESTART] camera=ppe_test_cam1 | mode=deepstream_nvinfer
+2026-07-09 17:30:49,357 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-09 17:30:49,362 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-09 17:30:49,363 - INFO - [RESTART] Complete | camera=ppe_test_cam1
+2026-07-09 17:30:49,382 - WARNING - Reload signal failed | service=deepstream_batch | batch_id=1: HTTPConnectionPool(host='deepstream-batch', port=8080): Max retries exceeded with url: /reload (Caused by NameResolutionError("HTTPConnection(host='deepstream-batch', port=8080): Failed to resolve 'deepstream-batch' ([Errno -3] Temporary failure in name resolution)"))
+2026-07-09 17:30:49,385 - INFO - Reload sent | service=deepstream_batch | containers=[1] | cameras=1
+2026-07-09 17:30:49,385 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'restarted'}]
+2026-07-09 17:56:16,751 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-09 17:56:16,754 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-09 17:56:16,754 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-09 17:56:29,350 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-09 17:56:29,491 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-09 17:56:29,491 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-09 17:56:29,492 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-09 17:56:29,492 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-09 17:56:29,492 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-12 22:42:15,659 - INFO - Controller starting | main_dir=/Aksha | host_dir=/home/algo38/Desktop/anvay/Aksha-Version-2.1-PPE/deployment/Aksha
+2026-07-12 22:42:15,667 - INFO - Docker client initialised successfully
+2026-07-12 22:42:15,667 - INFO - Kafka server resolved | KAFKA_SERVER=broker:9092
+2026-07-12 22:42:15,671 - INFO - Directories and config files initialized successfully
+2026-07-12 22:42:53,426 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-12 22:42:53,431 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-12 22:42:53,431 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-12 22:42:53,435 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-12 22:42:53,436 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-12 22:43:06,519 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-12 22:43:06,520 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-12 22:43:06,525 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-12 22:43:06,526 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-12 22:43:06,526 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-12 23:26:23,218 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-12 23:26:23,223 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-12 23:26:23,224 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-12 23:26:36,060 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-12 23:26:36,187 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-12 23:26:36,187 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-12 23:26:36,188 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-12 23:26:36,188 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-12 23:26:36,188 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-14 08:52:55,659 - INFO - Controller starting | main_dir=/Aksha | host_dir=/home/algo38/Desktop/anvay/Aksha-Version-2.1-PPE/deployment/Aksha
+2026-07-14 08:52:55,668 - INFO - Docker client initialised successfully
+2026-07-14 08:52:55,668 - INFO - Kafka server resolved | KAFKA_SERVER=broker:9092
+2026-07-14 08:52:55,677 - INFO - Directories and config files initialized successfully
+2026-07-14 08:53:21,191 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-14 08:53:21,192 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-14 08:53:21,192 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-14 08:53:21,193 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-14 08:53:21,193 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-14 08:53:40,819 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-14 08:53:40,819 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-14 08:53:40,974 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-14 08:53:40,975 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-14 08:53:40,975 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-14 11:37:26,505 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-14 11:37:26,508 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-14 11:37:26,508 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-14 11:37:39,555 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-14 11:37:40,019 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-14 11:37:40,019 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-14 11:37:40,020 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-14 11:37:40,020 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-14 11:37:40,020 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-14 22:30:00,122 - INFO - POST /DockerClean — running docker system prune
+2026-07-14 22:30:00,134 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-07-15 09:42:51,252 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-15 09:42:51,256 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-15 09:42:51,256 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-15 09:42:51,260 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-15 09:42:51,260 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-15 09:42:54,110 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-15 09:42:54,111 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-15 09:42:54,135 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-15 09:42:54,135 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-15 09:42:54,135 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-15 10:33:38,644 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-15 10:33:38,645 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-15 10:33:38,645 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-15 10:33:51,184 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-15 10:33:51,309 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-15 10:33:51,310 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-15 10:33:51,311 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-15 10:33:51,311 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-15 10:33:51,311 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-15 10:37:30,900 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-15 10:37:30,905 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-15 10:37:30,905 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-15 10:37:30,909 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-15 10:37:30,910 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-15 10:37:33,553 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-15 10:37:33,553 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-15 10:37:33,555 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-15 10:37:33,555 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-15 10:37:33,555 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-15 10:39:57,273 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-15 10:39:57,277 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-15 10:39:57,277 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-15 10:40:09,365 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-15 10:40:09,394 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-15 10:40:09,394 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-15 10:40:09,399 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-15 10:40:09,399 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-15 10:40:09,399 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-15 12:29:03,480 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-15 12:29:03,486 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-15 12:29:03,486 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-15 12:29:03,489 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-15 12:29:03,490 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-15 12:29:06,575 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-15 12:29:06,575 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-15 12:29:06,579 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-15 12:29:06,579 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-15 12:29:06,580 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-15 12:49:49,963 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-15 12:49:49,967 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-15 12:49:49,968 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-15 12:50:02,690 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-15 12:50:02,755 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-15 12:50:02,755 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-15 12:50:02,756 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-15 12:50:02,756 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-15 12:50:02,756 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-15 12:55:19,146 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-15 12:55:19,150 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-15 12:55:19,151 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-15 12:55:19,155 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-15 12:55:19,155 - WARNING - Camera directory not found, skipping delete: /Aksha/ppe_test_cam1
+2026-07-15 12:55:19,156 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-15 12:55:19,161 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-15 12:55:19,161 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-15 12:55:19,161 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-15 12:55:44,361 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-15 12:55:44,366 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-15 12:55:44,366 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-15 12:55:44,370 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-15 12:55:44,370 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-15 12:55:47,220 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-15 12:55:47,220 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-15 12:55:47,221 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-15 12:55:47,221 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-15 12:55:47,221 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-15 13:00:54,816 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-15 13:00:54,818 - INFO - Processing camera | camera=cam61 | operation=stop
+2026-07-15 13:00:54,818 - INFO - [DELETE] camera=cam61 | mode=deepstream_nvinfer
+2026-07-15 13:00:54,818 - INFO - Updating rtsplinks.json | camera=cam61 | running_status=False
+2026-07-15 13:00:54,819 - INFO - rtsplinks.json updated | camera=cam61 | rtsp_link=rtsp://172.21.208.1:8554/test1 | batch_id=1
+2026-07-15 13:00:54,819 - WARNING - Camera directory not found, skipping delete: /Aksha/cam61
+2026-07-15 13:00:54,819 - INFO - [DELETE] Complete | camera=cam61
+2026-07-15 13:00:54,852 - WARNING - Reload signal failed | service=deepstream_batch | batch_id=1: HTTPConnectionPool(host='deepstream-batch', port=8080): Max retries exceeded with url: /reload (Caused by NameResolutionError("HTTPConnection(host='deepstream-batch', port=8080): Failed to resolve 'deepstream-batch' ([Errno -3] Temporary failure in name resolution)"))
+2026-07-15 13:00:54,852 - INFO - Reload sent | service=deepstream_batch | containers=[1] | cameras=1
+2026-07-15 13:00:54,852 - INFO - POST /Surveillance complete | results=[{'camera': 'cam61', 'status': 'stopped'}]
+2026-07-15 22:30:00,048 - INFO - POST /DockerClean — running docker system prune
+2026-07-15 22:30:00,050 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-07-16 12:36:15,052 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-16 12:36:15,057 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-16 12:36:15,057 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-16 12:36:28,551 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-16 12:36:36,697 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-16 12:36:36,697 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-16 12:36:36,698 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-16 12:36:36,698 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-16 12:36:36,698 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-16 13:29:53,268 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-16 13:29:53,269 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-16 13:29:53,269 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-16 13:29:53,270 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-16 13:29:53,270 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-16 13:29:56,461 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-16 13:29:56,462 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-16 13:29:56,465 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-16 13:29:56,465 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-16 13:29:56,466 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-16 22:30:00,048 - INFO - POST /DockerClean — running docker system prune
+2026-07-16 22:30:00,051 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-07-17 16:01:44,216 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-17 16:01:44,220 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-17 16:01:44,221 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-17 16:01:57,233 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-17 16:02:02,520 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-17 16:02:02,520 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-17 16:02:02,521 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-17 16:02:02,521 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-17 16:02:02,521 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-17 16:02:39,996 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-17 16:02:39,998 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-17 16:02:39,998 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-17 16:02:39,999 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-17 16:02:39,999 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-17 16:02:42,989 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-17 16:02:42,989 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-17 16:02:42,990 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-17 16:02:42,990 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-17 16:02:42,990 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-17 17:23:27,026 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-17 17:23:27,029 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-17 17:23:27,029 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-17 17:23:42,022 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-17 17:23:42,254 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-17 17:23:42,254 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-17 17:23:42,255 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-17 17:23:42,255 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-17 17:23:42,255 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-17 17:26:35,905 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-17 17:26:35,906 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-17 17:26:35,906 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-17 17:26:35,910 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-17 17:26:35,910 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-17 17:26:39,208 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-17 17:26:39,208 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-17 17:26:39,213 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-17 17:26:39,214 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-17 17:26:39,214 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-17 17:32:13,127 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-17 17:32:13,132 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-17 17:32:13,132 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-17 17:32:25,974 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-17 17:32:25,987 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-17 17:32:25,987 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-17 17:32:25,988 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-17 17:32:25,989 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-17 17:32:25,989 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-17 17:35:58,816 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-17 17:35:58,817 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-17 17:35:58,817 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-17 17:35:58,818 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-17 17:35:58,818 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-17 17:36:02,779 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-17 17:36:02,779 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-17 17:36:02,783 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-17 17:36:02,784 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-17 17:36:02,784 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-17 17:39:56,893 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-17 17:39:56,894 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-17 17:39:56,894 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-17 17:40:10,783 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-17 17:40:10,792 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-17 17:40:10,792 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-17 17:40:10,793 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-17 17:40:10,793 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-17 17:40:10,793 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-17 21:04:53,496 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-17 21:04:53,506 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-17 21:04:53,509 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-17 21:04:53,518 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-17 21:04:53,519 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-17 21:04:57,377 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-17 21:04:57,378 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-17 21:04:57,382 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-17 21:04:57,382 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-17 21:04:57,382 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-17 21:08:38,904 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-17 21:08:38,908 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-17 21:08:38,909 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-17 21:08:52,161 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-17 21:08:52,181 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-17 21:08:52,181 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-17 21:08:52,182 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-17 21:08:52,182 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-17 21:08:52,182 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-07-17 22:30:00,014 - INFO - POST /DockerClean — running docker system prune
+2026-07-17 22:30:00,015 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-07-18 22:30:00,019 - INFO - POST /DockerClean — running docker system prune
+2026-07-18 22:30:00,020 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-07-19 18:54:08,632 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-07-19 18:54:08,633 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-07-19 18:54:08,633 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-07-19 18:54:08,634 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-07-19 18:54:08,634 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-07-19 18:54:15,589 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-07-19 18:54:15,589 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-07-19 18:54:15,590 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-19 18:54:15,590 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-07-19 18:54:15,590 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-07-19 22:30:00,016 - INFO - POST /DockerClean — running docker system prune
+2026-07-19 22:30:00,017 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-07-20 22:30:00,082 - INFO - POST /DockerClean — running docker system prune
+2026-07-20 22:30:00,085 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-07-21 22:30:00,044 - INFO - POST /DockerClean — running docker system prune
+2026-07-21 22:30:00,059 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-07-22 22:30:00,067 - INFO - POST /DockerClean — running docker system prune
+2026-07-22 22:30:00,069 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-07-23 16:10:41,977 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-07-23 16:10:41,992 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-07-23 16:10:41,993 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-07-23 16:10:57,126 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-07-23 16:11:25,824 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-07-23 16:11:25,824 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-07-23 16:11:26,057 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-07-23 16:11:26,057 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-07-23 16:11:26,057 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-08-12 19:20:06,809 - INFO - Controller starting | main_dir=/Aksha | host_dir=/home/algo38/Desktop/anvay/Aksha-Version-2.1-PPE/deployment/Aksha
+2026-08-12 19:20:07,162 - INFO - Docker client initialised successfully
+2026-08-12 19:20:07,162 - INFO - Kafka server resolved | KAFKA_SERVER=broker:9092
+2026-08-12 19:20:07,181 - INFO - Directories and config files initialized successfully
+2026-08-12 23:59:02,920 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-08-12 23:59:02,923 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-08-12 23:59:02,923 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-08-12 23:59:02,925 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-08-12 23:59:02,926 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-08-12 23:59:05,945 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-08-12 23:59:05,946 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-08-12 23:59:05,947 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-12 23:59:05,947 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-08-12 23:59:05,947 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-08-13 00:14:14,777 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-08-13 00:14:14,785 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-08-13 00:14:14,785 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-08-13 00:14:27,621 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-08-13 00:14:27,675 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-08-13 00:14:27,675 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-08-13 00:14:27,677 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-13 00:14:27,677 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-08-13 00:14:27,677 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-08-13 00:14:27,685 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-08-13 00:14:27,686 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-08-13 00:14:27,686 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-08-13 00:14:27,687 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-08-13 00:14:27,687 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-08-13 00:14:29,983 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-08-13 00:14:29,983 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-08-13 00:14:29,985 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-13 00:14:29,985 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-08-13 00:14:29,985 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-08-13 00:16:38,796 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-08-13 00:16:38,798 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-08-13 00:16:38,798 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-08-13 00:16:51,976 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-08-13 00:16:51,981 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-08-13 00:16:51,981 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-08-13 00:16:51,982 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-13 00:16:51,982 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-08-13 00:16:51,982 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-08-13 00:19:40,216 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-08-13 00:19:40,220 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-08-13 00:19:40,220 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-08-13 00:19:40,222 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-08-13 00:19:40,222 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-08-13 00:19:43,343 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-08-13 00:19:43,343 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-08-13 00:19:43,345 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-13 00:19:43,346 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-08-13 00:19:43,346 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-08-13 00:20:31,264 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-08-13 00:20:31,272 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-08-13 00:20:31,273 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-08-13 00:20:44,030 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-08-13 00:20:44,034 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-08-13 00:20:44,034 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-08-13 00:20:44,036 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-13 00:20:44,036 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-08-13 00:20:44,036 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-08-13 00:22:15,468 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-08-13 00:22:15,471 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-08-13 00:22:15,472 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-08-13 00:22:15,475 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-08-13 00:22:15,475 - WARNING - Camera directory not found, skipping delete: /Aksha/ppe_test_cam1
+2026-08-13 00:22:15,475 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-08-13 00:22:15,478 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-13 00:22:15,478 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-08-13 00:22:15,478 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-08-13 22:30:00,086 - INFO - POST /DockerClean — running docker system prune
+2026-08-13 22:30:00,088 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-08-13 22:46:22,733 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-08-13 22:46:22,735 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-08-13 22:46:22,736 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-08-13 22:46:22,737 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-08-13 22:46:22,737 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-08-13 22:46:26,161 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-08-13 22:46:26,162 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-08-13 22:46:26,166 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-13 22:46:26,167 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-08-13 22:46:26,167 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-08-13 23:09:08,274 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-08-13 23:09:08,280 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-08-13 23:09:08,280 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-08-13 23:09:20,390 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-08-13 23:09:20,449 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-08-13 23:09:20,449 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-08-13 23:09:20,450 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-13 23:09:20,450 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-08-13 23:09:20,450 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-08-13 23:09:20,458 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-08-13 23:09:20,460 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-08-13 23:09:20,460 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-08-13 23:09:20,460 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-08-13 23:09:20,460 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-08-13 23:09:23,156 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-08-13 23:09:23,156 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-08-13 23:09:23,160 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-13 23:09:23,161 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-08-13 23:09:23,161 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-08-13 23:29:47,688 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-08-13 23:29:47,689 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-08-13 23:29:47,689 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-08-13 23:29:59,879 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-08-13 23:29:59,926 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-08-13 23:29:59,926 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-08-13 23:29:59,927 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-13 23:29:59,927 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-08-13 23:29:59,927 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]
+2026-08-14 22:30:00,018 - INFO - POST /DockerClean — running docker system prune
+2026-08-14 22:30:00,019 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-08-15 22:30:00,015 - INFO - POST /DockerClean — running docker system prune
+2026-08-15 22:30:00,016 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-08-16 22:30:00,010 - INFO - POST /DockerClean — running docker system prune
+2026-08-16 22:30:00,011 - ERROR - Docker prune failed: [Errno 2] No such file or directory: 'docker'
+2026-08-17 20:17:49,268 - INFO - POST /Surveillance | operation=start | camera_count=1
+2026-08-17 20:17:49,273 - INFO - Processing camera | camera=ppe_test_cam1 | operation=start
+2026-08-17 20:17:49,273 - INFO - [CREATE] camera=ppe_test_cam1 | mode=ppe
+2026-08-17 20:17:49,276 - INFO - Container not found (skipped): ppe_test_cam1-ppe
+2026-08-17 20:17:49,276 - INFO - Creating PPE container | camera=ppe_test_cam1 | rtsp=rtsp://192.168.1.73:8554/test1 | fps=1.0 | size=640x360
+2026-08-17 20:17:52,406 - INFO - Container started | name=ppe_test_cam1-ppe | image=dockerhubalgo/ppe_container:latest
+2026-08-17 20:17:52,406 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=True
+2026-08-17 20:17:52,410 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-17 20:17:52,411 - INFO - [CREATE] Complete | camera=ppe_test_cam1
+2026-08-17 20:17:52,411 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'started'}]
+2026-08-17 21:48:42,307 - INFO - POST /Surveillance | operation=stop | camera_count=1
+2026-08-17 21:48:42,309 - INFO - Processing camera | camera=ppe_test_cam1 | operation=stop
+2026-08-17 21:48:42,309 - INFO - [DELETE] camera=ppe_test_cam1 | mode=ppe
+2026-08-17 21:48:57,266 - INFO - Stopped and removed container: ppe_test_cam1-ppe
+2026-08-17 21:48:57,545 - INFO - Removed camera directory: /Aksha/ppe_test_cam1
+2026-08-17 21:48:57,545 - INFO - Updating rtsplinks.json | camera=ppe_test_cam1 | running_status=False
+2026-08-17 21:48:57,546 - INFO - rtsplinks.json updated | camera=ppe_test_cam1 | rtsp_link=rtsp://192.168.1.73:8554/test1 | batch_id=1
+2026-08-17 21:48:57,546 - INFO - [DELETE] Complete | camera=ppe_test_cam1
+2026-08-17 21:48:57,546 - INFO - POST /Surveillance complete | results=[{'camera': 'ppe_test_cam1', 'status': 'stopped'}]

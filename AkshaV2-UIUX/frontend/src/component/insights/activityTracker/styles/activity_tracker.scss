@@ -1,0 +1,100 @@
+.activity-tracker {
+  .search-bar {
+    background-color: var(--color-primary);
+    // Fluid width: takes ~92% of the viewport on narrow screens, converges to
+    // a fixed 820px once there's room, instead of ~17 hand-tuned pixel bands.
+    width: clamp(300px, 92vw, 820px);
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-md);
+
+    display: flex;
+    align-items: center;
+
+    .main-content {
+      background-color: var(--color-surface);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: var(--radius-pill);
+      width: 100%;
+      flex-wrap: wrap;
+
+      .inner-content {
+        cursor: pointer;
+        flex: 1 1 176px;
+        max-width: 220px;
+        min-width: 150px;
+        padding: 12px 16px;
+      }
+    }
+
+    .searchIcon {
+      color: white;
+      margin: 0 14px;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  .activeTab {
+    background: var(--color-primary-tint);
+    color: var(--color-primary-dark);
+    border-radius: var(--radius-pill);
+  }
+
+  .middle-line {
+    background: var(--color-border-strong);
+    max-width: 1px;
+    min-height: 51px;
+    max-height: 51px;
+  }
+
+  .imgDiv {
+    max-width: 100%;
+    padding: 0px 5px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .main-content {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+}
+
+.model-radius {
+  .MuiPaper-rounded {
+    border-radius: var(--radius-md);
+    overflow: scroll;
+    height: 350px !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .activity-tracker {
+    .search-bar {
+      width: 95vw;
+    }
+
+    .imgDiv {
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-bottom: 20px;
+      text-align: left;
+      --bs-gutter-x: 0rem;
+    }
+  }
+
+  .MuiTypography-root {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 16px;
+    overflow: scroll;
+  }
+}

@@ -1,0 +1,64 @@
+// Shared "classy" modal treatment — applies to every react-bootstrap Modal
+// and MUI Dialog in the app (delete confirmations, view/edit dialogs, alert
+// configuration, add-camera steps, etc.) so spacing and button placement is
+// consistent everywhere instead of being re-implemented per screen.
+
+// ---- react-bootstrap Modal -------------------------------------------------
+.modal-content {
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--color-border);
+
+  .modal-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+}
+
+.modal-body {
+  padding: 20px 24px;
+}
+
+.modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  // Bootstrap adds its own margin-left between adjacent buttons; the gap
+  // above already covers spacing, so drop the extra margin to avoid
+  // double-spacing.
+  > * {
+    margin: 0;
+  }
+}
+
+// ---- MUI Dialog -------------------------------------------------------------
+.MuiDialog-paper {
+  border-radius: var(--radius-lg) !important;
+}
+
+.MuiDialogTitle-root {
+  padding: 20px 24px !important;
+  font-weight: 600 !important;
+}
+
+.MuiDialogContent-root {
+  padding: 8px 24px 20px !important;
+}
+
+.MuiDialogActions-root {
+  padding: 16px 24px !important;
+  justify-content: center !important;
+  gap: 12px;
+
+  > * {
+    margin: 0 !important;
+  }
+}

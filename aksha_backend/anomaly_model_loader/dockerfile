@@ -1,0 +1,55 @@
+FROM python:3.10-slim-bullseye AS build
+
+# Set timezone
+ENV TZ=Asia/Kolkata
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    tzdata \
+    wget \
+    fontconfig \
+    libfreetype6 \
+    libx11-6 \
+    libxext6 \
+    libxrender1 \
+    libssl1.1 \
+    libjpeg62-turbo \
+    libpng16-16 \
+    xfonts-75dpi \
+    xfonts-base \
+    libglib2.0-0 \
+    libsm6 \
+    libgl1-mesa-glx \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /code/app 
+
+# Download and install wkhtmltopdf for Bullseye (more compatible)
+RUN wget -q https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.bullseye_amd64.deb && \
+    apt-get update && \
+    apt-get install -y ./wkhtmltox_0.12.6.1-2.bullseye_amd64.deb && \
+    rm wkhtmltox_0.12.6.1-2.bullseye_amd64.deb
+
+# Copy requirements and install Python dependencies
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy app directory
+COPY ./app /code/app
+
+# Copy so_files to system library directory
+RUN if [ -d "/code/app/so_files" ]; then \
+        cp /code/app/so_files/* /usr/lib/x86_64-linux-gnu/ 2>/dev/null || true; \
+        echo "so_files copied successfully"; \
+    fi
+
+# Create necessary directories for reports
+RUN mkdir -p /code/insight_report /code/kpi_report
+
+# Expose port
+EXPOSE 8000
+
+# Run the application
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

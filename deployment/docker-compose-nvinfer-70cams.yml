@@ -1,0 +1,827 @@
+version: "3.8"
+
+# DeepStream NvInfer — 105 Cameras @ 5 fps — RTX 3050 (Ampere sm86)
+# ──────────────────────────────────────────────────────────────────
+# 10 pods × 10-11 cameras each = 105 cameras (BATCH_ID 1–10).
+#
+# Pipeline per pod (deepstream_nvinfer):
+#   Backbone (built once, never torn down):
+#     nvstreammux → nvinfer(TRT FP16) → fakesink
+#   Per camera (dynamic add/remove without pipeline restart):
+#     nvurisrcbin → tee
+#       Branch A: queue → mux_sink_N  ← inference, pure NVMM zero-copy
+#       Branch B: queue → nvvideoconvert → appsink ← pull worker → Kafka
+#
+# VRAM budget (RTX 3050, 8GB):
+#   10 pods × ~700MB (TRT engine + NVDEC + frame buffers) = ~7.0GB
+#   System + display: ~700MB
+#   Total: ~7.7GB / 8GB — tight, monitor VRAM usage
+#
+# Kafka: 30 partitions — 105 cams × 5fps × ~30% motion = ~157 msgs/sec typical,
+#   525 msgs/sec peak. 30 consumers handle peak at ~17 msgs/sec each.
+#
+# First start: nvinfer1 builds TRT engine for sm86 (~5–8 min).
+#   nvinfer2–10 wait for nvinfer1 healthy then load cached engine in ~2s.
+#   Engine cached at ./Aksha/trt_cache/yolov10_b40_fp16_sm86.engine (shared volume).
+#
+# Start:
+#   docker compose -f docker-compose-nvinfer-70cams.yml up -d
+# Stop:
+#   docker compose -f docker-compose-nvinfer-70cams.yml down
+
+services:
+
+  react_frontend:
+    container_name: react_frontend
+    networks:
+      - aksha-net
+    stdin_open: true
+    tty: true
+    ports:
+      - 3000:3000
+    environment:
+      - TZ=Asia/Kolkata
+      - CHOKIDAR_USEPOLLING=true
+      - WDS_SOCKET_PORT=0
+      - VITE_BASE_URL=ws://node_backend:5000
+    image: dockerhubalgo/aksha_refactor_frontend:15062026-1
+    restart: always
+    volumes:
+      - /app/node_modules
+      - ./Aksha:/usr/src/docker-react-sample/src/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - ./Aksha/app.config
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  node_backend:
+    container_name: node_backend
+    networks:
+      - aksha-net
+    # image: dockerhubalgo/go_backend:15062026-1
+    image: dockerhubalgo/aksha_refactor_backend:15062026-1
+    restart: always
+    ports:
+      - 5000:5000
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    volumes:
+      - /backend/node_modules
+      - ./Aksha:/backend/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      TZ: Asia/Kolkata
+      AKSHA_PATH: /backend/Aksha
+      DATABASE: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  controller:
+    container_name: api_service
+    image: dockerhubalgo/controller:24072026-3
+    networks:
+      - aksha-net
+    restart: always
+    ports:
+      - 4000:4000
+    environment:
+      - TZ=Asia/Kolkata
+      - AKSHA_PATH=/Aksha
+      - HOST_AKSHA_PATH=/Aksha
+      - HOST_MACHINE_AKSHA_PATH=${HOST_MACHINE_AKSHA_PATH}
+      # 10 pods × 10 cameras = 100 cameras @ 3fps
+      - BATCH_COUNT=10
+      # Route /reload signals to deepstream-nvinfer{1..10} pods
+      - DEEPSTREAM_SERVICE=deepstream_nvinfer
+    volumes:
+      - ./Aksha:/Aksha
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  mongodb:
+    networks:
+      - aksha-net
+    image: dockerhubalgo/aksha_database:latest
+    container_name: mongodb
+    hostname: mongodb
+    restart: always
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=mongo
+      - MONGO_INITDB_DATABASE=Aksha
+      - MONGO_REPLICA_SET_NAME=rs0
+    volumes:
+      - ./Aksha/backup:/data/db
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 27018:27018
+    healthcheck:
+      test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongo -u $${MONGO_INITDB_ROOT_USERNAME} -p $${MONGO_INITDB_ROOT_PASSWORD} --quiet) -eq 1
+      interval: 10s
+      start_period: 30s
+    command: "--bind_ip_all --keyFile keyfile --replSet rs0"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"
+
+
+  kafka_broker:
+    container_name: broker
+    image: apache/kafka:latest
+    networks:
+      - aksha-net
+    restart: always
+    ports:
+      - 9092:9092
+      - 9093:9093
+    environment:
+      TZ: Asia/Kolkata
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: "broker,controller"
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,PLAINTEXT_HOST://0.0.0.0:9093,CONTROLLER://0.0.0.0:9094
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:9092,PLAINTEXT_HOST://localhost:9093
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT,CONTROLLER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@broker:9094
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      # 30 partitions — 70 cams × 3fps peak = 210 msgs/sec ÷ 30 = 7 msgs/sec per consumer.
+      # Typical (30% motion): ~63 msgs/sec — well within capacity.
+      KAFKA_NUM_PARTITIONS: 30
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_LOG_RETENTION_HOURS: 2
+      KAFKA_LOG_RETENTION_BYTES: 536870912
+      KAFKA_LOG_SEGMENT_BYTES: 134217728
+      KAFKA_LOG_RETENTION_CHECK_INTERVAL_MS: 60000
+      KAFKA_HEAP_OPTS: "-Xmx1G -Xms1G"
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list > /dev/null 2>&1"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+      start_period: 30s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"
+
+
+  redis:
+    container_name: redis
+    image: redis:8.4-rc1-alpine3.22
+    networks:
+      - aksha-net
+    restart: always
+    ports:
+      - 6379:6379
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # DeepStream NvInfer — 7 pods × 10 cameras @ 3fps = 70 cameras
+  #
+  # nvinfer1 builds TRT engine on first start (~5–8 min, RTX 3050 sm86 FP16).
+  # nvinfer2–7 depend on nvinfer1 healthy → load cached engine in ~2s each.
+  # Cameras are assigned to pods via BATCH_ID in rtsplinks.json.
+  # Add/remove cameras: POST http://localhost:808N/reload (no container restart).
+  # ──────────────────────────────────────────────────────────────────────────
+
+  deepstream_nvinfer1:
+    container_name: deepstream-nvinfer1
+    image: dockerhubalgo/deepstream_nvinfer:24072026-25
+    networks:
+      - aksha-net
+    restart: always
+    runtime: nvidia
+    ports:
+      - 8080:8080
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 1200s
+    environment:
+      TZ: Asia/Kolkata
+      BATCH_ID: "1"
+      MAX_CAMERAS: "12"
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      BATCH_TIMEOUT_MS: "300"
+      SOURCE_FPS: "25"
+      INFER_INTERVAL: "0"
+      CONF_THRESHOLD: "0.35"
+      PUBLISH_LIVE_IMAGE: "true"
+      PUBLISH_RAW_FRAME: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,video,utility
+    volumes:
+      - ./Aksha:/Aksh
+      a
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"
+
+
+  deepstream_nvinfer2:
+    container_name: deepstream-nvinfer2
+    image: dockerhubalgo/deepstream_nvinfer:24072026-25
+    networks:
+      - aksha-net
+    restart: always
+    runtime: nvidia
+    ports:
+      - 8081:8080
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      deepstream_nvinfer1:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      BATCH_ID: "2"
+      MAX_CAMERAS: "12"
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      BATCH_TIMEOUT_MS: "300"
+      SOURCE_FPS: "25"
+      INFER_INTERVAL: "0"
+      CONF_THRESHOLD: "0.35"
+      PUBLISH_LIVE_IMAGE: "true"
+      PUBLISH_RAW_FRAME: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,video,utility
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"
+
+
+  deepstream_nvinfer3:
+    container_name: deepstream-nvinfer3
+    image: dockerhubalgo/deepstream_nvinfer:24072026-25
+    networks:
+      - aksha-net
+    restart: always
+    runtime: nvidia
+    ports:
+      - 8082:8080
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      deepstream_nvinfer1:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      BATCH_ID: "3"
+      MAX_CAMERAS: "12"
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      BATCH_TIMEOUT_MS: "300"
+      SOURCE_FPS: "25"
+      INFER_INTERVAL: "0"
+      CONF_THRESHOLD: "0.35"
+      PUBLISH_LIVE_IMAGE: "true"
+      PUBLISH_RAW_FRAME: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,video,utility
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"
+
+
+  deepstream_nvinfer4:
+    container_name: deepstream-nvinfer4
+    image: dockerhubalgo/deepstream_nvinfer:24072026-25
+    networks:
+      - aksha-net
+    restart: always
+    runtime: nvidia
+    ports:
+      - 8083:8080
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      deepstream_nvinfer1:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      BATCH_ID: "4"
+      MAX_CAMERAS: "12"
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      BATCH_TIMEOUT_MS: "300"
+      SOURCE_FPS: "25"
+      INFER_INTERVAL: "0"
+      CONF_THRESHOLD: "0.35"
+      PUBLISH_LIVE_IMAGE: "true"
+      PUBLISH_RAW_FRAME: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,video,utility
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"
+
+
+  deepstream_nvinfer5:
+    container_name: deepstream-nvinfer5
+    image: dockerhubalgo/deepstream_nvinfer:24072026-25
+    networks:
+      - aksha-net
+    restart: always
+    runtime: nvidia
+    ports:
+      - 8084:8080
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      deepstream_nvinfer1:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      BATCH_ID: "5"
+      MAX_CAMERAS: "12"
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      BATCH_TIMEOUT_MS: "300"
+      SOURCE_FPS: "25"
+      INFER_INTERVAL: "0"
+      CONF_THRESHOLD: "0.35"
+      PUBLISH_LIVE_IMAGE: "true"
+      PUBLISH_RAW_FRAME: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,video,utility
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"
+
+
+  deepstream_nvinfer6:
+    container_name: deepstream-nvinfer6
+    image: dockerhubalgo/deepstream_nvinfer:24072026-25
+    networks:
+      - aksha-net
+    restart: always
+    runtime: nvidia
+    ports:
+      - 8085:8080
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      deepstream_nvinfer1:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      BATCH_ID: "6"
+      MAX_CAMERAS: "12"
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      BATCH_TIMEOUT_MS: "300"
+      SOURCE_FPS: "25"
+      INFER_INTERVAL: "0"
+      CONF_THRESHOLD: "0.35"
+      PUBLISH_LIVE_IMAGE: "true"
+      PUBLISH_RAW_FRAME: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,video,utility
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"
+
+
+  deepstream_nvinfer7:
+    container_name: deepstream-nvinfer7
+    image: dockerhubalgo/deepstream_nvinfer:24072026-25
+    networks:
+      - aksha-net
+    restart: always
+    runtime: nvidia
+    ports:
+      - 8086:8080
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      deepstream_nvinfer1:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      BATCH_ID: "7"
+      MAX_CAMERAS: "12"
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      BATCH_TIMEOUT_MS: "300"
+      SOURCE_FPS: "25"
+      INFER_INTERVAL: "0"
+      CONF_THRESHOLD: "0.35"
+      PUBLISH_LIVE_IMAGE: "true"
+      PUBLISH_RAW_FRAME: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,video,utility
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"
+
+  deepstream_nvinfer8:
+    container_name: deepstream-nvinfer8
+    image: dockerhubalgo/deepstream_nvinfer:24072026-25
+    networks:
+      - aksha-net
+    restart: always
+    runtime: nvidia
+    ports:
+      - 8087:8080
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      deepstream_nvinfer1:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      BATCH_ID: "8"
+      MAX_CAMERAS: "12"
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      BATCH_TIMEOUT_MS: "300"
+      SOURCE_FPS: "25"
+      INFER_INTERVAL: "0"
+      CONF_THRESHOLD: "0.35"
+      PUBLISH_LIVE_IMAGE: "true"
+      PUBLISH_RAW_FRAME: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,video,utility
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"
+  
+  deepstream_nvinfer9:
+    container_name: deepstream-nvinfer9
+    image: dockerhubalgo/deepstream_nvinfer:24072026-25
+    networks:
+      - aksha-net
+    restart: always
+    runtime: nvidia
+    ports:
+      - 8088:8080
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      deepstream_nvinfer1:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      BATCH_ID: "9"
+      MAX_CAMERAS: "12"
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      BATCH_TIMEOUT_MS: "300"
+      SOURCE_FPS: "25"
+      INFER_INTERVAL: "0"
+      CONF_THRESHOLD: "0.35"
+      PUBLISH_LIVE_IMAGE: "true"
+      PUBLISH_RAW_FRAME: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,video,utility
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"
+
+  deepstream_nvinfer10:
+    container_name: deepstream-nvinfer10
+    image: dockerhubalgo/deepstream_nvinfer:24072026-25
+    networks:
+      - aksha-net
+    restart: always
+    runtime: nvidia
+    ports:
+      - 8089:8080
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      deepstream_nvinfer1:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      BATCH_ID: "10"
+      MAX_CAMERAS: "10"
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      BATCH_TIMEOUT_MS: "300"
+      SOURCE_FPS: "25"
+      INFER_INTERVAL: "0"
+      CONF_THRESHOLD: "0.35"
+      PUBLISH_LIVE_IMAGE: "true"
+      PUBLISH_RAW_FRAME: "true"
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,video,utility
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"
+
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # Downstream consumers — scaled for 70 cameras @ 3fps
+  #
+  # Worst-case : 210 msgs/sec (70 × 3fps, all frames pass motion gate)
+  # Typical    :  ~63 msgs/sec (30% motion pass rate on static scenes)
+  #
+  # alert_identification : 30 replicas — matches KAFKA_NUM_PARTITIONS
+  # post_processor       : 30 replicas — heavier (DB writes + image saves)
+  # notification         :  7 replicas — fires only on confirmed alerts
+  # ──────────────────────────────────────────────────────────────────────────
+
+  alert_identification:
+    image: dockerhubalgo/alert_identification:15062026-1
+    networks:
+      - aksha-net
+    restart: always
+    deploy:
+      replicas: 30
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      mongodb:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      CROWD_THRESHOLD: 6
+      AKSHA_PATH: /Aksha
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+
+  post_processor:
+    image: dockerhubalgo/post_processor:15062026-1
+    networks:
+      - aksha-net
+    restart: always
+    deploy:
+      replicas: 30
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      TZ: Asia/Kolkata
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+
+  notification:
+    image: dockerhubalgo/notification:15062026-1
+    networks:
+      - aksha-net
+    restart: always
+    deploy:
+      replicas: 7
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      kafka_broker:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+
+  retention_service:
+    container_name: retention_service
+    image: dockerhubalgo/retention_service:15062026-1
+    networks:
+      - aksha-net
+    restart: always
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha/
+      RETENTION_DAYS: 10
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  anomaly_model_loader:
+    container_name: anomaly_model_loader
+    image: dockerhubalgo/anamoly_model_loader:15062026-1
+    networks:
+      - aksha-net
+    restart: always
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      CAMERA_NAME: global
+      AKSHA_PATH: /Aksha
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+networks:
+  aksha-net:
+    name: aksha-net
+    driver: bridge

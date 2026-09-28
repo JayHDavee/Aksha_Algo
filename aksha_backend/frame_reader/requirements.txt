@@ -1,0 +1,4 @@
+opencv-python-headless==4.10.0.84
+scikit-image==0.24.0
+kafka-python==2.0.2
+requests==2.31.0

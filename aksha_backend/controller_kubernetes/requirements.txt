@@ -1,0 +1,36 @@
+fastapi[standard]==0.112.0
+pytz==2024.2
+kubernetes>=29.0.0
+
+# --- Additions from old requirements.txt ---
+# Core dependencies
+anyio==3.6.2
+uvicorn[standard]
+idna==3.4
+
+# Image/Video processing
+numpy==1.23.4
+opencv-python==4.8.0.76
+opencv-contrib-python==4.8.0.74
+ffmpeg-python==0.2.0
+pillow==10.4.0
+cairosvg==2.7.1
+
+# Data processing
+pandas==2.0.3
+
+# AI/ML dependencies
+openai==1.42.0
+tiktoken==0.5.1
+
+# Database
+pymongo==4.3.2
+
+# Environment
+python-dotenv==1.0.1
+requests==2.32.3
+
+# Pydantic (compatibility with old code)
+pydantic==1.10.2
+# Updated to satisfy both fastapi and openai requirements
+typing-extensions>=4.11,<5

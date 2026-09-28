@@ -1,0 +1,992 @@
+2026-07-23 15:45:51,155 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:45:51,317 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:45:51,317 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:45:51,318 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:45:52,504 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:45:52,505 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:45:52,505 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:45:52,507 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:45:53,203 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:45:53,204 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:45:53,227 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:45:53,227 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:45:54,243 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:45:54,244 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:45:54,245 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:45:54,246 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:45:55,176 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:45:55,177 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:00,112 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:00,113 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:01,048 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:01,049 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:02,093 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:02,093 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:03,099 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:03,100 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:04,072 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:04,073 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:05,150 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:05,151 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:06,160 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:06,161 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:07,136 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:07,137 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:07,137 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:07,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:32,184 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:32,185 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:33,212 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:33,214 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:51,097 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:46:51,099 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:46:51,099 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:51,102 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:52,205 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:46:52,206 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:46:52,208 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:52,210 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:53,189 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:53,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:53,223 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:46:53,224 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:46:54,124 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:46:54,125 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:46:54,126 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:54,128 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:46:55,164 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:46:55,165 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:00,187 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:00,188 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:01,214 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:01,290 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:02,135 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:02,264 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:03,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:03,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:04,153 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:04,154 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:05,170 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:05,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:06,178 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:06,179 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:07,151 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:07,152 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:07,188 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:07,189 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:32,415 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:32,419 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:33,166 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:33,167 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:51,119 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:51,120 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:51,147 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:47:51,149 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:47:52,147 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:52,148 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:52,177 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:47:52,178 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:47:53,229 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:53,230 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:53,231 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:47:53,232 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:47:54,041 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:54,042 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:47:54,075 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:47:54,076 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:47:55,127 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:47:55,128 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:00,188 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:00,188 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:01,141 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:01,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:02,030 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:02,030 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:03,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:03,143 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:04,135 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:04,137 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:05,132 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:05,134 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:06,149 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:06,150 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:07,120 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:07,121 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:07,121 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:07,125 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:32,395 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:32,396 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:33,584 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:33,587 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:51,236 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:51,237 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:51,269 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:48:51,270 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:48:52,077 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:52,078 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:52,106 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:48:52,107 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:48:53,117 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:53,117 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:53,145 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:48:53,146 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:48:54,206 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:54,207 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:48:54,208 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:48:54,209 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:48:55,117 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:48:55,118 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:00,062 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:00,063 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:01,238 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:01,238 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:02,157 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:02,157 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:03,083 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:03,083 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:04,183 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:04,184 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:05,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:05,191 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:06,184 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:06,185 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:07,202 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:07,202 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:07,231 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:07,232 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:32,192 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:32,194 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:33,230 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:33,231 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:51,192 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:51,193 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:51,226 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:49:51,227 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:49:52,236 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:52,237 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:52,271 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:49:52,272 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:49:53,254 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:49:53,255 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:49:53,255 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:53,257 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:54,206 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:54,207 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:49:54,208 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:49:54,209 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:49:55,081 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:49:55,082 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:00,042 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:00,044 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:01,162 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:01,163 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:02,265 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:02,266 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:03,061 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:03,061 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:04,177 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:04,178 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:05,192 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:05,193 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:06,168 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:06,169 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:07,183 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:07,183 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:07,216 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:07,217 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:32,248 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:32,249 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:33,206 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:33,207 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:51,120 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:51,121 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:51,123 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:50:51,125 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:50:52,189 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:52,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:52,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:50:52,192 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:50:53,270 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:53,272 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:53,302 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:50:53,302 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:50:54,097 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:54,098 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:50:54,098 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:50:54,101 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:50:55,138 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:50:55,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:00,199 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:00,201 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:01,103 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:01,103 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:02,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:02,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:03,162 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:03,163 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:04,147 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:04,148 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:05,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:05,193 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:06,191 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:06,192 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:07,156 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:07,157 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:07,158 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:07,160 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:32,402 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:32,403 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:33,239 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:33,240 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:51,097 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:51:51,097 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:51:51,098 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:51,099 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:52,166 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:51:52,167 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:51:52,167 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:52,169 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:53,058 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:53,059 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:53,088 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:51:53,090 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:51:54,233 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:54,233 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:51:54,266 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:51:54,267 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:51:55,163 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:51:55,164 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:00,071 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:00,072 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:01,145 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:01,146 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:02,072 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:02,073 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:03,123 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:03,123 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:04,120 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:04,121 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:05,108 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:05,109 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:06,052 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:06,053 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:07,133 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:07,133 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:07,169 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:07,170 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:32,222 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:32,225 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:33,229 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:33,230 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:51,153 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:51,155 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:51,179 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:52:51,180 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:52:52,107 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:52,108 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:52,136 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:52:52,137 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:52:53,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:53,140 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:53,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:52:53,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:52:54,194 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:54,195 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:52:54,227 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:52:54,228 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:52:55,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:52:55,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:00,195 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:00,197 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:01,080 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:01,081 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:02,135 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:02,137 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:03,198 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:03,199 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:04,178 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:04,179 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:05,159 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:05,160 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:06,146 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:06,147 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:07,205 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:07,206 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:07,206 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:07,207 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:32,230 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:32,231 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:33,196 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:33,197 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:51,112 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:51,113 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:51,113 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:53:51,115 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:53:52,133 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:52,133 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:52,163 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:53:52,165 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:53:53,036 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:53,037 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:53,067 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:53:53,067 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:53:54,154 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:54,159 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:53:54,189 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:53:54,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:53:55,116 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:53:55,117 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:00,065 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:00,066 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:01,136 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:01,137 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:02,104 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:02,105 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:03,063 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:03,063 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:04,143 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:04,144 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:06,019 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:06,021 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:06,764 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:06,765 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:07,193 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:07,194 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:07,225 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:07,226 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:32,223 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:32,224 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:33,237 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:33,238 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:51,097 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:51,098 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:51,099 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:54:51,100 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:54:52,164 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:52,164 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:52,198 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:54:52,199 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:54:53,208 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:53,209 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:53,209 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:54:53,210 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:54:54,138 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:54,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:54:54,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:54:54,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:54:55,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:54:55,141 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:00,150 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:00,151 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:01,098 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:01,098 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:02,027 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:02,028 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:03,143 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:03,144 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:04,180 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:04,181 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:05,145 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:05,146 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:06,051 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:06,052 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:07,170 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:07,170 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:07,201 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:07,202 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:32,206 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:32,207 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:33,191 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:33,192 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:51,192 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:51,193 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:51,223 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:55:51,224 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:55:52,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:52,144 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:52,175 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:55:52,176 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:55:53,132 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:53,134 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:53,164 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:55:53,164 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:55:54,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:54,174 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:55:54,207 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:55:54,208 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:55:55,150 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:55:55,150 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:00,187 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:00,188 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:01,213 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:01,215 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:02,060 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:02,061 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:03,217 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:03,218 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:04,223 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:04,224 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:05,181 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:05,182 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:06,119 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:06,120 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:07,198 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:07,199 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:07,228 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:07,229 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:32,230 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:32,231 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:33,168 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:33,169 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:51,200 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:51,200 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:51,201 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:56:51,202 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:56:52,020 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:52,021 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:52,051 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:56:52,052 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:56:53,066 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:53,066 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:53,096 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:56:53,097 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:56:54,163 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:54,164 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:56:54,194 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:56:54,195 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:56:55,046 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:56:55,046 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:00,170 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:00,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:01,161 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:01,162 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:02,071 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:02,071 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:03,068 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:03,068 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:04,189 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:04,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:05,223 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:05,224 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:06,147 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:06,148 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:07,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:07,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:07,202 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:07,202 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:32,073 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:32,074 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:33,134 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:33,135 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:51,132 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:51,132 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:51,158 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:57:51,159 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:57:52,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:52,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:52,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:57:52,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:57:53,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:53,174 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:53,203 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:57:53,204 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:57:54,137 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:57:54,138 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:57:54,138 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:54,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:57:55,119 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:57:55,120 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:00,130 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:00,131 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:01,187 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:01,188 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:02,114 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:02,115 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:03,158 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:03,159 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:04,052 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:04,053 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:05,140 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:05,141 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:06,057 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:06,058 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:07,058 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:07,059 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:07,087 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:07,088 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:32,114 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:32,116 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:33,146 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:33,147 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:51,118 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:51,119 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:51,147 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:58:51,148 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:58:52,242 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:52,243 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:52,273 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:58:52,275 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:58:53,090 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:53,091 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:53,124 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:58:53,124 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:58:54,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:54,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:58:54,174 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:58:54,175 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:58:55,148 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:58:55,150 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:00,162 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:00,163 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:01,116 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:01,116 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:02,188 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:02,189 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:03,055 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:03,056 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:04,188 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:04,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:05,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:05,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:06,116 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:06,117 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:07,195 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:07,195 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:07,219 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:07,219 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:32,189 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:32,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:33,189 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:33,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:51,174 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:51,175 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:51,206 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:59:51,207 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:59:52,010 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:52,010 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:52,035 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:59:52,036 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:59:53,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:53,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:53,199 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:59:53,200 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:59:54,135 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:54,136 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 15:59:54,170 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 15:59:54,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 15:59:55,120 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 15:59:55,121 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:00,018 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:00,019 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:01,108 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:01,109 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:02,093 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:02,093 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:03,115 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:03,116 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:04,196 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:04,197 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:05,096 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:05,097 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:06,140 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:06,141 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:07,093 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:07,094 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:07,095 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:07,096 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:32,208 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:32,209 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:33,071 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:33,072 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:51,150 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:51,151 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:51,180 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:00:51,181 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:00:52,081 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:52,082 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:52,110 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:00:52,112 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:00:53,144 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:53,145 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:53,174 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:00:53,175 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:00:54,192 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:54,193 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:00:54,193 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:00:54,195 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:00:55,252 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:00:55,252 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:00,128 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:00,129 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:01,174 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:01,175 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:02,038 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:02,038 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:03,132 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:03,133 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:04,039 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:04,040 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:05,051 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:05,052 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:06,193 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:06,194 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:07,041 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:07,042 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:07,078 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:07,079 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:32,221 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:32,222 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:33,163 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:33,164 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:51,209 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:51,210 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:51,210 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:01:51,211 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:01:52,140 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:01:52,141 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:01:52,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:52,143 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:53,198 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:53,199 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:53,200 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:01:53,202 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:01:54,028 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:54,029 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:01:54,059 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:01:54,061 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:01:55,098 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:01:55,098 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:00,154 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:00,155 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:01,129 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:01,129 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:02,099 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:02,100 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:03,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:03,140 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:04,058 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:04,059 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:05,130 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:05,131 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:06,096 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:06,097 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:07,169 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:07,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:07,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:07,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:32,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:32,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:33,134 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:33,135 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:51,176 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:51,177 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:51,177 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:02:51,179 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:02:52,120 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:52,121 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:52,156 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:02:52,157 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:02:53,054 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:53,055 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:53,055 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:02:53,057 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:02:54,168 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:02:54,169 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:02:54,169 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:54,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:02:55,138 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:02:55,138 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:00,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:00,174 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:01,117 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:01,118 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:02,128 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:02,129 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:03,063 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:03,063 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:04,144 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:04,145 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:05,176 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:05,177 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:06,141 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:06,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:07,285 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:07,285 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:07,314 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:07,315 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:32,182 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:32,183 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:33,146 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:33,147 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:51,194 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:03:51,194 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:03:51,195 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:51,196 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:52,100 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:52,101 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:52,101 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:03:52,103 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:03:53,133 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:53,134 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:53,135 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:03:53,137 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:03:54,019 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:54,020 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:03:54,050 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:03:54,051 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:03:55,152 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:03:55,153 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:00,185 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:00,185 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:01,148 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:01,148 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:02,033 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:02,034 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:03,141 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:03,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:04,189 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:04,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:05,141 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:05,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:06,170 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:06,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:07,111 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:07,112 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:07,144 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:07,145 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:32,176 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:32,177 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:33,160 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:33,161 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:51,212 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:51,213 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:51,240 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:04:51,241 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:04:52,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:52,174 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:52,175 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:04:52,177 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:04:53,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:04:53,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:04:53,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:53,175 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:54,161 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:04:54,161 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:04:54,162 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:54,164 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:04:55,153 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:04:55,154 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:00,057 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:00,058 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:01,127 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:01,127 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:02,121 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:02,122 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:03,149 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:03,150 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:04,177 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:04,178 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:05,024 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:05,025 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:06,141 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:06,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:07,140 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:07,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:07,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:07,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:32,126 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:32,127 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:33,133 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:33,135 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:51,152 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:51,153 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:51,183 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:05:51,184 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:05:52,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:52,191 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:52,215 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:05:52,216 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:05:53,179 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:53,180 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:53,209 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:05:53,210 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:05:54,104 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:54,105 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:05:54,105 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:05:54,107 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:05:55,125 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:05:55,125 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:00,076 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:00,077 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:01,186 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:01,187 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:02,115 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:02,115 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:03,185 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:03,186 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:04,186 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:04,187 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:05,023 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:05,024 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:06,137 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:06,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:07,170 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:07,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:07,205 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:07,206 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:32,207 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:32,208 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:33,101 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:33,102 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:51,164 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:51,165 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:51,165 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:06:51,167 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:06:52,211 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:52,212 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:52,248 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:06:52,248 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:06:53,150 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:53,151 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:53,178 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:06:53,179 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:06:54,159 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:54,159 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:06:54,191 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:06:54,192 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:06:55,120 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:06:55,121 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:00,147 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:00,147 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:01,113 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:01,114 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:02,224 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:02,225 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:03,101 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:03,103 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:04,177 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:04,180 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:05,150 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:05,151 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:06,058 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:06,058 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:07,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:07,171 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:07,172 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:07,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:32,204 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:32,205 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:33,109 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:33,110 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:51,308 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:51,309 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:51,337 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:07:51,367 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:07:52,121 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:52,122 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:52,149 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:07:52,150 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:07:53,335 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:53,336 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:53,364 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:07:53,364 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:07:54,135 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:54,136 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:07:54,165 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:07:54,166 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:07:55,109 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:07:55,109 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:00,127 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:00,129 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:01,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:01,143 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:02,069 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:02,069 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:03,134 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:03,135 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:04,126 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:04,127 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:05,134 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:05,135 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:06,175 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:06,176 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:07,076 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:07,076 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:07,109 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:07,110 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:32,147 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:32,147 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:33,159 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:33,160 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:51,138 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:08:51,138 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:08:51,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:51,140 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:52,148 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:52,149 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:52,177 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:08:52,178 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:08:53,191 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:53,192 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:53,193 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:08:53,195 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:08:55,114 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:55,115 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:08:55,143 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:08:55,144 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:08:55,718 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:08:55,719 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:00,167 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:00,168 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:01,111 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:01,111 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:02,005 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:02,007 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:03,138 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:03,139 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:04,157 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:04,158 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:05,052 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:05,053 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:06,128 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:06,129 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:07,173 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:07,174 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:07,175 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:07,176 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:32,255 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:32,256 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:33,241 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:33,242 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:51,183 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:51,184 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:51,217 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:09:51,217 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:09:52,239 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:52,240 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:52,268 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:09:52,269 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:09:53,462 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:53,463 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:53,554 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:09:53,557 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:09:55,115 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:55,116 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:09:55,142 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=low | violated=['No-Shoes', 'No-Shoes']
+2026-07-23 16:09:55,145 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=low | sent_to=post_processing
+2026-07-23 16:09:56,252 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:09:56,253 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:10:00,091 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:10:00,092 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:10:01,145 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:10:01,146 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:10:02,156 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:10:02,156 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:10:03,095 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:10:03,096 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:10:04,178 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:10:04,179 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:10:05,081 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:10:05,082 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing
+2026-07-23 16:10:06,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE FRAME RECEIVED] camera=ppe_test_cam1 | severity=none | violated=[]
+2026-07-23 16:10:06,190 - ppe_alert_consumer_8d53e773ecf3 - INFO - [PPE Result] camera=ppe_test_cam1 | severity=none | sent_to=post_processing

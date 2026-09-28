@@ -1,0 +1,205 @@
+
+.autoalert-search {
+  width: 100%;
+  padding: 0 24px;
+
+  .inner-content {
+    @extend .aa-inner-content;
+  }
+
+  .activeTab {
+    @extend .aa-activeTab;
+  }
+
+  .middle-line {
+    @extend .aa-middle-line;
+  }
+
+  .aa-search-bar {
+    width: clamp(320px, 80%, 820px);
+    margin: 0 auto;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 6px;
+  }
+
+  .aa-main-content {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-pill);
+    width: calc(100% - 64px);
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    gap: 2px;
+    flex-wrap: wrap;
+  }
+
+  .aa-inner-content {
+    flex: 1;
+    min-width: 170px;
+    max-width: 260px;
+    padding: 16px 12px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .aa-activeTab {
+    background: var(--color-primary-tint);
+    color: var(--color-primary-dark);
+    border-radius: var(--radius-pill);
+  }
+
+  .aa-middle-line {
+    width: 1px;
+    height: 48px;
+    background: var(--color-border-strong);
+  }
+
+  .aa-searchIcon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+// /* KPI main layout */
+// .kpi-content-wrapper {
+//   margin-top: 32px;
+//   align-items: stretch;
+// }
+
+// /* Right panel */
+// .kpi-right-panel {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100%;
+// }
+
+// /* Chart card */
+// .kpi-chart-card {
+//   flex: 1;
+//   width: 100%;
+//   min-height: 340px;
+// }
+
+// /* Card body must stretch */
+// .kpi-chart-card .card-body {
+//   height: 100%;
+//   padding: 8px;
+// }
+
+// /* Chart container MUST have height */
+// .kpi-chart-card .chart-container {
+//   width: 100%;
+//   height: calc(100% - 28px);
+// }
+
+// /* Force Chart.js canvas */
+// .kpi-chart-card canvas {
+//   width: 100% !important;
+//   height: 100% !important;
+//   display: block;
+// }
+
+.kpi-layout {
+  margin-top: 40px;
+}
+
+/* Shared Card Style */
+.kpi-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 24px;
+}
+
+/* Header */
+.kpi-card-header {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 20px 24px 10px 24px;
+}
+
+/* Body */
+.kpi-card-body {
+  flex: 1;
+  padding: 10px 24px 24px 24px;
+}
+
+/* Right wrapper */
+.kpi-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Bigger charts */
+.kpi-chart-card {
+  height: 500px;   // 👈 bigger charts
+}
+
+/* Chart should fill full area */
+.kpi-chart-card canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Table should stretch */
+.kpi-table-body {
+  overflow: auto;
+}
+
+
+.aa-search-bar.desktop {
+  display: flex;
+}
+
+.aa-mobile-search {
+  display: none;
+}
+
+
+@media (max-width: 1200px) {
+  .autoalert-search {
+    .aa-search-bar {
+      width: 95%;
+    }
+  }
+}
+
+
+// Kept hidden at all widths — the KPI Report filter bar always uses the same
+// styled desktop pill layout as the Report tab, regardless of viewport width.
+.aa-mobile-search {
+  display: none;
+
+  .aa-search-button {
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }}
+  
+  .my_alert_not_found img {
+  width: auto !important;    
+  height: 160px;              
+  max-width: 100%;
+  object-fit: contain;        
+}
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="imgkit-format" content="png"/>
+<meta name="imgkit-orientation" content="Portrait"/>
+<title>WhatsApp Alert</title>
+</head>
+<body style="margin:0;padding:0;">
+    <div style="max-width:554px;margin:0 auto;padding: 35px; background:#fff; box-shadow: 26px 56px 43px #ddd;border-radius: 10px;">
+    <table>
+        <tr>
+        <td> 
+            <img src="{{logo_path}}" style="max-width:127px;position:relative;left:-7px;" alt="">
+        </td>
+        <td style="width:300px;"></td>
+        <td> <img src="{{logo2_path}}" style="max-width:127px;" alt=""></td>
+        </tr>
+    </table>
+    <p style="font-size:18px;padding-top:10px;">
+        Worker Safety Notification <br><br>
+        <p style="margin-bottom: 9px;">My Alert</p>
+        <span style="line-height:30px;"><strong>Camera :</strong> {{camera}}</span><br>
+        <span style="line-height:30px;"><strong>Alert Name :</strong> {{alert_name}}</span><br>
+        <span style="line-height:30px;"><strong>Alert description : </strong>{{alert_description}}</span><br>
+        <span style="line-height:30px;"><strong>Incident Time : </strong>{{Timestamp}}</span><br>
+        <span style="line-height:30px;"><strong>Camera Images : </strong></span><br>
+        <table>
+        <tr>
+            <td>
+                <img src="{{alert_image_path}}" alt="my alert" style="max-width:250px;">
+            </td>
+        </tr>
+        </table>
+    </p>
+    </div>
+</body>
+</html>

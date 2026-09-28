@@ -1,0 +1,13 @@
+{
+    "DATABASE_CONNECTION": "mongodb://mongo:mongo@localhost:27017/Aksha?authSource=admin&tls=false",
+    "SAS_URL": "https://aksha.blob.core.windows.net/aksha-customers?sp=rcw&st=2023-03-01T09:48:03Z&se=2025-03-01T17:48:03Z&spr=https&sv=2021-06-08&sr=c&sig=QfATi6YqBT7BGogIeYKnafBaPpt3ENgWsi7SNpsNURA%3D",
+    "connection_string": "DefaultEndpointsProtocol=https;AccountName=raspidev;AccountKey=zdjtCRt33TV4ukFJKgKZ0SLdAmIsbIj5j7crqI5PaJs8ql95HGzyKK+vExMir8jYy2iMLUCNY1Nd+AStPXJ9ZA==;EndpointSuffix=core.windows.net",
+    "blob_name" : "aksha-email-auth",
+    "PARENT_ID_UT" : "1FVMFG8PX3Nq6k6F6OaEU4Tii6APC2jgd",
+    "UT_app_id" : "UnitedToolkits001",
+    "PARENT_ID_SHAARDA" : "1unmWc4Fm6YwEn7w4oLapy08VExTYs0WK",
+    "Shaarda_app_id" : "Sha0001Cli01",
+    "PARENT_ID_AKSHA_TEAM" : "16j9WdCQbOwT9_064KV9COcu4Zaeir23v",
+    "Aksha_team_app_id" : "Aksha0000Test"
+}
+

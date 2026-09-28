@@ -1,0 +1,172 @@
+.profile-model {
+  min-width: 600px;
+  padding: 1rem;
+
+  .userInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      max-width: 54px;
+      min-width: 54px;
+      margin-right: 1rem;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--color-text);
+    }
+
+    p {
+      font-size: 14px;
+      color: var(--color-text);
+    }
+
+    .flex-info {
+      display: flex;
+      align-items: center;
+
+    }
+
+    .close-icon {
+      background-color: var(--color-primary-tint);
+      border-radius: var(--radius-sm);
+    }
+  }
+
+  .credential-title {
+    margin-bottom: -0.7rem;
+    margin-top: 0.6rem;
+    margin-left: 0.4rem;
+    // margin: 0.5rem, 0, -1rem, 0.4rem;
+  }
+
+  .flex-main-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    .information {
+      h2 {
+        font-size: 22px;
+        font-weight: 800;
+        color: var(--color-text);
+      }
+
+      input {
+        margin-top: 1rem;
+        padding-left: 0.5rem;
+
+        &:focus {
+          border-color: #ced4da !important;
+          outline: 0;
+          box-shadow: unset !important;
+        }
+      }
+    }
+
+    .change-password {
+      h2 {
+        font-size: 22px;
+        font-weight: 800;
+        color: var(--color-text);
+      }
+
+      input {
+        margin-top: 2.25rem;
+        padding-left: 2rem;
+
+        &:focus {
+          border-color: #ced4da !important;
+          outline: 0;
+          box-shadow: unset !important;
+        }
+      }
+    }
+  }
+
+  .flex-input {
+    position: relative;
+  }
+
+  .pencil-icon {
+    position: absolute;
+    z-index: 9;
+    top: 7px;
+    right: 12px;
+    color: #979797;
+  }
+
+  .lockIcon {
+    position: absolute;
+    top: 7px;
+    z-index: 90;
+    left: 5px;
+    color: #979797;
+  }
+
+  .enable-gen-ai-features {
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .form-check-input {
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-top: 0.25rem !important;
+    font-size: 1.2rem;
+  }
+
+  .form-check-input:checked {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+}
+
+.flex-btn-pass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+
+  .btn-primary {
+    width: 9rem;
+    height: 3.7rem;
+  }
+
+  .btn-reset-pass {
+    border: 1px solid var(--color-primary);
+    height: 3.7rem;
+    width: 12rem;
+    color: var(--color-primary);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      background: var(--color-primary);
+      color: white;
+    }
+  }
+}
+
+.profile-model {
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
+}
+
+.MuiDialog-paper {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,1829 @@
+.camera-directory-list-section {
+  .barCls123 {
+    max-height: "90vh";
+    width: "42.5vw";
+    overflow-x: hidden;
+  }
+
+  .widtCls {
+    width: 100%
+  }
+
+  .heightAdjustCls {
+    // overflow-y: scroll;
+    // overflow-x: scroll;
+    width: 42.5vw;
+    height: 100vh;
+  }
+
+  .widthAdjustFlex {
+    display: flex;
+  }
+
+  // Table visuals now live in the shared .classy-table / .classy-table-card
+  // classes (src/styles/_classyTable.scss) applied directly in JSX.
+
+  .alert-name {
+    color: var(--color-primary);
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  .alert-name-absent {
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  .Edit-Alert-style {
+    font-size: 24px;
+    color: var(--color-primary);
+    margin-right: 10px;
+  }
+
+  .View-Alert-style {
+    font-size: 25px;
+    color: var(--color-primary);
+  }
+
+  .Data-not-Available {
+    text-align: center;
+  }
+
+  .Loading {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .flex-box-style {
+    position: relative;
+    top: 5px;
+  }
+
+  .right-radius {
+    border-top-right-radius: var(--radius-sm);
+    border-bottom-right-radius: var(--radius-sm);
+  }
+
+  .left-radius {
+    border-top-left-radius: var(--radius-sm);
+    border-bottom-left-radius: var(--radius-sm);
+  }
+
+  .border-radius {
+    border-radius: var(--radius-md);
+  }
+
+  .white-row {
+    background-color: var(--color-surface);
+  }
+
+  input.green-checkbox[type="checkbox"] {
+    accent-color: var(--color-success);
+    width: 21px;
+    height: 21px;
+  }
+
+  input.default-checkbox[type="checkbox"]:checked {
+    accent-color: var(--color-success);
+  }
+
+  input.default-checkbox[type="checkbox"] {
+    accent-color: #bbbbbb;
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 4px;
+  }
+
+  .addButton {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 7px 24px;
+    border-radius: var(--radius-sm);
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 1px;
+    background: var(--color-surface);
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      background: var(--color-primary);
+      color: white;
+    }
+  }
+
+  .addButton-disabled {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 7px 24px;
+    border-radius: var(--radius-sm);
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 1px;
+    opacity: 0.3;
+  }
+
+  .fs-14 {
+    font-size: 14px;
+  }
+
+
+
+  .form-check-input {
+    width: 25px;
+    height: 25px;
+    background-color: #cfcfcf;
+    border-color: #cfcfcf;
+  }
+
+  .form-check-input:checked {
+    background-color: var(--color-success);
+    border-color: var(--color-success);
+  }
+
+  .form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.4rem;
+  }
+
+
+
+  .margin-l-38 {
+    margin-left: 38%;
+  }
+
+  // .view-edit-img-mode{
+  //   margin-top: 53px !important;
+  // }
+
+  // .edit-cam-length-one{
+  //   margin-top: 130px !important;
+  // }
+
+  .add-camera-section {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+
+    .bottom-form-content {
+      h2 {
+        margin-top: 35px;
+        font-weight: 700;
+        margin-bottom: 26px;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      li {
+        list-style: none;
+        padding: 10px 0;
+
+      }
+
+
+    }
+
+    .corner {
+      width: 50%;
+      min-height: 80vh;
+
+      .form-basic-details {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+
+        label {
+          padding-bottom: 10px;
+        }
+
+        element.style {
+          width: 98%;
+          padding: 10px;
+          border: 1px solid var(--color-border-strong);
+          outline: none;
+          font-size: 15px;
+
+        }
+
+        input {
+          width: 96%;
+          padding: 9px 10px;
+          outline: none;
+          font-size: 15px;
+          border: 1px solid var(--color-border-strong);
+          border-radius: var(--radius-sm);
+          background-color: var(--color-surface);
+          transition: border-color 0.15s ease;
+
+          &:focus {
+            border-color: var(--color-primary);
+          }
+        }
+
+        .nameinput {
+          width: 100%;
+          padding: 9px 10px;
+          outline: none;
+          font-size: 15px;
+          border: 1px solid var(--color-border-strong);
+          border-radius: var(--radius-sm);
+          background-color: var(--color-surface);
+        }
+
+
+
+        select {
+          width: 96%;
+          padding: 9px 10px;
+          outline: none;
+          font-size: 15px;
+          border: 1px solid var(--color-border-strong);
+          border-radius: var(--radius-sm);
+          background-color: var(--color-surface);
+          appearance: none;
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%236c7689' d='M4 6l4 4 4-4'/%3e%3c/svg%3e");
+          background-repeat: no-repeat;
+          background-position: right 10px center;
+
+          &:focus {
+            border-color: var(--color-primary);
+          }
+        }
+
+        textarea {
+          border-radius: var(--radius-sm);
+          border-color: var(--color-border-strong) !important;
+
+          &:focus {
+            border-color: var(--color-primary) !important;
+          }
+        }
+      }
+
+      textarea:disabled {
+        background-color: #fff !important;
+      }
+
+
+      img {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 90px;
+        display: flex;
+      }
+    }
+
+    // .cameraTwodivs{
+    //   display: flex;
+    //   justify-content: space-between;
+    //   align-items: center;
+    // }
+
+
+
+
+  }
+
+  td {
+    border: none;
+    position: relative;
+  }
+
+
+  // .grid-view {
+  //   display: flex !important;
+  // }
+
+  // .padding-cls-camera {
+  //   padding: 0px 33px
+  // }
+
+  // .hide-to-desktop {
+  //   display: none;
+  // }
+
+  //{=====Mobile View Responsive======}
+  @media only screen and (min-width: 360px) and (max-width: 374px) {
+
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 0px !important;
+    }
+
+    .hide-to-desktop {
+      display: block;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: block !important;
+    }
+
+    .add-camera-section {
+      display: block !important;
+
+      .corner {
+        width: 100% !important;
+
+        img {
+          width: 100%;
+
+          max-width: 350px;
+
+          height: auto;
+
+          max-height: 480px;
+
+          object-fit: contain;
+          margin: 0 auto;
+          margin-top: 90px;
+          display: flex;
+        }
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 96%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 50%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 5px;
+    }
+
+    td {
+      padding: 15px 15px;
+    }
+  }
+
+  @media only screen and (min-width: 375px) and (max-width: 389px) and (orientation : portrait) {
+
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 0px !important;
+    }
+
+    .hide-to-desktop {
+      display: block;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: block !important;
+    }
+
+    .add-camera-section {
+      display: block !important;
+
+      .corner {
+        width: 100% !important;
+
+
+        img {
+          width: 100%;
+
+          max-width: 350px;
+
+          height: auto;
+
+          max-height: 480px;
+
+          object-fit: contain;
+          margin: 0 auto;
+          margin-top: 90px;
+          display: flex;
+        }
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 96%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 50%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .AlertCls {
+            flex: 0 0 auto;
+            width: 70.666667%;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 11px;
+    }
+
+    td {
+      padding: 15px 15px;
+    }
+
+
+  }
+
+
+
+  @media only screen and (min-width: 390px) and (max-width: 411px) and (orientation : portrait) {
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 0px !important;
+    }
+
+    .hide-to-desktop {
+      display: block;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: block !important;
+    }
+
+    .add-camera-section {
+      display: block !important;
+
+      .corner {
+        width: 100% !important;
+
+        img {
+          width: 100%;
+
+          max-width: 350px;
+
+          height: auto;
+
+          max-height: 480px;
+
+          object-fit: contain;
+          margin: 0 auto;
+          margin-top: 90px;
+          display: flex;
+        }
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 96%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 50%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 11px;
+    }
+
+    td {
+      padding: 15px 15px;
+    }
+  }
+
+  @media only screen and (min-width: 412px) and (max-width: 413px) and (orientation : portrait) {
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 0px !important;
+    }
+
+    .hide-to-desktop {
+      display: block;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: block !important;
+    }
+
+    .add-camera-section {
+      display: block !important;
+
+      .corner {
+        width: 100% !important;
+
+
+        img {
+          width: 100%;
+
+          max-width: 350px;
+
+          height: auto;
+
+          max-height: 480px;
+
+          object-fit: contain;
+          margin: 0 auto;
+          margin-top: 90px;
+          display: flex;
+        }
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 96%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 50%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 11px;
+    }
+
+    td {
+      padding: 15px 15px;
+    }
+  }
+
+  @media only screen and (min-width: 414px) and (max-width: 427px) and (orientation : portrait) {
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 0px !important;
+    }
+
+    .hide-to-desktop {
+      display: block;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: block !important;
+    }
+
+    .add-camera-section {
+      display: block !important;
+
+      .corner {
+        width: 100% !important;
+
+        img {
+          width: 100%;
+
+          max-width: 350px;
+
+          height: auto;
+
+          max-height: 480px;
+
+          object-fit: contain;
+          margin: 0 auto;
+          margin-top: 90px;
+          display: flex;
+        }
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 96%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 50%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 11px;
+    }
+
+    td {
+      padding: 15px 15px;
+    }
+  }
+
+  @media only screen and (min-width: 428px) and (max-width: 767px) and (orientation : portrait) {
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 0px !important;
+    }
+
+    .hide-to-desktop {
+      display: block;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: block !important;
+    }
+
+    .add-camera-section {
+      display: block !important;
+
+      .corner {
+        width: 100% !important;
+
+        img {
+          width: 100%;
+
+          max-width: 350px;
+
+          height: auto;
+
+          max-height: 480px;
+
+          object-fit: contain;
+          margin: 0 auto;
+          margin-top: 90px;
+          display: flex;
+        }
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 96%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 50%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 11px;
+    }
+
+    td {
+      padding: 15px 15px;
+    }
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 799px) and (orientation : portrait) {
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 10px !important;
+    }
+
+    .hide-to-desktop {
+      display: block;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: block !important;
+    }
+
+    .add-camera-section {
+      //display: block !important;
+
+      .corner {
+
+        // width: 100% !important;
+        img {
+          width: 100%;
+
+          max-width: 350px;
+
+          height: auto;
+
+          max-height: 480px;
+
+          object-fit: contain;
+          margin: 0 auto;
+          margin-top: 90px;
+          display: flex;
+        }
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 96%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 50%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 0px;
+    }
+
+    td {
+      padding: 5px 14px;
+    }
+
+    .grid-view {
+      display: block !important;
+    }
+
+    .camera-directory-list-section .add-camera-section .corner {
+      width: 50%;
+      display: inline-block;
+    }
+
+    .add-camera-section {
+      //display: block !important;
+    }
+
+    .td-link-cls {
+      max-width: 278px !important;
+      min-width: 40px !important;
+      width: 210px !important;
+      word-break: break-all
+    }
+
+    .widthAdjust {
+      display: flex;
+      width: 109%;
+    }
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 1200px) and (orientation : portrait) {
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 10px !important;
+    }
+
+    .hide-to-desktop {
+      display: block;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: block !important;
+    }
+
+    .add-camera-section {
+      display: flex;
+      justify-content: space-between;
+      //align-items: center;
+
+
+      .corner {
+        width: 50%;
+        display: inline-block;
+
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 96%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 50%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 6px;
+    }
+
+    td {
+      padding: 15px 15px;
+    }
+
+    .grid-view {
+      display: block !important;
+    }
+
+    .td-link-cls {
+      max-width: 278px !important;
+      min-width: 40px !important;
+      width: 210px !important;
+      word-break: break-all
+    }
+
+    .widthAdjust {
+      display: flex;
+      width: 109%;
+    }
+  }
+
+  //{======Desk View Responaive======}
+  @media only screen and (min-width: 1280px) and (max-width: 1365px) {
+
+    td {
+      padding: 22px 15px;
+    }
+
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 33px !important;
+    }
+
+    .hide-to-desktop {
+      display: flex;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: flex !important;
+    }
+
+    .add-camera-section {
+      display: flex;
+      justify-content: space-between;
+      //align-items: center;
+
+      .corner {
+        width: 50%;
+        display: inline-block;
+        //padding: 35px 50px!important;
+
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 96%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 50%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 11px;
+    }
+
+    .heightAdjustCls {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      width: 42.5vw;
+    }
+
+
+
+  }
+
+  @media only screen and (min-width: 1366px) and (max-width: 1439px) {
+    td {
+      padding: 22px 15px;
+    }
+
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 33px !important;
+    }
+
+    .hide-to-desktop {
+      display: flex;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: flex !important;
+    }
+
+    .add-camera-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .corner {
+        width: 50%;
+        display: inline-block;
+        // padding: 35px 50px!important;
+
+
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 96%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 50%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 11px;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) and (max-width: 1535px) {
+    td {
+      padding: 22px 15px;
+    }
+
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 33px !important;
+    }
+
+    .hide-to-desktop {
+      display: flex;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: flex !important;
+    }
+
+    .add-camera-section {
+      display: flex;
+      justify-content: space-between;
+      //align-items: center;
+
+      .corner {
+        width: 50%;
+        display: inline-block;
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 96%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 50%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 11px;
+    }
+  }
+
+  @media only screen and (min-width: 1536px) and (max-width: 1599px) {
+
+    // .widthAdjust {
+    //   flex: 0 0 auto;
+    //   width: 0%;
+    // }
+    @media (min-width: 992px) {
+      .col-lg-12 {
+        width: initial
+      }
+
+      .col-lg-8 {
+        flex: 0 0 auto;
+        // width: 66.66666667%;
+      }
+    }
+
+  }
+
+  //   .hide-for-mobile {
+  //     display: none !important;
+  //   }
+
+  //   .padding-cls-camera {
+  //     padding: 0px 0px !important;
+  //   }
+
+  //   .hide-to-desktop {
+  //     display: flex;
+  //   }
+
+  //   .combinationCls {
+  //     display: block !important;
+  //   }
+
+  //   .grid-view {
+  //     //display: block !important;
+  //   }
+
+  //   .add-camera-section {
+  //     display: block !important;
+
+  //     .corner {
+  //       width: 50%;
+  //       display: inline-block;
+
+  //       .form-basic-details {
+  //         display: block !important;
+
+  //         input {
+  //           width: 96%;
+  //           padding: 8px 8px;
+  //           outline: none;
+  //           font-size: 15px;
+  //           border: 1px solid #9d9d9d;
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   .camera-directory-list-section th {
+  //     background-color: #000;
+  //     color: #fff;
+  //     padding: 11px 11px;
+  //   }
+
+  //   .camera-directory-list-section .widthAdjustFlex {
+  //     display: flex;
+  //   }
+  // }
+
+  @media only screen and (min-width: 1600px) and (max-width: 1919px) {
+    td {
+      padding: 22px 15px;
+    }
+
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 33px !important;
+    }
+
+    .hide-to-desktop {
+      display: flex;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: flex !important;
+    }
+
+    .add-camera-section {
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+
+      .corner {
+        width: 50%;
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 97%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 95%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 11px;
+    }
+  }
+
+  @media only screen and (min-width: 1920px) and (max-width: 1990px) {
+
+    td {
+      padding: 22px 15px;
+    }
+
+    .hide-for-mobile {
+      display: none !important;
+    }
+
+    .padding-cls-camera {
+      padding: 0px 33px !important;
+    }
+
+    .hide-to-desktop {
+      display: flex;
+    }
+
+    .combinationCls {
+      display: block !important;
+    }
+
+    .grid-view {
+      display: flex !important;
+    }
+
+    .add-camera-section {
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+
+      .corner {
+        width: 50%;
+
+        .form-basic-details {
+          display: block !important;
+
+          input {
+            width: 97%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+
+          .nameinput {
+            width: 50%;
+            padding: 8px 8px;
+            outline: none;
+            font-size: 15px;
+            border: 1px solid #9d9d9d;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 11px 11px;
+    }
+  }
+}
+
+.camCls {
+  padding-left: 0px;
+}
+
+.barCls123 {
+  overflow-x: hidden;
+  max-width: 100vw !important;
+  width: 50vw;
+  height: 90vh;
+  padding-left: 100px;
+}
+
+.grid-view {
+  display: flex !important;
+}
+
+.padding-cls-camera {
+  padding: 0px 33px
+}
+
+.hide-to-desktop {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.table-width {
+  overflow-x: scroll
+}
+
+.td-link-cls {
+  max-width: 100%;
+  min-width: 40px;
+  width: 40px;
+}
+
+.combinationCls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 66vw
+}
+
+.AlertCls {
+  flex: 0 0 auto;
+  width: 80.666667%;
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+  .barCls123 {
+    max-height: 90vh !important;
+    width: 70.5vw !important;
+    overflow-x: hidden;
+    margin-left: -30px;
+    padding-left: 0px !important;
+  }
+
+  .camera {
+    display: block;
+    width: 112% !important;
+    margin: 0px 0px 0px -19px !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    max-width: 120% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 50px !important;
+    margin-right: 0px !important;
+    margin-left: -18px !important;
+  }
+}
+
+
+@media only screen and (min-width: 375px) and (max-width: 389px) {
+  .barCls123 {
+    max-height: 90vh !important;
+    width: 68.5vw !important;
+    overflow-x: hidden;
+    margin-left: -25px;
+    padding-left: 0px !important;
+  }
+
+  .camera {
+    display: block;
+    width: 100% !important;
+    margin: 0px 0px 0px 0px !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 50px !important;
+  }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 411px) {
+  .barCls123 {
+    max-height: 90vh !important;
+    width: 70.5vw !important;
+    overflow-x: hidden;
+    margin-left: -25px;
+    padding-left: 0px !important;
+  }
+
+  .camera {
+    display: block;
+    width: 105% !important;
+    margin: 0px 0px 0px 0px !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    max-width: 120% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 50px !important;
+    margin-left: -9px !important;
+  }
+}
+
+@media only screen and (min-width: 412px) and (max-width: 413px) {
+  .barCls123 {
+    max-height: 90vh !important;
+    width: 76.5vw !important;
+    overflow-x: hidden;
+    margin-left: -36px;
+    padding-left: 0px !important;
+  }
+
+  .camera {
+    display: block;
+    width: 104% !important;
+    margin: 0px 0px 0px 0px !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    max-width: 117% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 50px !important;
+    margin-left: -6px !important;
+  }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 427px) {
+  .barCls123 {
+    max-height: 90vh !important;
+    width: 73.5vw !important;
+    overflow-x: hidden;
+    margin-left: -25px;
+    padding-left: 0px !important;
+  }
+
+  .camera {
+    display: block;
+    width: 100% !important;
+    margin: 0px 0px 0px 0px !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 50px !important;
+  }
+}
+
+@media only screen and (min-width: 428px) and (max-width: 539px) {
+  .barCls123 {
+    max-height: 90vh !important;
+    width: 73.5vw !important;
+    overflow-x: hidden;
+    margin-left: -25px;
+    padding-left: 0px !important;
+  }
+
+  .camera {
+    display: block;
+    width: 100% !important;
+    margin: 0px 0px 0px 0px !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 50px !important;
+  }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 799px) {
+  .barCls123 {
+    max-height: 90vh !important;
+    width: 83.5vw !important;
+    overflow-x: hidden;
+    margin-left: -40px;
+    padding-left: 0px !important;
+  }
+
+  .camera {
+    display: block;
+    width: 110% !important;
+    margin: 0px 0px 0px 0px !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    max-width: 111% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 50px !important;
+    margin-left: -20px !important;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .barCls123 {
+    overflow-x: hidden;
+    max-width: 100vw !important;
+    width: 72vw;
+    height: 90vh;
+    padding-left: 0px !important;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 819px) {
+  .camera {
+    display: block;
+    width: 105% !important;
+    margin: 0px 0px 0px 0px !important;
+    height: 82vh;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    max-width: 120% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin-top: 50px !important;
+    margin-left: -17px !important;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 911px) {
+  .camera {
+    display: block;
+    width: 100% !important;
+    margin: 0px 0px 0px 0px !important;
+    height: 82vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+@media only screen and (min-width: 912px) and (max-width: 1279px) {
+  .camera {
+    display: block;
+    width: 118% !important;
+    margin: 0px 0px 0px 0px !important;
+    height: 82vh;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    max-width: 132% !important;
+    padding-left: 62px !important;
+    margin-top: 50px !important;
+    margin-left: -30px !important;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+  .camera {
+    display: block;
+    height: 100%;
+    float: right;
+    width: 50% !important;
+    margin: 0px 20px 0px 20px !important;
+    height: 90vh !important;
+    // overflow-y: scroll;
+    overflow-x: visible;
+    max-width: 75% !important;
+  }
+
+  // .align-items-start {
+  //   align-items: flex-start;
+  //   //margin-bottom: 160px;
+  // }
+
+  .add-camera-step-form {
+    // border: 1px solid #ddd;
+    padding: 3px 13px 100px 13px;
+  }
+
+  .AlertCls {
+    margin: 0px 0px;
+  }
+
+  .container-style {
+    max-width: 100%;
+    margin: 0 1px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
+  .camera {
+    display: block;
+    height: 100%;
+    float: right;
+    width: 50% !important;
+    margin: 0px 0px 0px 0px !important;
+    height: 81vh !important;
+    // overflow-y: scroll;
+    overflow-x: visible;
+    max-width: 75% !important;
+  }
+
+  .add-camera-step-form {
+    // border: 1px solid #ddd;
+    padding: 3px 13px 0px 13px;
+  }
+
+  .AlertCls {
+    margin: 50px 0px;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1535px) {
+  .camera {
+    display: block;
+    height: 100%;
+    float: right;
+    width: 55% !important;
+    margin: 0px 0px 0px 0px !important;
+    height: 70vh !important;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    max-width: 75% !important;
+  }
+
+  .add-camera-step-form {
+    // border: 1px solid #ddd;
+    padding: 3px 13px 11px 13px;
+  }
+
+  .AlertCls {
+    margin: 15px 0px;
+  }
+}
+
+// @media only screen and (min-width: 1536px) and (max-width: 1599px) {
+//   .camera {
+//     display: block;
+//     height: 100%;
+//     float: right;
+//     width: 55%;
+//     margin: 18px 20px !important;
+//     padding: -52px 3px;
+//     overflow-y: scroll; 
+//     overflow-x: hidden;
+//     padding-left: 71px;
+//   }
+
+//   .form-button-group {
+//     margin-top: 20px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start;
+//     margin-bottom: 258px;
+//   }
+//}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+  .camera {
+    display: block;
+    height: 100%;
+    float: right;
+    width: 50% !important;
+    margin: -600px 0px 0px 20px !important;
+    height: 70vh !important;
+    // overflow-y: scroll;
+    overflow-x: visible;
+    max-width: 75% !important;
+  }
+
+  .add-camera-step-form {
+    // border: 1px solid #ddd;
+    padding: 3px 13px 160px 13px;
+  }
+
+  .AlertCls {
+    margin: 60px 0px;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 1990px) {
+  .camera {
+    display: block;
+    width: 100%;
+    /* Full width of its container */
+    height: 100%;
+    /* Full height of parent */
+    max-height: 100vh;
+    /* Restrict to viewport height */
+    margin: 0;
+    /* Remove unwanted gaps */
+    padding: 0;
+    /* Remove padding if any */
+    overflow-y: auto;
+    /* Scroll if content exceeds */
+    overflow-x: hidden;
+  }
+
+
+  .add-camera-step-form {
+    // border: 1px solid #ddd;
+    padding: 3px 13px 225px 13px;
+  }
+
+  .AlertCls {
+    margin: 50px 0px;
+  }
+
+  // .widthCls {
+  //   max-width: 83vw;
+  //   font-size: 20px;
+  // }
+  // .camera-directory-list-section .form-check-input{
+  //   width:35px;
+  //   height: 35px;
+  // }
+  // .bx-edit-alt{
+  //   font-size: 35px!important;
+  // }
+  // .form-check-label{
+  //   font-size: 26px!important;
+  // }
+}
+
+.camera {
+  display: block;
+  width: 100%;
+  /* Full width of its container */
+  height: 100%;
+  /* Full height of parent */
+  max-height: 100vh;
+  /* Restrict to viewport height */
+  margin: 0;
+  /* Remove unwanted gaps */
+  padding: 0;
+  /* Remove padding if any */
+  overflow-y: auto;
+  /* Scroll if content exceeds */
+  overflow-x: hidden;
+}
+
+
+
+
+
+.MuiDialog-root {
+  z-index: 2001 !important;
+}
+
+
+.MuiPickersPopper-root {
+  z-index: 2001 !important;
+}
+
+.camera-directory-list-section {
+
+  .add-camera-section {
+
+    .corner {
+      width: 50% !important;
+      min-height: auto !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      display: block !important;
+    }
+
+  }
+}
+
+.group-form-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--color-text);
+
+  margin-bottom: 2px;
+  padding-bottom: 10px;
+
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+  .group-form-title {
+    font-size: 22px;
+  }
+}

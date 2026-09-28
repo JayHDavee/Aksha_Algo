@@ -1,0 +1,100 @@
+2026-07-17 17:15:50,267 - notification4d758e34a615 - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-07-17 17:15:50,268 - notification4d758e34a615 - INFO - Starting Notification Service
+2026-07-17 17:15:50,268 - notification4d758e34a615 - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-07-17 17:15:50,481 - notification4d758e34a615 - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-07-17 17:15:50,482 - notification4d758e34a615 - INFO - NotificationUtils initialised
+2026-07-17 17:15:50,482 - notification4d758e34a615 - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-07-17 17:15:50,488 - notification4d758e34a615 - INFO - Read threadId from config: 19f6e499000e975f
+2026-07-17 17:15:50,735 - notification4d758e34a615 - INFO - MongoDB connected | db=Aksha
+2026-07-17 17:15:50,735 - notification4d758e34a615 - INFO - notif_setup_email | reading Resource collection
+2026-07-17 17:15:50,764 - notification4d758e34a615 - INFO - Email config loaded | recipients=['anvay011006@gmail.com'] | sender=anvay011006@gmail.com
+2026-07-17 17:15:51,002 - notification4d758e34a615 - WARNING - Could not download keys.yaml: The specified blob does not exist.
+RequestId:35e2fae3-e01e-0073-7fe1-15c2ec000000
+Time:2026-07-17T11:45:50.8896189Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:35e2fae3-e01e-0073-7fe1-15c2ec000000
+Time:2026-07-17T11:45:50.8896189Z</Message></Error>
+2026-07-17 17:15:51,003 - notification4d758e34a615 - INFO - threadId read from app.config: 19f6e499000e975f
+2026-07-17 17:15:51,004 - notification4d758e34a615 - INFO - notif_setup_telegram | service_status=True
+2026-07-17 17:15:51,006 - notification4d758e34a615 - INFO - Telegram service configured | chat_ids=[]
+2026-07-17 17:15:51,006 - notification4d758e34a615 - INFO - Notification setup complete | recipients=1 | sender=anvay011006@gmail.com | threadId=19f6e499000e975f | telegram_service_status=True
+2026-07-17 17:15:51,007 - notification4d758e34a615 - INFO - Notification worker pool ready | workers=8 | queue_maxsize=50
+2026-07-17 17:15:51,007 - notification4d758e34a615 - INFO - _poll_kafka task created — entering message dispatch loop
+2026-07-17 17:15:51,008 - notification4d758e34a615 - INFO - _poll_kafka started | input_topic=notification_service | queue_maxsize=50
+2026-07-17 17:15:51,204 - notification4d758e34a615 - INFO - _poll_kafka: 1 message(s) received from Kafka
+2026-07-17 17:15:51,244 - notification4d758e34a615 - INFO - [NOTIFICATION RECEIVED] frame_id=None | camera=ppe_test_cam1 | Type=PPE Alert | timestamp=2026-07-17 17:15:39.633096
+2026-07-17 17:15:51,244 - notification4d758e34a615 - INFO - send_notifications | camera=ppe_test_cam1 | Type=PPE Alert | recipients=['anvay011006@gmail.com'] | thread_id=19f6e499000e975f
+2026-07-17 17:15:51,244 - notification4d758e34a615 - INFO - Queuing email task | camera=ppe_test_cam1 | to=['anvay011006@gmail.com']
+2026-07-17 17:15:51,244 - notification4d758e34a615 - INFO - Queuing telegram task | camera=ppe_test_cam1 | chat_ids=[]
+2026-07-17 17:15:51,245 - notification4d758e34a615 - INFO - Running 2 notification task(s) | camera=ppe_test_cam1
+2026-07-17 17:15:51,245 - notification4d758e34a615 - INFO - email gmail function started for camera: ppe_test_cam1, Type: PPE Alert
+2026-07-17 17:15:51,245 - notification4d758e34a615 - INFO - DataPath: /Aksha, main_dir: /Aksha
+2026-07-17 17:15:51,248 - notification4d758e34a615 - INFO - Loaded config from: /usr/src/app/app/socialPlatforms/keys.yaml
+2026-07-17 17:15:51,249 - notification4d758e34a615 - INFO - Using threadId from namespace: 19f6e499000e975f
+2026-07-17 17:15:51,249 - notification4d758e34a615 - INFO - Credentials loaded successfully
+2026-07-17 17:15:51,249 - notification4d758e34a615 - INFO - telegram() | camera=ppe_test_cam1 | Type=PPE Alert | subscription=notification_results | service_status=True | chat_ids=[]
+2026-07-17 17:15:51,249 - notification4d758e34a615 - ERROR - Missing chat_ids or bot_token for Telegram
+2026-07-17 17:15:51,524 - notification4d758e34a615 - INFO - Gmail API discovered
+2026-07-17 17:15:52,332 - notification4d758e34a615 - INFO - Added threading headers for thread: 19f6e499000e975f
+2026-07-17 17:15:52,335 - notification4d758e34a615 - INFO - Attached logo1 from: /usr/src/app/app/logo.png
+2026-07-17 17:15:52,336 - notification4d758e34a615 - INFO - Attached logo2 from: /usr/src/app/app/logo2.png
+2026-07-17 17:15:52,336 - notification4d758e34a615 - INFO - Looking for alert image at: /Aksha/ppe_test_cam1/alerts/2026-07-17/2026-07-17 17:15:39.63_alert.jpg
+2026-07-17 17:15:52,338 - notification4d758e34a615 - INFO - Attached alert image: /Aksha/ppe_test_cam1/alerts/2026-07-17/2026-07-17 17:15:39.63_alert.jpg
+2026-07-17 17:15:52,345 - notification4d758e34a615 - INFO - Sending email with threadId: 19f6e499000e975f
+2026-07-17 17:15:53,175 - notification4d758e34a615 - ERROR - Error sending email: 
+
+
+
+Too Many Requests
+
+Content:
+{'code': 429,
+ 'errors': [{'domain': 'global',
+             'message': 'User-rate limit exceeded.  Retry after '
+                        '2026-07-17T12:00:53.042Z (Mail sending)',
+             'reason': 'rateLimitExceeded'}],
+ 'message': 'User-rate limit exceeded.  Retry after 2026-07-17T12:00:53.042Z '
+            '(Mail sending)',
+ 'status': 'RESOURCE_EXHAUSTED'}
+
+Request URL:
+https://gmail.googleapis.com/gmail/v1/users/me/messages/send
+2026-07-17 17:15:53,179 - notification4d758e34a615 - ERROR - Traceback: Traceback (most recent call last):
+  File "/usr/src/app/app/socialPlatforms/email.py", line 767, in email_gmail
+    response = await google.as_user(
+  File "/usr/local/lib/python3.10/site-packages/aiogoogle/client.py", line 270, in as_user
+    return await self.send(
+  File "/usr/local/lib/python3.10/site-packages/aiogoogle/client.py", line 425, in send
+    return await session.send(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/aiogoogle/sessions/aiohttp_session.py", line 192, in send
+    results = await schedule_tasks()
+  File "/usr/local/lib/python3.10/site-packages/aiogoogle/sessions/aiohttp_session.py", line 177, in schedule_tasks
+    return await asyncio.gather(
+  File "/usr/local/lib/python3.10/site-packages/aiogoogle/sessions/aiohttp_session.py", line 171, in get_content
+    response = await get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/aiogoogle/sessions/aiohttp_session.py", line 167, in get_response
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/site-packages/aiogoogle/models.py", line 481, in raise_for_status
+    raise HTTPError(msg=self.reason, req=self.req, res=self)
+aiogoogle.excs.HTTPError: 
+
+
+
+Too Many Requests
+
+Content:
+{'code': 429,
+ 'errors': [{'domain': 'global',
+             'message': 'User-rate limit exceeded.  Retry after '
+                        '2026-07-17T12:00:53.042Z (Mail sending)',
+             'reason': 'rateLimitExceeded'}],
+ 'message': 'User-rate limit exceeded.  Retry after 2026-07-17T12:00:53.042Z '
+            '(Mail sending)',
+ 'status': 'RESOURCE_EXHAUSTED'}
+
+Request URL:
+https://gmail.googleapis.com/gmail/v1/users/me/messages/send
+
+2026-07-17 17:15:53,181 - notification4d758e34a615 - INFO - Updated threadId in app.config: 19f6e499000e975f
+2026-07-17 17:15:53,181 - notification4d758e34a615 - INFO - [NOTIFICATION SENT] frame_id=None | camera=ppe_test_cam1 | Type=PPE Alert | topic=notification_results

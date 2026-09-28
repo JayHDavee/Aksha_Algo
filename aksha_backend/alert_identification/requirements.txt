@@ -1,0 +1,11 @@
+# pymongo — MongoDB driver for fetching alert configs (source of truth)
+pymongo==4.10.1
+# shapely — Point-in-Polygon test for area-of-interest detection filtering
+shapely==2.0.6
+# redis[hiredis] — camera-config cache (5-min TTL per camera, avoids per-frame DB queries)
+# hiredis extra enables the C-level parser for faster response decoding
+redis[hiredis]==3.0.0
+# aiokafka — async Kafka consumer + producer (integrates with asyncio event loop)
+aiokafka==0.12.0
+# backoff — exponential retry decorator for Redis connection errors in get_camera_config
+backoff==2.2.1

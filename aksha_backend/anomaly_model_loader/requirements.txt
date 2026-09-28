@@ -1,0 +1,26 @@
+fastapi[standard]==0.112.0
+pillow==10.4.0
+requests==2.32.3
+joblib==1.4.2
+numpy==1.24.4
+scikit-learn==1.0.2
+pydantic>=2.7.0,<3.0.0
+opencv-python-headless==4.9.0.80
+scikit-image==0.21.0
+pandas==2.0.3
+pymongo==4.6.1
+python-dotenv==1.0.1
+
+# New dependencies for report functionality
+matplotlib==3.7.5
+pybars3==0.9.7
+pdfkit==1.0.0
+aiogoogle==5.4.0
+pyyaml==6.0.1
+python-dateutil==2.9.0.post0
+
+# Google auth dependencies for email functionality
+google-auth==2.27.0
+google-auth-oauthlib==1.2.0
+google-auth-httplib2==0.2.0
+google-api-python-client==2.115.0

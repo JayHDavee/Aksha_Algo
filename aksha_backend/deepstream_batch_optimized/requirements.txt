@@ -1,0 +1,13 @@
+# numpy pinned to 1.24.x — last series compatible with onnxruntime-gpu 1.17 on Python 3.10
+numpy==1.24.4
+kafka-python==2.0.2
+# scikit-image retained for any SSIM fallback paths; not on the hot inference path
+scikit-image==0.21.0
+requests==2.32.3
+pymongo==4.6.0
+fastapi==0.111.0
+uvicorn==0.30.1
+# PyTurboJPEG wraps libturbojpeg (installed via apt) for ~3× faster JPEG encoding than cv2
+PyTurboJPEG==1.7.1
+# onnx needed for patch_models.py (TopK axis fix); inference itself uses nvinfer TRT
+onnx>=1.14.0

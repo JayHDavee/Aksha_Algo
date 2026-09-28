@@ -1,0 +1,19 @@
+.delete-alert-icon {
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.deletebutton {
+  background: var(--color-danger);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: background-color 0.15s ease;
+}
+
+.deletebutton:hover {
+  background-color: #b52a39;
+}

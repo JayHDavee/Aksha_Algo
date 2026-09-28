@@ -1,0 +1,24 @@
+# YOLO training config for the jewelry-store custom detection model.
+# Classes verbatim from JEWELRY-STORE-CV-DESIGN.md's "Detection Model" section.
+#
+# Run once dataset/images/{train,val} and dataset/labels/{train,val} are
+# populated with annotated frames (see training/README.md):
+#   yolo detect train data=data.yaml model=yolo11n.pt imgsz=640 epochs=100
+#
+# After training, point jewelry_rules.CFG["class_map"] at these class names
+# directly (dropping the gate_open/gate_closed proxies) — see README.md.
+
+path: dataset
+train: images/train
+val: images/val
+
+names:
+  0: Person
+  1: Staff
+  2: Customer
+  3: Showcase Closed
+  4: Showcase Open
+  5: Counter
+  6: Cash Drawer
+  7: Vault Door
+  8: Safe Door

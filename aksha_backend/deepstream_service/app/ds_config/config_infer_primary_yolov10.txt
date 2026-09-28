@@ -1,0 +1,36 @@
+# nvinfer config for YOLOv10 — FUTURE UPGRADE PATH
+#
+# Currently the deepstream_service uses Python ONNX Runtime for inference
+# (same yolov10.onnx, same CUDA/TRT provider selection as object_detection_service_gpu).
+#
+# To upgrade to native nvinfer (full GPU pipeline, zero Python overhead for inference):
+#   1. Set output-tensor-meta=1 so raw tensors come through the pyds pad probe
+#   2. Add a GStreamer pad probe on the nvinfer src pad
+#   3. Parse the YOLOv10 [batch, 300, 6] output tensor using pyds.NvDsInferTensorMeta
+#   4. Remove the _run_inference() call from the appsink loop
+#
+# This config is ready to use once step 2-3 are implemented.
+
+[property]
+gpu-id=0
+# YOLOv10 input scale: 1/255
+net-scale-factor=0.0039215697906911373
+onnx-file=/code/yolov10.onnx
+labelfile-path=/code/coco.names
+batch-size=1
+# FP16 — best throughput on RTX 2070 (Turing supports FP16 natively)
+network-mode=2
+num-detected-classes=80
+# interval=0: run inference on every frame that enters the mux
+interval=0
+gie-unique-id=1
+# output-tensor-meta=1: expose raw output tensors via NvDsInferTensorMeta in pad probe
+# Required because YOLOv10 uses end-to-end detection (no NMS) so there is no
+# standard DeepStream bbox parser for it.
+output-tensor-meta=1
+process-mode=1
+# network-type=100: custom network — skip built-in post-processing
+network-type=100
+
+[class-attrs-all]
+threshold=0.35

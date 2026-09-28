@@ -1,0 +1,471 @@
+version: "3.8"
+
+services:
+
+  react_frontend:
+    container_name: react_frontend
+    networks:
+      - aksha-net
+    stdin_open: true
+    tty: true
+    ports:
+      - 3000:3000
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WDS_SOCKET_PORT=0
+      - VITE_BASE_URL=ws://node_backend:5000
+    image: dockerhubalgo/aksha_refactor_frontend:28082026
+    restart: always
+    volumes:
+      - /app/node_modules
+      - ./Aksha:/usr/src/docker-react-sample/src/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - ./Aksha/app.config
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  node_backend:
+    container_name: node_backend
+    networks:
+      - aksha-net
+    image: dockerhubalgo/aksha_refactor_backend:28072026-2
+    restart: always
+    ports:
+      - 5000:5000
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    volumes:
+      - /backend/node_modules
+      - ./Aksha:/backend/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      AKSHA_PATH: /backend/Aksha
+      DATABASE: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      PPE_DETECTION: "true"
+      JEWELRY_DETECTION: "false"  # flip to "true" once the jewelry pilot is ready to roll out
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  controller:
+      container_name: api_service
+      image: dockerhubalgo/controller:02072026-1
+      networks:
+        - aksha-net
+      restart: always
+      ports:
+        - 4000:4000
+      environment:
+        - AKSHA_PATH=/Aksha
+        - HOST_AKSHA_PATH=/Aksha
+        - HOST_MACHINE_AKSHA_PATH=${HOST_MACHINE_AKSHA_PATH}
+      volumes:
+        - ./Aksha:/Aksha
+        - /var/run/docker.sock:/var/run/docker.sock
+        - /etc/timezone:/etc/timezone:ro
+        - /etc/localtime:/etc/localtime:ro
+      logging:
+        driver: "json-file"
+        options:
+          max-size: "10m"
+          max-file: "3"
+
+
+  health_agent:
+    container_name: health_agent
+    build:
+      context: ../health_agent
+    networks:
+      - aksha-net
+    restart: always
+    environment:
+      - SITE_ID=${SITE_ID}
+      - AWS_REGION=ap-south-1
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - HEALTH_TABLE_NAME=Aksha_System_Health
+      - CHECK_INTERVAL_SECONDS=300
+      - CORE_CONTAINERS=react_frontend,node_backend,mongodb,broker,redis
+      - PIPELINE_CONTAINER_PATTERNS=object_detection,ppe_detection,deepstream
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  mongodb:
+    networks:
+      - aksha-net
+    image : dockerhubalgo/aksha_database:latest
+    container_name: mongodb
+    hostname: mongodb
+    restart: always
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=mongo
+      - MONGO_INITDB_DATABASE=Aksha
+      - MONGO_REPLICA_SET_NAME=rs0
+    volumes:
+      - ./Aksha/backup:/data/db
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 27017:27017
+    healthcheck:
+      test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongo -u $${MONGO_INITDB_ROOT_USERNAME} -p $${MONGO_INITDB_ROOT_PASSWORD} --quiet) -eq 1
+      interval: 10s
+      start_period: 30s
+    command: "--bind_ip_all --keyFile keyfile --replSet rs0"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"
+
+
+
+  kafka_broker:
+    container_name: broker
+    image: apache/kafka:latest
+    networks:
+      - aksha-net
+    restart: always
+    ports:
+      - 9092:9092
+      - 9093:9093
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: "broker,controller"
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,PLAINTEXT_HOST://0.0.0.0:9093,CONTROLLER://0.0.0.0:9094
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:9092,PLAINTEXT_HOST://localhost:9093
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT,CONTROLLER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@broker:9094
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_NUM_PARTITIONS: 4
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_LOG_RETENTION_HOURS: 2          # delete logs older than 2 hours
+      KAFKA_LOG_RETENTION_BYTES: 536870912  # also cap at 512MB per partition
+      KAFKA_LOG_SEGMENT_BYTES: 134217728    # 128MB segments (faster cleanup)
+      KAFKA_LOG_RETENTION_CHECK_INTERVAL_MS: 60000  # check every 60s
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"
+
+
+  redis:
+    container_name: redis
+    image: redis:8.4-rc1-alpine3.22
+    networks:
+      - aksha-net
+    restart: always
+    ports:
+      - 6379:6379
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  object_detection:
+    image: dockerhubalgo/object_detection:23042026
+    networks:
+      - aksha-net
+    restart: always
+    deploy:
+      replicas: 2       # 3 replicas for 15 cameras @ 3fps on CPU
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      kafka_broker:
+        condition: service_started
+    environment:
+      AKSHA_PATH: /Aksha
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      ENABLE_GPU: false
+      ENABLE_TENSORRT: false
+      TRT_CACHE_PATH: /Aksha/trt_cache
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+
+  ppe_detection:
+      image: dockerhubalgo/ppe_detection:19062026
+      networks:
+       - aksha-net
+      restart: always
+      deploy:
+        replicas: 2       # 3 replicas for 15 cameras @ 3fps on CPU
+        restart_policy:
+          condition: on-failure
+      depends_on:
+        kafka_broker:
+          condition: service_started
+      environment:
+        AKSHA_PATH: /Aksha
+        KAFKA_BOOTSTRAP_SERVERS: broker:9092
+        ENABLE_GPU: false
+        ENABLE_TENSORRT: false
+        TRT_CACHE_PATH: /Aksha/trt_cache
+      volumes:
+        - ./Aksha:/Aksha
+        - /etc/timezone:/etc/timezone:ro
+        - /etc/localtime:/etc/localtime:ro
+      logging:
+        driver: "json-file"
+        options:
+          max-size: "50m"
+          max-file: "5"
+
+
+  alert_identification:
+    image: dockerhubalgo/alert_identification:03072026-2
+    networks:
+      - aksha-net
+    restart: always
+    deploy:
+      replicas: 2       # 3 replicas for 15 cameras @ 3fps on CPU
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      kafka_broker:
+        condition: service_started
+      redis:
+        condition: service_started
+      mongodb:
+        condition: service_healthy
+    environment:
+      CROWD_THRESHOLD: 6
+      AKSHA_PATH: /Aksha
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+  ppe_alert_consumer:
+    image: dockerhubalgo/alert_identification:03072026-2
+    networks:
+      - aksha-net
+    restart: always
+    command: ["python", "ppe_alert_consumer.py"]
+    depends_on:
+      kafka_broker:
+        condition: service_started
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      AKSHA_PATH: /Aksha
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+  # Bridges jewelry_results -> post_processing, same role as ppe_alert_consumer
+  # above but for the jewelry rule-engine stream. Behind JEWELRY_DETECTION —
+  # harmless to leave running with no messages if no jewelry cameras exist yet.
+  jewelry_alert_consumer:
+    image: dockerhubalgo/alert_identification:03072026-2
+    networks:
+      - aksha-net
+    restart: always
+    command: ["python", "jewelry_alert_consumer.py"]
+    depends_on:
+      kafka_broker:
+        condition: service_started
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      AKSHA_PATH: /Aksha
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+  post_processor:
+    image: dockerhubalgo/post_processor:17082026-1
+    networks:
+      - aksha-net
+    restart: always
+    deploy:
+      replicas: 2       # 3 replicas for 15 cameras @ 3fps on CPU
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      kafka_broker:
+        condition: service_started
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+  ppe_dashboard_service:
+    image: dockerhubalgo/ppe_dashboard_service:17082026-1
+    container_name: ppe_dashboard_service
+    networks:
+      - aksha-net
+    restart: always
+    ports:
+      - "8010:8010"
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      MONGODB_URI: "mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false"
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+      REDIS_PPE_CHANNEL: "ppe_live_alerts"
+      AKSHA_PATH: /Aksha
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+  retention_service:
+    container_name: retention_service
+    image: dockerhubalgo/retention_service:23042026
+    networks:
+      - aksha-net
+    restart: always
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    environment:
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha/
+      RETENTION_DAYS: 10
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  notification:
+    image: dockerhubalgo/notification:17072026-1
+    deploy:
+      replicas: 2       # 3 replicas for 15 cameras @ 3fps on CPU
+    networks:
+      - aksha-net
+    restart: always
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+
+
+  anomaly_model_loader:
+    container_name: anomaly_model_loader
+    image: dockerhubalgo/anamoly_model_loader:23042026
+    networks:
+      - aksha-net
+    restart: always
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    environment:
+      CAMERA_NAME: global
+      AKSHA_PATH: /Aksha
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+networks:
+  aksha-net:
+    name: aksha-net
+    driver: bridge

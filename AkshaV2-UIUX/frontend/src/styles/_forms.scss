@@ -1,0 +1,64 @@
+// Shared "classy" form-control styling for the many raw <input>/<select>
+// elements across Add/Edit screens (camera, camera group, notification
+// manager, mobile users) that previously relied on inline `border:#ccc`
+// styling with no focus state.
+
+.classy-input,
+.classy-select,
+.classy-textarea {
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-tint);
+  }
+
+  &:disabled {
+    background-color: var(--color-bg);
+    color: var(--color-text-muted);
+    cursor: not-allowed;
+  }
+
+  &::placeholder {
+    color: var(--color-text-subtle);
+  }
+}
+
+.classy-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%236c7689' d='M4 6l4 4 4-4'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+}
+
+.classy-textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.classy-checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 4px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+// Ensure browser-default checkboxes app-wide (not just ones explicitly
+// tagged .classy-checkbox) also pick up the brand color instead of the
+// browser's default blue, without needing a class on every instance.
+input[type="checkbox"] {
+  accent-color: var(--color-primary);
+}

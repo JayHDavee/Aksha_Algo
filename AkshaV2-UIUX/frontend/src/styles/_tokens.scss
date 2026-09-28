@@ -1,0 +1,57 @@
+// Design tokens for the Aksha web app.
+// Plain CSS custom properties (not Sass variables) so every .scss file in the
+// project can consume them via var(--token-name) without needing an @use/@import
+// chain of its own — this codebase has ~30 independent scss partials scattered
+// across nested folders with no shared build-time injection configured.
+//
+// Standard breakpoints to use with plain `@media (max-width: …)` queries
+// instead of the old per-40px pixel-hack blocks: 1440 / 1200 / 992 / 768 / 480.
+
+:root {
+  // Brand
+  --color-primary: #035faa;
+  --color-primary-dark: #024578;
+  --color-primary-tint: #e3edf7;
+  --color-primary-soft: #eef4fa;
+
+  // Table header — dark-gray "classy" top (same bold presence as the old
+  // black header, softened to gray), shared by every data table (camera
+  // directory / group / notification manager / mobile users / Kreport /
+  // alert report) so headers read as one consistent design.
+  --color-table-header: #495057;
+  --color-table-header-border: #343a40;
+  --color-table-header-text: #ffffff;
+
+  // Semantic
+  --color-success: #27ae60;
+  --color-danger: #dc3545;
+  --color-danger-soft: #fdeced;
+  --color-warning: #f5a623;
+
+  // Neutrals / surfaces
+  --color-bg: #f5f7fb;
+  --color-surface: #ffffff;
+  --color-border: #e3e7ed;
+  --color-border-strong: #d7dce4;
+  --color-text: #111827;
+  --color-text-muted: #6c7689;
+  --color-text-subtle: #9aa3b2;
+
+  // Radius scale
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  // Shadow scale
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 20px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.10);
+
+  // Spacing scale (used sparingly, most files keep their own local padding)
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+}

@@ -1,0 +1,12 @@
+client_creds:
+  client_id: "743350585320-9atepc9h8qgtvt8iagthrpthj6tts55l.apps.googleusercontent.com"
+  client_secret: "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"
+  scopes:
+    - https://www.googleapis.com/auth/gmail.send
+    - https://www.googleapis.com/auth/gmail.modify
+
+user_creds:
+  email: example@gmail.com  # Optional
+  access_token: 'ya29.a0AXooCgsU0gAsWYd8yFRF0NoPbJxHHXelnPyjBeAvA9zmYpJmzjlBfTMiqpNPrTJsgcjSmOZkzcCnvHReDJbmi34myLh17l_3xxk4K_WnHtqI42mefKYCPnrTJ8QrialDDAH0q1wxeygiN3MVtDyALkCl--fZ8vM6hVNlTgaCgYKAS0SARMSFQHGX2MiW2-D0kf1A8D5C2jpnPeJmw0173'
+  refresh_token: '1//0gcCuePg6-wwuCgYIARAAGBASNwF-L9IryqAnu7vdNMI47q3tZopm0V7pM2TtG3ZFni57yyJStFMwrr0h5N3Xc8P3uWObb6xQeOE'
+  expires_at: ''

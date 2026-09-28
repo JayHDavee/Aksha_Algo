@@ -1,0 +1,32 @@
+{
+  "name": "aksha-desktop",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron . --no-sandbox",
+    "dist": "npm run build-react && electron-builder",
+    "build-react": "cd ../frontend && npm run prod-build && mkdir -p ../electron/resources/frontend && cp -r dist/* ../electron/resources/frontend/dist/"
+  },
+  "build": {
+    "appId": "com.aksha.desktop",
+    "productName": "Aksha",
+    "files": [
+      "main.js",
+      "resources/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": ["AppImage"],    
+      "category": "Utility"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.2.0",
+    "electron-builder": "^24.13.3"
+  }
+}

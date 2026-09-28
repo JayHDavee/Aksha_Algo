@@ -1,0 +1,10 @@
+# opencv-python-headless: no GUI deps — saves ~50 MB vs full opencv-python in the container
+opencv-python-headless==4.10.0.84
+# onnxruntime-gpu installed separately from CUDA 12 feed (see dockerfile) — listed here for reference
+onnxruntime-gpu==1.17.1
+# numpy pinned to 1.24.x — last series compatible with onnxruntime-gpu 1.17 on Python 3.10
+numpy==1.24.4
+kafka-python==2.0.2
+# scikit-image provides structural_similarity for the SSIM prefilter fallback (FAST_PREFILTER=false)
+scikit-image==0.21.0
+requests==2.32.3

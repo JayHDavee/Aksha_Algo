@@ -1,0 +1,32 @@
+.corner {
+  background: var(--color-surface);
+  padding: 25px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.deletebutton {
+  background: var(--color-danger);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: background-color 0.15s ease;
+}
+
+.deletebutton:hover {
+  background-color: #b52a39;
+}
+
+.channel-list-more {
+  display: inline-block;
+  margin-top: 2px;
+  padding: 1px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: var(--color-primary-soft);
+  border-radius: var(--radius-pill);
+  cursor: help;
+}

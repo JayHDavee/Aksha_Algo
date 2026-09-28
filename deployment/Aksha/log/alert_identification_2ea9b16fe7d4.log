@@ -1,0 +1,14 @@
+2026-07-29 18:54:27,459 - alert_identification_2ea9b16fe7d4 - INFO - Alert identification service starting | pipeline: object_detection_results → alert_identification → post_processing | KAFKA=broker:9092 | REDIS=redis:6379 | MONGO=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | frame_path_enable=False
+2026-07-29 18:54:27,459 - alert_identification_2ea9b16fe7d4 - INFO - KafkaAlertService init | consumer_topic=object_detection_results | producer_topic=post_processing | group=alert-service-group | kafka=broker:9092
+2026-07-29 18:54:27,460 - alert_identification_2ea9b16fe7d4 - INFO - Redis client created | host=redis | port=6379
+2026-07-29 18:54:27,466 - alert_identification_2ea9b16fe7d4 - INFO - MongoDB client created | db=Aksha | collection=Alerts | uri=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+2026-07-29 18:54:27,466 - alert_identification_2ea9b16fe7d4 - INFO - ThreadPoolExecutor created | max_workers=10
+2026-07-29 18:54:27,466 - alert_identification_2ea9b16fe7d4 - INFO - Starting KafkaAlertService
+2026-07-29 18:54:27,466 - alert_identification_2ea9b16fe7d4 - INFO - Starting Kafka consumer and producer
+2026-07-29 18:54:27,468 - alert_identification_2ea9b16fe7d4 - ERROR - Failed to start Kafka service: KafkaConnectionError: Unable to bootstrap from [('broker', 9092, <AddressFamily.AF_UNSPEC: 0>)]
+2026-07-29 18:54:27,468 - alert_identification_2ea9b16fe7d4 - ERROR - Error while starting KafkaAlertService: KafkaConnectionError: Unable to bootstrap from [('broker', 9092, <AddressFamily.AF_UNSPEC: 0>)]
+2026-07-29 18:54:27,468 - alert_identification_2ea9b16fe7d4 - INFO - Stopping KafkaAlertService
+2026-07-29 18:54:27,468 - alert_identification_2ea9b16fe7d4 - INFO - Stopping Kafka alert service
+2026-07-29 18:54:27,468 - alert_identification_2ea9b16fe7d4 - INFO - Kafka consumer stopped
+2026-07-29 18:54:27,468 - alert_identification_2ea9b16fe7d4 - INFO - Kafka producer stopped
+2026-07-29 18:54:27,468 - alert_identification_2ea9b16fe7d4 - INFO - Thread pool shut down

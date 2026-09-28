@@ -1,0 +1,1431 @@
+2026-06-05 05:51:06,599 - INFO - generated new fontManager
+2026-06-05 05:51:07,518 - INFO - MongoDB connection established
+2026-06-05 06:00:07,527 - INFO - Fetched camera list: ['cam61']
+2026-06-05 06:00:07,530 - INFO - Fetched camera list: ['cam61']
+2026-06-05 06:00:07,533 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-06-05 06:00:07,533 - INFO - Hourly reports generated at 2026-06-05 06:00:07.503158
+2026-06-05 09:37:42,654 - INFO - MongoDB connection established
+2026-06-05 10:14:47,571 - INFO - MongoDB connection established
+2026-06-05 11:00:47,398 - INFO - Fetched camera list: []
+2026-06-05 11:00:47,415 - INFO - Fetched camera list: []
+2026-06-05 11:00:47,416 - INFO - KPI report skipped. Cameras: 0, Alerts: 0
+2026-06-05 11:00:47,417 - INFO - Hourly reports generated at 2026-06-05 11:00:47.366482
+2026-06-06 07:00:45,011 - INFO - MongoDB connection established
+2026-06-06 07:00:54,066 - INFO - Fetched camera list: ['cam61']
+2026-06-06 07:00:54,073 - INFO - Fetched camera list: ['cam61']
+2026-06-06 07:00:54,074 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-06-06 07:00:54,075 - INFO - Hourly reports generated at 2026-06-06 07:00:45.025603
+2026-07-08 19:41:19,824 - WARNING - Matplotlib is building the font cache; this may take a moment.
+2026-07-08 19:41:22,077 - INFO - generated new fontManager
+2026-07-08 19:41:25,316 - INFO - MongoDB connection established
+2026-07-08 20:00:25,374 - INFO - Fetched camera list: ['cam61']
+2026-07-08 20:00:25,381 - INFO - Fetched camera list: ['cam61']
+2026-07-08 20:00:25,383 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-08 20:00:25,384 - INFO - Hourly reports generated at 2026-07-08 20:00:25.329402
+2026-07-08 21:00:25,406 - INFO - Fetched camera list: ['cam61']
+2026-07-08 21:00:25,407 - INFO - Fetched camera list: ['cam61']
+2026-07-08 21:00:25,413 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-08 21:00:25,413 - INFO - Hourly reports generated at 2026-07-08 21:00:25.402387
+2026-07-09 13:23:27,396 - WARNING - Matplotlib is building the font cache; this may take a moment.
+2026-07-09 13:23:29,839 - INFO - generated new fontManager
+2026-07-09 13:23:35,208 - INFO - MongoDB connection established
+2026-07-09 15:58:50,492 - INFO - generated new fontManager
+2026-07-09 15:58:55,164 - INFO - MongoDB connection established
+2026-07-09 16:00:55,184 - INFO - Fetched camera list: ['cam61']
+2026-07-09 16:00:55,187 - INFO - Fetched camera list: ['cam61']
+2026-07-09 16:00:55,188 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-09 16:00:55,188 - INFO - Hourly reports generated at 2026-07-09 16:00:55.173866
+2026-07-09 17:00:55,215 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-09 17:00:55,219 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-09 17:00:55,222 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-09 17:00:55,222 - INFO - Hourly reports generated at 2026-07-09 17:00:55.212885
+2026-07-12 22:42:42,997 - WARNING - Matplotlib is building the font cache; this may take a moment.
+2026-07-12 22:42:44,322 - INFO - generated new fontManager
+2026-07-12 22:42:51,509 - INFO - MongoDB connection established
+2026-07-12 23:00:51,560 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-12 23:00:51,565 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-12 23:00:51,566 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-12 23:00:51,566 - INFO - Hourly reports generated at 2026-07-12 23:00:51.524224
+2026-07-14 08:53:24,607 - WARNING - Matplotlib is building the font cache; this may take a moment.
+2026-07-14 08:53:29,393 - INFO - generated new fontManager
+2026-07-14 08:53:35,085 - INFO - MongoDB connection established
+2026-07-14 09:00:35,127 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 09:00:35,131 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 09:00:35,132 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 09:00:35,132 - INFO - Hourly reports generated at 2026-07-14 09:00:35.101071
+2026-07-14 10:00:35,176 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 10:00:35,178 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 10:00:35,180 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 10:00:35,180 - INFO - Hourly reports generated at 2026-07-14 10:00:35.171857
+2026-07-14 11:00:35,230 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 11:00:35,242 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 11:00:35,244 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 11:00:35,245 - INFO - Hourly reports generated at 2026-07-14 11:00:35.229880
+2026-07-14 12:00:35,273 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 12:00:35,277 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 12:00:35,279 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 12:00:35,280 - INFO - Hourly reports generated at 2026-07-14 12:00:35.271226
+2026-07-14 13:00:35,305 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 13:00:35,308 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 13:00:35,309 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 13:00:35,309 - INFO - Hourly reports generated at 2026-07-14 13:00:35.303396
+2026-07-14 14:00:35,328 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 14:00:35,332 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 14:00:35,335 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 14:00:35,335 - INFO - Hourly reports generated at 2026-07-14 14:00:35.326495
+2026-07-14 15:00:35,351 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 15:00:35,352 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 15:00:35,353 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 15:00:35,353 - INFO - Hourly reports generated at 2026-07-14 15:00:35.351002
+2026-07-14 16:00:35,374 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 16:00:35,378 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 16:00:35,380 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 16:00:35,381 - INFO - Hourly reports generated at 2026-07-14 16:00:35.372422
+2026-07-14 17:00:35,402 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 17:00:35,406 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 17:00:35,408 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 17:00:35,408 - INFO - Hourly reports generated at 2026-07-14 17:00:35.400165
+2026-07-14 18:00:35,436 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 18:00:35,440 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 18:00:35,442 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 18:00:35,442 - INFO - Hourly reports generated at 2026-07-14 18:00:35.430903
+2026-07-14 19:00:35,460 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 19:00:35,463 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 19:00:35,465 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 19:00:35,465 - INFO - Hourly reports generated at 2026-07-14 19:00:35.458895
+2026-07-14 20:00:35,482 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 20:00:35,483 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 20:00:35,484 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 20:00:35,484 - INFO - Hourly reports generated at 2026-07-14 20:00:35.481088
+2026-07-14 21:00:35,501 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 21:00:35,503 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 21:00:35,504 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 21:00:35,504 - INFO - Hourly reports generated at 2026-07-14 21:00:35.499888
+2026-07-14 22:00:35,517 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 22:00:35,521 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 22:00:35,523 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 22:00:35,523 - INFO - Hourly reports generated at 2026-07-14 22:00:35.514895
+2026-07-14 23:00:35,550 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 23:00:35,552 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-14 23:00:35,552 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-14 23:00:35,553 - INFO - Hourly reports generated at 2026-07-14 23:00:35.549228
+2026-07-15 00:00:35,577 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 00:00:35,579 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 00:00:35,580 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 00:00:35,580 - INFO - Hourly reports generated at 2026-07-15 00:00:35.575829
+2026-07-15 00:00:35,581 - INFO - Old reports cleaned up
+2026-07-15 01:00:35,603 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 01:00:35,607 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 01:00:35,609 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 01:00:35,609 - INFO - Hourly reports generated at 2026-07-15 01:00:35.600895
+2026-07-15 02:00:35,619 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 02:00:35,620 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 02:00:35,621 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 02:00:35,621 - INFO - Hourly reports generated at 2026-07-15 02:00:35.618672
+2026-07-15 03:00:35,637 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 03:00:35,640 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 03:00:35,643 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 03:00:35,643 - INFO - Hourly reports generated at 2026-07-15 03:00:35.634670
+2026-07-15 04:00:35,665 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 04:00:35,669 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 04:00:35,671 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 04:00:35,671 - INFO - Hourly reports generated at 2026-07-15 04:00:35.662670
+2026-07-15 05:00:35,691 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 05:00:35,694 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 05:00:35,694 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 05:00:35,694 - INFO - Hourly reports generated at 2026-07-15 05:00:35.691175
+2026-07-15 06:00:35,718 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 06:00:35,719 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 06:00:35,720 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 06:00:35,720 - INFO - Hourly reports generated at 2026-07-15 06:00:35.717701
+2026-07-15 07:00:35,735 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 07:00:35,736 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 07:00:35,736 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 07:00:35,737 - INFO - Hourly reports generated at 2026-07-15 07:00:35.734264
+2026-07-15 08:00:35,757 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 08:00:35,759 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 08:00:35,761 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 08:00:35,761 - INFO - Hourly reports generated at 2026-07-15 08:00:35.756578
+2026-07-15 09:00:35,782 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 09:00:35,786 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 09:00:35,788 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 09:00:35,789 - INFO - Hourly reports generated at 2026-07-15 09:00:35.780026
+2026-07-15 10:00:35,810 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 10:00:35,814 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 10:00:35,817 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 10:00:35,817 - INFO - Hourly reports generated at 2026-07-15 10:00:35.808444
+2026-07-15 11:00:35,835 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 11:00:35,836 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 11:00:35,837 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 11:00:35,837 - INFO - Hourly reports generated at 2026-07-15 11:00:35.834384
+2026-07-15 12:00:35,862 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 12:00:35,865 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 12:00:35,866 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 12:00:35,866 - INFO - Hourly reports generated at 2026-07-15 12:00:35.861501
+2026-07-15 13:00:35,878 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 13:00:35,879 - INFO - Fetched camera list: ['cam61', 'ppe_test_cam1']
+2026-07-15 13:00:35,880 - INFO - KPI report skipped. Cameras: 2, Alerts: 0
+2026-07-15 13:00:35,880 - INFO - Hourly reports generated at 2026-07-15 13:00:35.877925
+2026-07-15 14:00:35,898 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 14:00:35,916 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 14:00:35,918 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-15 14:00:35,918 - INFO - Hourly reports generated at 2026-07-15 14:00:35.896243
+2026-07-15 15:00:35,939 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 15:00:35,943 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 15:00:35,945 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-15 15:00:35,945 - INFO - Hourly reports generated at 2026-07-15 15:00:35.936734
+2026-07-15 16:00:35,968 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 16:00:35,979 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 16:00:35,983 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-15 16:00:35,983 - INFO - Hourly reports generated at 2026-07-15 16:00:35.964825
+2026-07-15 17:00:36,009 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 17:00:36,014 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 17:00:36,016 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-15 17:00:36,016 - INFO - Hourly reports generated at 2026-07-15 17:00:36.007399
+2026-07-15 18:00:36,030 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 18:00:36,031 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 18:00:36,032 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-15 18:00:36,032 - INFO - Hourly reports generated at 2026-07-15 18:00:36.030071
+2026-07-15 19:00:36,054 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 19:00:36,058 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 19:00:36,060 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-15 19:00:36,060 - INFO - Hourly reports generated at 2026-07-15 19:00:36.051579
+2026-07-15 20:00:36,080 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 20:00:36,081 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 20:00:36,082 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-15 20:00:36,082 - INFO - Hourly reports generated at 2026-07-15 20:00:36.079579
+2026-07-15 21:00:36,105 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 21:00:36,111 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 21:00:36,113 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-15 21:00:36,114 - INFO - Hourly reports generated at 2026-07-15 21:00:36.102899
+2026-07-15 22:00:36,180 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 22:00:36,188 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 22:00:36,194 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-15 22:00:36,194 - INFO - Hourly reports generated at 2026-07-15 22:00:36.178256
+2026-07-15 23:00:36,222 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 23:00:36,225 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-15 23:00:36,225 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-15 23:00:36,225 - INFO - Hourly reports generated at 2026-07-15 23:00:36.221407
+2026-07-16 00:00:36,248 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 00:00:36,250 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 00:00:36,250 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 00:00:36,250 - INFO - Hourly reports generated at 2026-07-16 00:00:36.247522
+2026-07-16 00:00:36,251 - INFO - Old reports cleaned up
+2026-07-16 01:00:36,277 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 01:00:36,279 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 01:00:36,280 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 01:00:36,280 - INFO - Hourly reports generated at 2026-07-16 01:00:36.276372
+2026-07-16 02:00:36,307 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 02:00:36,310 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 02:00:36,311 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 02:00:36,311 - INFO - Hourly reports generated at 2026-07-16 02:00:36.306989
+2026-07-16 03:00:36,335 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 03:00:36,338 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 03:00:36,339 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 03:00:36,339 - INFO - Hourly reports generated at 2026-07-16 03:00:36.334716
+2026-07-16 04:00:36,358 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 04:00:36,361 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 04:00:36,362 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 04:00:36,362 - INFO - Hourly reports generated at 2026-07-16 04:00:36.356805
+2026-07-16 05:00:36,386 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 05:00:36,388 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 05:00:36,389 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 05:00:36,390 - INFO - Hourly reports generated at 2026-07-16 05:00:36.384894
+2026-07-16 06:00:36,402 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 06:00:36,403 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 06:00:36,404 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 06:00:36,404 - INFO - Hourly reports generated at 2026-07-16 06:00:36.400165
+2026-07-16 07:00:36,459 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 07:00:36,461 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 07:00:36,462 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 07:00:36,462 - INFO - Hourly reports generated at 2026-07-16 07:00:36.458454
+2026-07-16 08:00:36,499 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 08:00:36,500 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 08:00:36,501 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 08:00:36,501 - INFO - Hourly reports generated at 2026-07-16 08:00:36.497934
+2026-07-16 09:00:36,520 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 09:00:36,522 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 09:00:36,523 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 09:00:36,523 - INFO - Hourly reports generated at 2026-07-16 09:00:36.519499
+2026-07-16 10:00:36,544 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 10:00:36,547 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 10:00:36,547 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 10:00:36,548 - INFO - Hourly reports generated at 2026-07-16 10:00:36.542062
+2026-07-16 11:00:36,562 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 11:00:36,563 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 11:00:36,564 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 11:00:36,564 - INFO - Hourly reports generated at 2026-07-16 11:00:36.561249
+2026-07-16 12:00:36,664 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 12:00:36,666 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 12:00:36,668 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 12:00:36,668 - INFO - Hourly reports generated at 2026-07-16 12:00:36.662387
+2026-07-16 13:00:36,760 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 13:00:36,765 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 13:00:36,767 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 13:00:36,768 - INFO - Hourly reports generated at 2026-07-16 13:00:36.757905
+2026-07-16 14:00:36,791 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 14:00:36,792 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 14:00:36,792 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 14:00:36,792 - INFO - Hourly reports generated at 2026-07-16 14:00:36.790224
+2026-07-16 15:00:36,808 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 15:00:36,812 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 15:00:36,813 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 15:00:36,814 - INFO - Hourly reports generated at 2026-07-16 15:00:36.806526
+2026-07-16 16:00:36,836 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 16:00:36,840 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 16:00:36,841 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 16:00:36,841 - INFO - Hourly reports generated at 2026-07-16 16:00:36.833954
+2026-07-16 17:00:36,863 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 17:00:36,867 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 17:00:36,870 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 17:00:36,870 - INFO - Hourly reports generated at 2026-07-16 17:00:36.861448
+2026-07-16 18:00:36,881 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 18:00:36,884 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 18:00:36,886 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 18:00:36,886 - INFO - Hourly reports generated at 2026-07-16 18:00:36.879147
+2026-07-16 19:00:36,912 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 19:00:36,916 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 19:00:36,919 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 19:00:36,919 - INFO - Hourly reports generated at 2026-07-16 19:00:36.910217
+2026-07-16 20:00:36,936 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 20:00:36,940 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 20:00:36,942 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 20:00:36,942 - INFO - Hourly reports generated at 2026-07-16 20:00:36.933618
+2026-07-16 21:00:36,966 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 21:00:36,970 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 21:00:36,972 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 21:00:36,972 - INFO - Hourly reports generated at 2026-07-16 21:00:36.964109
+2026-07-16 22:00:36,992 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 22:00:36,996 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 22:00:36,998 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 22:00:36,998 - INFO - Hourly reports generated at 2026-07-16 22:00:36.989855
+2026-07-16 23:00:37,018 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 23:00:37,022 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-16 23:00:37,024 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-16 23:00:37,024 - INFO - Hourly reports generated at 2026-07-16 23:00:37.015680
+2026-07-17 00:00:37,043 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 00:00:37,048 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 00:00:37,050 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 00:00:37,050 - INFO - Hourly reports generated at 2026-07-17 00:00:37.041482
+2026-07-17 00:00:37,110 - INFO - Old reports cleaned up
+2026-07-17 01:00:37,151 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 01:00:37,160 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 01:00:37,162 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 01:00:37,163 - INFO - Hourly reports generated at 2026-07-17 01:00:37.147775
+2026-07-17 02:00:37,232 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 02:00:37,235 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 02:00:37,236 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 02:00:37,236 - INFO - Hourly reports generated at 2026-07-17 02:00:37.231222
+2026-07-17 03:00:37,297 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 03:00:37,302 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 03:00:37,303 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 03:00:37,303 - INFO - Hourly reports generated at 2026-07-17 03:00:37.293663
+2026-07-17 04:00:37,340 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 04:00:37,345 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 04:00:37,347 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 04:00:37,347 - INFO - Hourly reports generated at 2026-07-17 04:00:37.330068
+2026-07-17 05:00:37,369 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 05:00:37,371 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 05:00:37,372 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 05:00:37,372 - INFO - Hourly reports generated at 2026-07-17 05:00:37.366157
+2026-07-17 06:00:37,394 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 06:00:37,395 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 06:00:37,396 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 06:00:37,396 - INFO - Hourly reports generated at 2026-07-17 06:00:37.393526
+2026-07-17 07:00:37,410 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 07:00:37,412 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 07:00:37,412 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 07:00:37,413 - INFO - Hourly reports generated at 2026-07-17 07:00:37.409733
+2026-07-17 08:00:37,469 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 08:00:37,472 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 08:00:37,474 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 08:00:37,474 - INFO - Hourly reports generated at 2026-07-17 08:00:37.466982
+2026-07-17 09:00:37,520 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 09:00:37,523 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 09:00:37,524 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 09:00:37,524 - INFO - Hourly reports generated at 2026-07-17 09:00:37.519630
+2026-07-17 10:00:37,560 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 10:00:37,561 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 10:00:37,562 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 10:00:37,562 - INFO - Hourly reports generated at 2026-07-17 10:00:37.559396
+2026-07-17 11:00:37,576 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 11:00:37,578 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 11:00:37,579 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 11:00:37,579 - INFO - Hourly reports generated at 2026-07-17 11:00:37.574946
+2026-07-17 12:00:37,600 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 12:00:37,601 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 12:00:37,604 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 12:00:37,604 - INFO - Hourly reports generated at 2026-07-17 12:00:37.600034
+2026-07-17 13:00:37,617 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 13:00:37,618 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 13:00:37,619 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 13:00:37,619 - INFO - Hourly reports generated at 2026-07-17 13:00:37.616985
+2026-07-17 14:00:37,636 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 14:00:37,637 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 14:00:37,638 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 14:00:37,638 - INFO - Hourly reports generated at 2026-07-17 14:00:37.636179
+2026-07-17 15:00:37,657 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 15:00:37,658 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 15:00:37,659 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 15:00:37,659 - INFO - Hourly reports generated at 2026-07-17 15:00:37.656986
+2026-07-17 16:00:37,679 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 16:00:37,680 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 16:00:37,681 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 16:00:37,681 - INFO - Hourly reports generated at 2026-07-17 16:00:37.678346
+2026-07-17 17:00:37,693 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 17:00:37,696 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 17:00:37,697 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 17:00:37,697 - INFO - Hourly reports generated at 2026-07-17 17:00:37.692842
+2026-07-17 18:00:37,719 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 18:00:37,721 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 18:00:37,722 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 18:00:37,722 - INFO - Hourly reports generated at 2026-07-17 18:00:37.718522
+2026-07-17 19:00:37,748 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 19:00:37,752 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 19:00:37,754 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 19:00:37,754 - INFO - Hourly reports generated at 2026-07-17 19:00:37.745649
+2026-07-17 20:00:37,771 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 20:00:37,772 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 20:00:37,773 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 20:00:37,773 - INFO - Hourly reports generated at 2026-07-17 20:00:37.770557
+2026-07-17 21:00:37,797 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 21:00:37,801 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 21:00:37,803 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 21:00:37,803 - INFO - Hourly reports generated at 2026-07-17 21:00:37.794940
+2026-07-17 22:00:37,823 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 22:00:37,824 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 22:00:37,825 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 22:00:37,825 - INFO - Hourly reports generated at 2026-07-17 22:00:37.822745
+2026-07-17 23:00:37,838 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 23:00:37,842 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-17 23:00:37,844 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-17 23:00:37,844 - INFO - Hourly reports generated at 2026-07-17 23:00:37.836236
+2026-07-18 00:00:37,859 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 00:00:37,863 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 00:00:37,865 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 00:00:37,865 - INFO - Hourly reports generated at 2026-07-18 00:00:37.856693
+2026-07-18 00:00:37,865 - INFO - Old reports cleaned up
+2026-07-18 01:00:37,892 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 01:00:37,896 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 01:00:37,898 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 01:00:37,899 - INFO - Hourly reports generated at 2026-07-18 01:00:37.890066
+2026-07-18 02:00:37,916 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 02:00:37,920 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 02:00:37,922 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 02:00:37,922 - INFO - Hourly reports generated at 2026-07-18 02:00:37.913657
+2026-07-18 03:00:37,943 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 03:00:37,947 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 03:00:37,949 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 03:00:37,949 - INFO - Hourly reports generated at 2026-07-18 03:00:37.941244
+2026-07-18 04:00:37,972 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 04:00:37,980 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 04:00:37,982 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 04:00:37,983 - INFO - Hourly reports generated at 2026-07-18 04:00:37.969742
+2026-07-18 05:00:38,004 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 05:00:38,005 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 05:00:38,006 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 05:00:38,006 - INFO - Hourly reports generated at 2026-07-18 05:00:38.003940
+2026-07-18 06:00:38,021 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 06:00:38,025 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 06:00:38,027 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 06:00:38,028 - INFO - Hourly reports generated at 2026-07-18 06:00:38.019449
+2026-07-18 07:00:38,043 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 07:00:38,044 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 07:00:38,044 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 07:00:38,044 - INFO - Hourly reports generated at 2026-07-18 07:00:38.042210
+2026-07-18 08:00:38,065 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 08:00:38,069 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 08:00:38,073 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 08:00:38,073 - INFO - Hourly reports generated at 2026-07-18 08:00:38.063321
+2026-07-18 09:00:38,096 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 09:00:38,097 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 09:00:38,098 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 09:00:38,098 - INFO - Hourly reports generated at 2026-07-18 09:00:38.095362
+2026-07-18 10:00:38,114 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 10:00:38,120 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 10:00:38,122 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 10:00:38,122 - INFO - Hourly reports generated at 2026-07-18 10:00:38.111868
+2026-07-18 11:00:38,134 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 11:00:38,135 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 11:00:38,136 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 11:00:38,136 - INFO - Hourly reports generated at 2026-07-18 11:00:38.134126
+2026-07-18 12:00:38,151 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 12:00:38,153 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 12:00:38,154 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 12:00:38,154 - INFO - Hourly reports generated at 2026-07-18 12:00:38.150089
+2026-07-18 13:00:38,174 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 13:00:38,175 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 13:00:38,175 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 13:00:38,175 - INFO - Hourly reports generated at 2026-07-18 13:00:38.173825
+2026-07-18 14:00:38,195 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 14:00:38,199 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 14:00:38,201 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 14:00:38,202 - INFO - Hourly reports generated at 2026-07-18 14:00:38.193173
+2026-07-18 15:00:38,227 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 15:00:38,231 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 15:00:38,233 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 15:00:38,233 - INFO - Hourly reports generated at 2026-07-18 15:00:38.224592
+2026-07-18 16:00:38,250 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 16:00:38,255 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 16:00:38,257 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 16:00:38,257 - INFO - Hourly reports generated at 2026-07-18 16:00:38.248462
+2026-07-18 17:00:38,273 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 17:00:38,277 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 17:00:38,279 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 17:00:38,280 - INFO - Hourly reports generated at 2026-07-18 17:00:38.271309
+2026-07-18 18:00:38,298 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 18:00:38,302 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 18:00:38,304 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 18:00:38,305 - INFO - Hourly reports generated at 2026-07-18 18:00:38.296299
+2026-07-18 19:00:38,328 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 19:00:38,329 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 19:00:38,330 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 19:00:38,330 - INFO - Hourly reports generated at 2026-07-18 19:00:38.327660
+2026-07-18 20:00:38,348 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 20:00:38,349 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 20:00:38,350 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 20:00:38,350 - INFO - Hourly reports generated at 2026-07-18 20:00:38.348006
+2026-07-18 21:00:38,370 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 21:00:38,374 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 21:00:38,376 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 21:00:38,377 - INFO - Hourly reports generated at 2026-07-18 21:00:38.368349
+2026-07-18 22:00:38,398 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 22:00:38,402 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 22:00:38,404 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 22:00:38,405 - INFO - Hourly reports generated at 2026-07-18 22:00:38.396441
+2026-07-18 23:00:38,426 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 23:00:38,430 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-18 23:00:38,432 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-18 23:00:38,433 - INFO - Hourly reports generated at 2026-07-18 23:00:38.424543
+2026-07-19 00:00:38,455 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 00:00:38,457 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 00:00:38,457 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 00:00:38,457 - INFO - Hourly reports generated at 2026-07-19 00:00:38.454975
+2026-07-19 00:00:38,457 - INFO - Old reports cleaned up
+2026-07-19 01:00:38,477 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 01:00:38,481 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 01:00:38,483 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 01:00:38,483 - INFO - Hourly reports generated at 2026-07-19 01:00:38.474838
+2026-07-19 02:00:38,502 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 02:00:38,503 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 02:00:38,504 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 02:00:38,504 - INFO - Hourly reports generated at 2026-07-19 02:00:38.501064
+2026-07-19 03:00:38,529 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 03:00:38,534 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 03:00:38,536 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 03:00:38,536 - INFO - Hourly reports generated at 2026-07-19 03:00:38.527508
+2026-07-19 04:00:38,555 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 04:00:38,556 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 04:00:38,557 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 04:00:38,557 - INFO - Hourly reports generated at 2026-07-19 04:00:38.554622
+2026-07-19 05:00:38,577 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 05:00:38,581 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 05:00:38,583 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 05:00:38,583 - INFO - Hourly reports generated at 2026-07-19 05:00:38.575275
+2026-07-19 06:00:38,603 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 06:00:38,607 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 06:00:38,609 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 06:00:38,609 - INFO - Hourly reports generated at 2026-07-19 06:00:38.600730
+2026-07-19 07:00:38,626 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 07:00:38,630 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 07:00:38,632 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 07:00:38,632 - INFO - Hourly reports generated at 2026-07-19 07:00:38.623849
+2026-07-19 08:00:38,652 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 08:00:38,655 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 08:00:38,658 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 08:00:38,658 - INFO - Hourly reports generated at 2026-07-19 08:00:38.649564
+2026-07-19 09:00:38,678 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 09:00:38,682 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 09:00:38,684 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 09:00:38,684 - INFO - Hourly reports generated at 2026-07-19 09:00:38.675938
+2026-07-19 10:00:38,711 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 10:00:38,715 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 10:00:38,717 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 10:00:38,717 - INFO - Hourly reports generated at 2026-07-19 10:00:38.708627
+2026-07-19 11:00:38,736 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 11:00:38,740 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 11:00:38,742 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 11:00:38,742 - INFO - Hourly reports generated at 2026-07-19 11:00:38.733830
+2026-07-19 12:00:38,757 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 12:00:38,761 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 12:00:38,763 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 12:00:38,763 - INFO - Hourly reports generated at 2026-07-19 12:00:38.754886
+2026-07-19 13:00:38,779 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 13:00:38,780 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 13:00:38,781 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 13:00:38,781 - INFO - Hourly reports generated at 2026-07-19 13:00:38.778925
+2026-07-19 14:00:38,798 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 14:00:38,802 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 14:00:38,804 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 14:00:38,804 - INFO - Hourly reports generated at 2026-07-19 14:00:38.796238
+2026-07-19 15:00:38,826 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 15:00:38,830 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 15:00:38,832 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 15:00:38,832 - INFO - Hourly reports generated at 2026-07-19 15:00:38.824090
+2026-07-19 16:00:38,853 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 16:00:38,855 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 16:00:38,856 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 16:00:38,856 - INFO - Hourly reports generated at 2026-07-19 16:00:38.852698
+2026-07-19 17:00:38,874 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 17:00:38,878 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 17:00:38,880 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 17:00:38,880 - INFO - Hourly reports generated at 2026-07-19 17:00:38.871708
+2026-07-19 18:00:38,900 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 18:00:38,901 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 18:00:38,902 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 18:00:38,902 - INFO - Hourly reports generated at 2026-07-19 18:00:38.899328
+2026-07-19 19:00:38,918 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 19:00:38,919 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 19:00:38,920 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 19:00:38,920 - INFO - Hourly reports generated at 2026-07-19 19:00:38.917584
+2026-07-19 20:00:38,939 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 20:00:38,941 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 20:00:38,941 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 20:00:38,942 - INFO - Hourly reports generated at 2026-07-19 20:00:38.939069
+2026-07-19 21:00:38,962 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 21:00:38,964 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 21:00:38,964 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 21:00:38,964 - INFO - Hourly reports generated at 2026-07-19 21:00:38.962010
+2026-07-19 22:00:38,982 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 22:00:38,986 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 22:00:38,987 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 22:00:38,988 - INFO - Hourly reports generated at 2026-07-19 22:00:38.980551
+2026-07-19 23:00:39,001 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 23:00:39,002 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-19 23:00:39,003 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-19 23:00:39,003 - INFO - Hourly reports generated at 2026-07-19 23:00:39.000953
+2026-07-20 00:00:39,021 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 00:00:39,024 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 00:00:39,025 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 00:00:39,026 - INFO - Hourly reports generated at 2026-07-20 00:00:39.019192
+2026-07-20 00:00:39,047 - INFO - Old reports cleaned up
+2026-07-20 01:00:39,075 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 01:00:39,079 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 01:00:39,081 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 01:00:39,081 - INFO - Hourly reports generated at 2026-07-20 01:00:39.072960
+2026-07-20 02:00:39,098 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 02:00:39,102 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 02:00:39,104 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 02:00:39,104 - INFO - Hourly reports generated at 2026-07-20 02:00:39.095893
+2026-07-20 03:00:39,122 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 03:00:39,126 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 03:00:39,128 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 03:00:39,128 - INFO - Hourly reports generated at 2026-07-20 03:00:39.119952
+2026-07-20 04:00:39,149 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 04:00:39,153 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 04:00:39,155 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 04:00:39,156 - INFO - Hourly reports generated at 2026-07-20 04:00:39.147465
+2026-07-20 05:00:39,175 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 05:00:39,179 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 05:00:39,181 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 05:00:39,181 - INFO - Hourly reports generated at 2026-07-20 05:00:39.172759
+2026-07-20 06:00:39,199 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 06:00:39,203 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 06:00:39,205 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 06:00:39,205 - INFO - Hourly reports generated at 2026-07-20 06:00:39.196845
+2026-07-20 07:00:39,218 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 07:00:39,219 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 07:00:39,220 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 07:00:39,220 - INFO - Hourly reports generated at 2026-07-20 07:00:39.217506
+2026-07-20 08:00:39,242 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 08:00:39,244 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 08:00:39,245 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 08:00:39,246 - INFO - Hourly reports generated at 2026-07-20 08:00:39.241292
+2026-07-20 09:00:39,269 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 09:00:39,270 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 09:00:39,270 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 09:00:39,270 - INFO - Hourly reports generated at 2026-07-20 09:00:39.268494
+2026-07-20 10:00:39,290 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 10:00:39,294 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 10:00:39,296 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 10:00:39,297 - INFO - Hourly reports generated at 2026-07-20 10:00:39.288518
+2026-07-20 11:00:39,319 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 11:00:39,324 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 11:00:39,326 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 11:00:39,341 - INFO - Hourly reports generated at 2026-07-20 11:00:39.316450
+2026-07-20 12:00:39,374 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 12:00:39,385 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 12:00:39,401 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 12:00:39,402 - INFO - Hourly reports generated at 2026-07-20 12:00:39.372604
+2026-07-20 13:00:39,443 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 13:00:39,446 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 13:00:39,446 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 13:00:39,446 - INFO - Hourly reports generated at 2026-07-20 13:00:39.442075
+2026-07-20 14:00:39,507 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 14:00:39,509 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 14:00:39,510 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 14:00:39,510 - INFO - Hourly reports generated at 2026-07-20 14:00:39.506147
+2026-07-20 15:00:39,539 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 15:00:39,549 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 15:00:39,550 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 15:00:39,550 - INFO - Hourly reports generated at 2026-07-20 15:00:39.537110
+2026-07-20 16:00:39,610 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 16:00:39,612 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 16:00:39,613 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 16:00:39,613 - INFO - Hourly reports generated at 2026-07-20 16:00:39.605029
+2026-07-20 17:00:39,634 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 17:00:39,640 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 17:00:39,645 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 17:00:39,645 - INFO - Hourly reports generated at 2026-07-20 17:00:39.633629
+2026-07-20 18:00:39,698 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 18:00:39,700 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 18:00:39,700 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 18:00:39,701 - INFO - Hourly reports generated at 2026-07-20 18:00:39.696227
+2026-07-20 19:00:39,742 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 19:00:39,743 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 19:00:39,744 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 19:00:39,744 - INFO - Hourly reports generated at 2026-07-20 19:00:39.741849
+2026-07-20 20:00:39,772 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 20:00:39,775 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 20:00:39,776 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 20:00:39,776 - INFO - Hourly reports generated at 2026-07-20 20:00:39.771330
+2026-07-20 21:00:39,788 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 21:00:39,789 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 21:00:39,789 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 21:00:39,789 - INFO - Hourly reports generated at 2026-07-20 21:00:39.787665
+2026-07-20 22:00:39,810 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 22:00:39,812 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 22:00:39,812 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 22:00:39,813 - INFO - Hourly reports generated at 2026-07-20 22:00:39.808369
+2026-07-20 23:00:39,826 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 23:00:39,827 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-20 23:00:39,828 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-20 23:00:39,828 - INFO - Hourly reports generated at 2026-07-20 23:00:39.824841
+2026-07-21 00:00:39,844 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 00:00:39,845 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 00:00:39,845 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 00:00:39,845 - INFO - Hourly reports generated at 2026-07-21 00:00:39.842145
+2026-07-21 00:00:39,845 - INFO - Old reports cleaned up
+2026-07-21 01:00:39,858 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 01:00:39,860 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 01:00:39,860 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 01:00:39,860 - INFO - Hourly reports generated at 2026-07-21 01:00:39.858211
+2026-07-21 02:00:39,875 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 02:00:39,876 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 02:00:39,876 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 02:00:39,876 - INFO - Hourly reports generated at 2026-07-21 02:00:39.874245
+2026-07-21 03:00:39,897 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 03:00:39,898 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 03:00:39,898 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 03:00:39,898 - INFO - Hourly reports generated at 2026-07-21 03:00:39.896312
+2026-07-21 04:00:39,913 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 04:00:39,916 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 04:00:39,918 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 04:00:39,918 - INFO - Hourly reports generated at 2026-07-21 04:00:39.910910
+2026-07-21 05:00:39,943 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 05:00:39,947 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 05:00:39,950 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 05:00:39,950 - INFO - Hourly reports generated at 2026-07-21 05:00:39.940891
+2026-07-21 06:00:39,966 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 06:00:39,967 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 06:00:39,967 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 06:00:39,967 - INFO - Hourly reports generated at 2026-07-21 06:00:39.964737
+2026-07-21 07:00:39,985 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 07:00:39,986 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 07:00:39,987 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 07:00:39,987 - INFO - Hourly reports generated at 2026-07-21 07:00:39.984710
+2026-07-21 08:00:40,003 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 08:00:40,004 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 08:00:40,004 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 08:00:40,004 - INFO - Hourly reports generated at 2026-07-21 08:00:40.002339
+2026-07-21 09:00:40,011 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 09:00:40,012 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 09:00:40,013 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 09:00:40,013 - INFO - Hourly reports generated at 2026-07-21 09:00:40.010725
+2026-07-21 10:00:40,029 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 10:00:40,030 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 10:00:40,031 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 10:00:40,031 - INFO - Hourly reports generated at 2026-07-21 10:00:40.028297
+2026-07-21 11:00:40,044 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 11:00:40,046 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 11:00:40,046 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 11:00:40,046 - INFO - Hourly reports generated at 2026-07-21 11:00:40.044023
+2026-07-21 12:00:40,078 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 12:00:40,082 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 12:00:40,084 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 12:00:40,084 - INFO - Hourly reports generated at 2026-07-21 12:00:40.075573
+2026-07-21 13:00:40,096 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 13:00:40,100 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 13:00:40,102 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 13:00:40,102 - INFO - Hourly reports generated at 2026-07-21 13:00:40.094483
+2026-07-21 14:00:40,122 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 14:00:40,126 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 14:00:40,128 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 14:00:40,128 - INFO - Hourly reports generated at 2026-07-21 14:00:40.120237
+2026-07-21 15:00:40,148 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 15:00:40,152 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 15:00:40,154 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 15:00:40,154 - INFO - Hourly reports generated at 2026-07-21 15:00:40.145860
+2026-07-21 16:00:40,171 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 16:00:40,174 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 16:00:40,177 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 16:00:40,177 - INFO - Hourly reports generated at 2026-07-21 16:00:40.168712
+2026-07-21 17:00:40,195 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 17:00:40,199 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 17:00:40,201 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 17:00:40,202 - INFO - Hourly reports generated at 2026-07-21 17:00:40.193093
+2026-07-21 18:00:40,216 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 18:00:40,220 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 18:00:40,222 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 18:00:40,222 - INFO - Hourly reports generated at 2026-07-21 18:00:40.213708
+2026-07-21 19:00:40,239 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 19:00:40,243 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 19:00:40,245 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 19:00:40,245 - INFO - Hourly reports generated at 2026-07-21 19:00:40.237079
+2026-07-21 20:00:40,267 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 20:00:40,271 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 20:00:40,273 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 20:00:40,273 - INFO - Hourly reports generated at 2026-07-21 20:00:40.264584
+2026-07-21 21:00:40,294 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 21:00:40,298 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 21:00:40,300 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 21:00:40,300 - INFO - Hourly reports generated at 2026-07-21 21:00:40.291547
+2026-07-21 22:00:40,318 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 22:00:40,322 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 22:00:40,324 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 22:00:40,325 - INFO - Hourly reports generated at 2026-07-21 22:00:40.316377
+2026-07-21 23:00:40,353 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 23:00:40,360 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-21 23:00:40,364 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-21 23:00:40,364 - INFO - Hourly reports generated at 2026-07-21 23:00:40.347420
+2026-07-22 00:00:40,389 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 00:00:40,394 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 00:00:40,397 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 00:00:40,398 - INFO - Hourly reports generated at 2026-07-22 00:00:40.387212
+2026-07-22 00:00:40,398 - INFO - Old reports cleaned up
+2026-07-22 01:00:40,474 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 01:00:40,478 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 01:00:40,479 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 01:00:40,479 - INFO - Hourly reports generated at 2026-07-22 01:00:40.471871
+2026-07-22 02:00:40,520 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 02:00:40,521 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 02:00:40,522 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 02:00:40,522 - INFO - Hourly reports generated at 2026-07-22 02:00:40.519136
+2026-07-22 03:00:40,548 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 03:00:40,549 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 03:00:40,550 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 03:00:40,550 - INFO - Hourly reports generated at 2026-07-22 03:00:40.545218
+2026-07-22 04:00:40,604 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 04:00:40,605 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 04:00:40,605 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 04:00:40,606 - INFO - Hourly reports generated at 2026-07-22 04:00:40.602423
+2026-07-22 05:00:40,664 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 05:00:40,674 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 05:00:40,676 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 05:00:40,679 - INFO - Hourly reports generated at 2026-07-22 05:00:40.661624
+2026-07-22 06:00:40,751 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 06:00:40,753 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 06:00:40,754 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 06:00:40,754 - INFO - Hourly reports generated at 2026-07-22 06:00:40.747636
+2026-07-22 07:00:40,769 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 07:00:40,770 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 07:00:40,771 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 07:00:40,771 - INFO - Hourly reports generated at 2026-07-22 07:00:40.768962
+2026-07-22 08:00:40,782 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 08:00:40,783 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 08:00:40,783 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 08:00:40,783 - INFO - Hourly reports generated at 2026-07-22 08:00:40.779873
+2026-07-22 09:00:40,798 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 09:00:40,799 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 09:00:40,799 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 09:00:40,799 - INFO - Hourly reports generated at 2026-07-22 09:00:40.797386
+2026-07-22 10:00:40,815 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 10:00:40,816 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 10:00:40,817 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 10:00:40,817 - INFO - Hourly reports generated at 2026-07-22 10:00:40.814266
+2026-07-22 11:00:40,825 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 11:00:40,826 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 11:00:40,826 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 11:00:40,826 - INFO - Hourly reports generated at 2026-07-22 11:00:40.824532
+2026-07-22 12:00:40,845 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 12:00:40,846 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 12:00:40,847 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 12:00:40,847 - INFO - Hourly reports generated at 2026-07-22 12:00:40.844677
+2026-07-22 13:00:40,868 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 13:00:40,869 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 13:00:40,870 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 13:00:40,870 - INFO - Hourly reports generated at 2026-07-22 13:00:40.867466
+2026-07-22 14:00:40,886 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 14:00:40,889 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 14:00:40,891 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 14:00:40,891 - INFO - Hourly reports generated at 2026-07-22 14:00:40.885696
+2026-07-22 15:00:40,905 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 15:00:40,906 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 15:00:40,906 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 15:00:40,906 - INFO - Hourly reports generated at 2026-07-22 15:00:40.904445
+2026-07-22 16:00:40,936 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 16:00:40,937 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 16:00:40,937 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 16:00:40,937 - INFO - Hourly reports generated at 2026-07-22 16:00:40.935669
+2026-07-22 17:00:40,953 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 17:00:40,953 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 17:00:40,954 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 17:00:40,954 - INFO - Hourly reports generated at 2026-07-22 17:00:40.952224
+2026-07-22 18:00:40,972 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 18:00:40,973 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 18:00:40,974 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 18:00:40,974 - INFO - Hourly reports generated at 2026-07-22 18:00:40.971388
+2026-07-22 19:00:40,990 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 19:00:40,992 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 19:00:40,994 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 19:00:40,994 - INFO - Hourly reports generated at 2026-07-22 19:00:40.988921
+2026-07-22 20:00:41,011 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 20:00:41,012 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 20:00:41,013 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 20:00:41,013 - INFO - Hourly reports generated at 2026-07-22 20:00:41.010442
+2026-07-22 21:00:41,029 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 21:00:41,031 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 21:00:41,031 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 21:00:41,031 - INFO - Hourly reports generated at 2026-07-22 21:00:41.028692
+2026-07-22 22:00:41,045 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 22:00:41,046 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 22:00:41,047 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 22:00:41,047 - INFO - Hourly reports generated at 2026-07-22 22:00:41.044506
+2026-07-22 23:00:41,063 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 23:00:41,066 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-22 23:00:41,067 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-22 23:00:41,068 - INFO - Hourly reports generated at 2026-07-22 23:00:41.062475
+2026-07-23 00:00:41,080 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 00:00:41,085 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 00:00:41,088 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 00:00:41,088 - INFO - Hourly reports generated at 2026-07-23 00:00:41.077974
+2026-07-23 00:00:41,089 - INFO - Old reports cleaned up
+2026-07-23 01:00:41,105 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 01:00:41,107 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 01:00:41,107 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 01:00:41,107 - INFO - Hourly reports generated at 2026-07-23 01:00:41.104554
+2026-07-23 02:00:41,123 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 02:00:41,125 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 02:00:41,126 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 02:00:41,126 - INFO - Hourly reports generated at 2026-07-23 02:00:41.122258
+2026-07-23 03:00:41,135 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 03:00:41,137 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 03:00:41,137 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 03:00:41,138 - INFO - Hourly reports generated at 2026-07-23 03:00:41.133564
+2026-07-23 04:00:41,150 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 04:00:41,157 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 04:00:41,159 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 04:00:41,159 - INFO - Hourly reports generated at 2026-07-23 04:00:41.147916
+2026-07-23 05:00:41,174 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 05:00:41,177 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 05:00:41,178 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 05:00:41,178 - INFO - Hourly reports generated at 2026-07-23 05:00:41.173576
+2026-07-23 06:00:41,192 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 06:00:41,193 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 06:00:41,194 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 06:00:41,194 - INFO - Hourly reports generated at 2026-07-23 06:00:41.191226
+2026-07-23 07:00:41,209 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 07:00:41,211 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 07:00:41,212 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 07:00:41,212 - INFO - Hourly reports generated at 2026-07-23 07:00:41.208526
+2026-07-23 08:00:41,229 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 08:00:41,232 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 08:00:41,233 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 08:00:41,233 - INFO - Hourly reports generated at 2026-07-23 08:00:41.226026
+2026-07-23 09:00:41,250 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 09:00:41,254 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 09:00:41,257 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 09:00:41,257 - INFO - Hourly reports generated at 2026-07-23 09:00:41.248539
+2026-07-23 10:00:41,274 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 10:00:41,276 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 10:00:41,278 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 10:00:41,278 - INFO - Hourly reports generated at 2026-07-23 10:00:41.272855
+2026-07-23 11:00:41,293 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 11:00:41,297 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 11:00:41,299 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 11:00:41,299 - INFO - Hourly reports generated at 2026-07-23 11:00:41.290770
+2026-07-23 12:00:41,311 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 12:00:41,313 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 12:00:41,313 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 12:00:41,313 - INFO - Hourly reports generated at 2026-07-23 12:00:41.310574
+2026-07-23 13:00:41,328 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 13:00:41,330 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 13:00:41,331 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 13:00:41,331 - INFO - Hourly reports generated at 2026-07-23 13:00:41.327844
+2026-07-23 14:00:41,343 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 14:00:41,344 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 14:00:41,344 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 14:00:41,344 - INFO - Hourly reports generated at 2026-07-23 14:00:41.342203
+2026-07-23 15:00:41,358 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 15:00:41,359 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 15:00:41,360 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 15:00:41,360 - INFO - Hourly reports generated at 2026-07-23 15:00:41.357169
+2026-07-23 16:00:41,377 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 16:00:41,381 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-07-23 16:00:41,383 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-07-23 16:00:41,383 - INFO - Hourly reports generated at 2026-07-23 16:00:41.374902
+2026-08-13 00:19:15,887 - WARNING - Matplotlib is building the font cache; this may take a moment.
+2026-08-13 00:19:16,474 - INFO - generated new fontManager
+2026-08-13 00:19:19,228 - INFO - MongoDB connection established
+2026-08-13 01:00:19,267 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 01:00:19,269 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 01:00:19,270 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 01:00:19,271 - INFO - Hourly reports generated at 2026-08-13 01:00:19.250737
+2026-08-13 02:00:19,283 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 02:00:19,284 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 02:00:19,285 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 02:00:19,285 - INFO - Hourly reports generated at 2026-08-13 02:00:19.282877
+2026-08-13 03:00:19,297 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 03:00:19,298 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 03:00:19,298 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 03:00:19,298 - INFO - Hourly reports generated at 2026-08-13 03:00:19.296507
+2026-08-13 04:00:19,318 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 04:00:19,319 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 04:00:19,320 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 04:00:19,320 - INFO - Hourly reports generated at 2026-08-13 04:00:19.317638
+2026-08-13 05:00:19,333 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 05:00:19,334 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 05:00:19,334 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 05:00:19,334 - INFO - Hourly reports generated at 2026-08-13 05:00:19.332277
+2026-08-13 06:00:19,360 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 06:00:19,363 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 06:00:19,366 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 06:00:19,366 - INFO - Hourly reports generated at 2026-08-13 06:00:19.357661
+2026-08-13 07:00:19,383 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 07:00:19,387 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 07:00:19,389 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 07:00:19,389 - INFO - Hourly reports generated at 2026-08-13 07:00:19.380930
+2026-08-13 08:00:19,403 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 08:00:19,407 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 08:00:19,409 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 08:00:19,410 - INFO - Hourly reports generated at 2026-08-13 08:00:19.401039
+2026-08-13 09:00:19,424 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 09:00:19,428 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 09:00:19,430 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 09:00:19,430 - INFO - Hourly reports generated at 2026-08-13 09:00:19.421779
+2026-08-13 10:00:19,460 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 10:00:19,464 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 10:00:19,466 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 10:00:19,467 - INFO - Hourly reports generated at 2026-08-13 10:00:19.458658
+2026-08-13 11:00:19,483 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 11:00:19,487 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 11:00:19,489 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 11:00:19,490 - INFO - Hourly reports generated at 2026-08-13 11:00:19.481444
+2026-08-13 12:00:19,509 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 12:00:19,513 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 12:00:19,515 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 12:00:19,515 - INFO - Hourly reports generated at 2026-08-13 12:00:19.506744
+2026-08-13 13:00:19,532 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 13:00:19,535 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 13:00:19,536 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 13:00:19,537 - INFO - Hourly reports generated at 2026-08-13 13:00:19.530729
+2026-08-13 14:00:19,553 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 14:00:19,555 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 14:00:19,557 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 14:00:19,557 - INFO - Hourly reports generated at 2026-08-13 14:00:19.551086
+2026-08-13 15:00:19,577 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 15:00:19,578 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 15:00:19,579 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 15:00:19,579 - INFO - Hourly reports generated at 2026-08-13 15:00:19.576644
+2026-08-13 16:00:19,598 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 16:00:19,602 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 16:00:19,604 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 16:00:19,605 - INFO - Hourly reports generated at 2026-08-13 16:00:19.596108
+2026-08-13 17:00:19,618 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 17:00:19,622 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 17:00:19,624 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 17:00:19,624 - INFO - Hourly reports generated at 2026-08-13 17:00:19.615872
+2026-08-13 18:00:19,647 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 18:00:19,650 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 18:00:19,653 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 18:00:19,653 - INFO - Hourly reports generated at 2026-08-13 18:00:19.644606
+2026-08-13 19:00:19,675 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 19:00:19,679 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 19:00:19,681 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 19:00:19,681 - INFO - Hourly reports generated at 2026-08-13 19:00:19.672957
+2026-08-13 20:00:19,695 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 20:00:19,699 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 20:00:19,701 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 20:00:19,702 - INFO - Hourly reports generated at 2026-08-13 20:00:19.693336
+2026-08-13 21:00:19,728 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 21:00:19,732 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 21:00:19,734 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 21:00:19,734 - INFO - Hourly reports generated at 2026-08-13 21:00:19.726030
+2026-08-13 22:00:19,752 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 22:00:19,756 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 22:00:19,758 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 22:00:19,759 - INFO - Hourly reports generated at 2026-08-13 22:00:19.750447
+2026-08-13 23:00:19,775 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 23:00:19,779 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-13 23:00:19,781 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-13 23:00:19,781 - INFO - Hourly reports generated at 2026-08-13 23:00:19.772732
+2026-08-14 00:00:19,800 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 00:00:19,804 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 00:00:19,806 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 00:00:19,806 - INFO - Hourly reports generated at 2026-08-14 00:00:19.798158
+2026-08-14 00:00:19,807 - INFO - Old reports cleaned up
+2026-08-14 01:00:19,823 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 01:00:19,827 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 01:00:19,829 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 01:00:19,830 - INFO - Hourly reports generated at 2026-08-14 01:00:19.821169
+2026-08-14 02:00:19,846 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 02:00:19,847 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 02:00:19,848 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 02:00:19,848 - INFO - Hourly reports generated at 2026-08-14 02:00:19.845764
+2026-08-14 03:00:19,862 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 03:00:19,866 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 03:00:19,868 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 03:00:19,869 - INFO - Hourly reports generated at 2026-08-14 03:00:19.860063
+2026-08-14 04:00:19,893 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 04:00:19,897 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 04:00:19,899 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 04:00:19,900 - INFO - Hourly reports generated at 2026-08-14 04:00:19.891492
+2026-08-14 05:00:19,918 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 05:00:19,922 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 05:00:19,924 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 05:00:19,925 - INFO - Hourly reports generated at 2026-08-14 05:00:19.916431
+2026-08-14 06:00:19,955 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 06:00:19,958 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 06:00:19,960 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 06:00:19,960 - INFO - Hourly reports generated at 2026-08-14 06:00:19.951472
+2026-08-14 07:00:19,970 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 07:00:19,973 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 07:00:19,974 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 07:00:19,974 - INFO - Hourly reports generated at 2026-08-14 07:00:19.969700
+2026-08-14 08:00:19,986 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 08:00:19,988 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 08:00:19,990 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 08:00:19,990 - INFO - Hourly reports generated at 2026-08-14 08:00:19.985268
+2026-08-14 09:00:20,012 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 09:00:20,013 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 09:00:20,014 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 09:00:20,014 - INFO - Hourly reports generated at 2026-08-14 09:00:20.011919
+2026-08-14 10:00:20,030 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 10:00:20,031 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 10:00:20,032 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 10:00:20,032 - INFO - Hourly reports generated at 2026-08-14 10:00:20.029534
+2026-08-14 11:00:20,043 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 11:00:20,044 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 11:00:20,044 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 11:00:20,044 - INFO - Hourly reports generated at 2026-08-14 11:00:20.042330
+2026-08-14 12:00:20,064 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 12:00:20,067 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 12:00:20,068 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 12:00:20,069 - INFO - Hourly reports generated at 2026-08-14 12:00:20.062877
+2026-08-14 13:00:20,092 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 13:00:20,094 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 13:00:20,096 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 13:00:20,096 - INFO - Hourly reports generated at 2026-08-14 13:00:20.090050
+2026-08-14 14:00:20,124 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 14:00:20,128 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 14:00:20,131 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 14:00:20,131 - INFO - Hourly reports generated at 2026-08-14 14:00:20.121941
+2026-08-14 15:00:20,149 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 15:00:20,153 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 15:00:20,155 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 15:00:20,155 - INFO - Hourly reports generated at 2026-08-14 15:00:20.146913
+2026-08-14 16:00:20,175 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 16:00:20,179 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 16:00:20,181 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 16:00:20,182 - INFO - Hourly reports generated at 2026-08-14 16:00:20.173538
+2026-08-14 17:00:20,201 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 17:00:20,204 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 17:00:20,206 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 17:00:20,207 - INFO - Hourly reports generated at 2026-08-14 17:00:20.198525
+2026-08-14 18:00:20,228 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 18:00:20,232 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 18:00:20,234 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 18:00:20,234 - INFO - Hourly reports generated at 2026-08-14 18:00:20.226517
+2026-08-14 19:00:20,259 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 19:00:20,265 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 19:00:20,267 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 19:00:20,267 - INFO - Hourly reports generated at 2026-08-14 19:00:20.253902
+2026-08-14 20:00:20,285 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 20:00:20,287 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 20:00:20,288 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 20:00:20,288 - INFO - Hourly reports generated at 2026-08-14 20:00:20.284762
+2026-08-14 21:00:20,306 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 21:00:20,308 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 21:00:20,308 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 21:00:20,309 - INFO - Hourly reports generated at 2026-08-14 21:00:20.305272
+2026-08-14 22:00:20,330 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 22:00:20,334 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 22:00:20,338 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 22:00:20,338 - INFO - Hourly reports generated at 2026-08-14 22:00:20.327411
+2026-08-14 23:00:20,362 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 23:00:20,363 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-14 23:00:20,364 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-14 23:00:20,364 - INFO - Hourly reports generated at 2026-08-14 23:00:20.361463
+2026-08-15 00:00:20,382 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 00:00:20,389 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 00:00:20,391 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 00:00:20,392 - INFO - Hourly reports generated at 2026-08-15 00:00:20.379748
+2026-08-15 00:00:20,392 - INFO - Old reports cleaned up
+2026-08-15 01:00:20,413 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 01:00:20,414 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 01:00:20,415 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 01:00:20,415 - INFO - Hourly reports generated at 2026-08-15 01:00:20.412054
+2026-08-15 02:00:20,430 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 02:00:20,434 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 02:00:20,437 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 02:00:20,437 - INFO - Hourly reports generated at 2026-08-15 02:00:20.428380
+2026-08-15 03:00:20,450 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 03:00:20,454 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 03:00:20,456 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 03:00:20,457 - INFO - Hourly reports generated at 2026-08-15 03:00:20.448261
+2026-08-15 04:00:20,478 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 04:00:20,482 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 04:00:20,484 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 04:00:20,484 - INFO - Hourly reports generated at 2026-08-15 04:00:20.475889
+2026-08-15 05:00:20,504 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 05:00:20,508 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 05:00:20,510 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 05:00:20,510 - INFO - Hourly reports generated at 2026-08-15 05:00:20.502213
+2026-08-15 06:00:20,532 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 06:00:20,533 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 06:00:20,534 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 06:00:20,534 - INFO - Hourly reports generated at 2026-08-15 06:00:20.531700
+2026-08-15 07:00:20,552 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 07:00:20,557 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 07:00:20,559 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 07:00:20,559 - INFO - Hourly reports generated at 2026-08-15 07:00:20.550443
+2026-08-15 08:00:20,574 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 08:00:20,578 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 08:00:20,580 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 08:00:20,581 - INFO - Hourly reports generated at 2026-08-15 08:00:20.572039
+2026-08-15 09:00:20,602 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 09:00:20,606 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 09:00:20,608 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 09:00:20,608 - INFO - Hourly reports generated at 2026-08-15 09:00:20.600092
+2026-08-15 10:00:20,625 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 10:00:20,626 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 10:00:20,626 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 10:00:20,626 - INFO - Hourly reports generated at 2026-08-15 10:00:20.624353
+2026-08-15 11:00:20,645 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 11:00:20,649 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 11:00:20,651 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 11:00:20,651 - INFO - Hourly reports generated at 2026-08-15 11:00:20.643166
+2026-08-15 12:00:20,669 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 12:00:20,673 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 12:00:20,675 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 12:00:20,676 - INFO - Hourly reports generated at 2026-08-15 12:00:20.667311
+2026-08-15 13:00:20,697 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 13:00:20,701 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 13:00:20,703 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 13:00:20,703 - INFO - Hourly reports generated at 2026-08-15 13:00:20.695150
+2026-08-15 14:00:20,727 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 14:00:20,731 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 14:00:20,733 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 14:00:20,733 - INFO - Hourly reports generated at 2026-08-15 14:00:20.724930
+2026-08-15 15:00:20,755 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 15:00:20,756 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 15:00:20,758 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 15:00:20,758 - INFO - Hourly reports generated at 2026-08-15 15:00:20.754670
+2026-08-15 16:00:20,781 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 16:00:20,785 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 16:00:20,787 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 16:00:20,788 - INFO - Hourly reports generated at 2026-08-15 16:00:20.779421
+2026-08-15 17:00:20,813 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 17:00:20,817 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 17:00:20,819 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 17:00:20,820 - INFO - Hourly reports generated at 2026-08-15 17:00:20.811318
+2026-08-15 18:00:20,836 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 18:00:20,837 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 18:00:20,838 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 18:00:20,838 - INFO - Hourly reports generated at 2026-08-15 18:00:20.835247
+2026-08-15 19:00:20,858 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 19:00:20,862 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 19:00:20,864 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 19:00:20,864 - INFO - Hourly reports generated at 2026-08-15 19:00:20.855768
+2026-08-15 20:00:20,884 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 20:00:20,885 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 20:00:20,886 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 20:00:20,886 - INFO - Hourly reports generated at 2026-08-15 20:00:20.883969
+2026-08-15 21:00:20,906 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 21:00:20,910 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 21:00:20,912 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 21:00:20,912 - INFO - Hourly reports generated at 2026-08-15 21:00:20.904108
+2026-08-15 22:00:20,934 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 22:00:20,938 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 22:00:20,940 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 22:00:20,940 - INFO - Hourly reports generated at 2026-08-15 22:00:20.931615
+2026-08-15 23:00:20,959 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 23:00:20,963 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-15 23:00:20,965 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-15 23:00:20,966 - INFO - Hourly reports generated at 2026-08-15 23:00:20.957306
+2026-08-16 00:00:20,984 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 00:00:20,985 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 00:00:20,986 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 00:00:20,986 - INFO - Hourly reports generated at 2026-08-16 00:00:20.983812
+2026-08-16 00:00:20,986 - INFO - Old reports cleaned up
+2026-08-16 01:00:21,003 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 01:00:21,004 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 01:00:21,004 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 01:00:21,005 - INFO - Hourly reports generated at 2026-08-16 01:00:21.002161
+2026-08-16 02:00:21,017 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 02:00:21,019 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 02:00:21,019 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 02:00:21,019 - INFO - Hourly reports generated at 2026-08-16 02:00:21.017012
+2026-08-16 03:00:21,039 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 03:00:21,043 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 03:00:21,046 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 03:00:21,046 - INFO - Hourly reports generated at 2026-08-16 03:00:21.037440
+2026-08-16 04:00:21,060 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 04:00:21,061 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 04:00:21,062 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 04:00:21,062 - INFO - Hourly reports generated at 2026-08-16 04:00:21.059302
+2026-08-16 05:00:21,080 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 05:00:21,081 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 05:00:21,082 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 05:00:21,082 - INFO - Hourly reports generated at 2026-08-16 05:00:21.079135
+2026-08-16 06:00:21,101 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 06:00:21,105 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 06:00:21,107 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 06:00:21,108 - INFO - Hourly reports generated at 2026-08-16 06:00:21.099279
+2026-08-16 07:00:21,130 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 07:00:21,134 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 07:00:21,136 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 07:00:21,136 - INFO - Hourly reports generated at 2026-08-16 07:00:21.127856
+2026-08-16 08:00:21,153 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 08:00:21,157 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 08:00:21,159 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 08:00:21,159 - INFO - Hourly reports generated at 2026-08-16 08:00:21.150710
+2026-08-16 09:00:21,176 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 09:00:21,180 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 09:00:21,182 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 09:00:21,182 - INFO - Hourly reports generated at 2026-08-16 09:00:21.173911
+2026-08-16 10:00:21,209 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 10:00:21,210 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 10:00:21,211 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 10:00:21,211 - INFO - Hourly reports generated at 2026-08-16 10:00:21.208849
+2026-08-16 11:00:21,229 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 11:00:21,232 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 11:00:21,234 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 11:00:21,234 - INFO - Hourly reports generated at 2026-08-16 11:00:21.227851
+2026-08-16 12:00:21,265 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 12:00:21,269 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 12:00:21,271 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 12:00:21,271 - INFO - Hourly reports generated at 2026-08-16 12:00:21.263209
+2026-08-16 13:00:21,299 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 13:00:21,303 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 13:00:21,305 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 13:00:21,306 - INFO - Hourly reports generated at 2026-08-16 13:00:21.297034
+2026-08-16 14:00:21,324 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 14:00:21,325 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 14:00:21,325 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 14:00:21,325 - INFO - Hourly reports generated at 2026-08-16 14:00:21.323521
+2026-08-16 15:00:21,344 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 15:00:21,348 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 15:00:21,350 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 15:00:21,351 - INFO - Hourly reports generated at 2026-08-16 15:00:21.342324
+2026-08-16 16:00:21,370 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 16:00:21,374 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 16:00:21,376 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 16:00:21,376 - INFO - Hourly reports generated at 2026-08-16 16:00:21.367893
+2026-08-16 17:00:21,393 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 17:00:21,394 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 17:00:21,394 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 17:00:21,394 - INFO - Hourly reports generated at 2026-08-16 17:00:21.392303
+2026-08-16 18:00:21,408 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 18:00:21,412 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 18:00:21,415 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 18:00:21,415 - INFO - Hourly reports generated at 2026-08-16 18:00:21.406085
+2026-08-16 19:00:21,427 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 19:00:21,431 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 19:00:21,433 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 19:00:21,433 - INFO - Hourly reports generated at 2026-08-16 19:00:21.424907
+2026-08-16 20:00:21,464 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 20:00:21,468 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 20:00:21,470 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 20:00:21,471 - INFO - Hourly reports generated at 2026-08-16 20:00:21.461968
+2026-08-16 21:00:21,491 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 21:00:21,495 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 21:00:21,497 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 21:00:21,497 - INFO - Hourly reports generated at 2026-08-16 21:00:21.488970
+2026-08-16 22:00:21,519 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 22:00:21,521 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 22:00:21,522 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 22:00:21,523 - INFO - Hourly reports generated at 2026-08-16 22:00:21.518507
+2026-08-16 23:00:21,539 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 23:00:21,543 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-16 23:00:21,545 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-16 23:00:21,545 - INFO - Hourly reports generated at 2026-08-16 23:00:21.536846
+2026-08-17 00:00:21,571 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 00:00:21,575 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 00:00:21,577 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 00:00:21,577 - INFO - Hourly reports generated at 2026-08-17 00:00:21.568875
+2026-08-17 00:00:21,577 - INFO - Old reports cleaned up
+2026-08-17 01:00:21,602 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 01:00:21,606 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 01:00:21,608 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 01:00:21,609 - INFO - Hourly reports generated at 2026-08-17 01:00:21.600417
+2026-08-17 02:00:21,626 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 02:00:21,630 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 02:00:21,632 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 02:00:21,633 - INFO - Hourly reports generated at 2026-08-17 02:00:21.624416
+2026-08-17 03:00:21,650 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 03:00:21,652 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 03:00:21,653 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 03:00:21,653 - INFO - Hourly reports generated at 2026-08-17 03:00:21.649363
+2026-08-17 04:00:21,670 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 04:00:21,674 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 04:00:21,677 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 04:00:21,677 - INFO - Hourly reports generated at 2026-08-17 04:00:21.668311
+2026-08-17 05:00:21,694 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 05:00:21,695 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 05:00:21,696 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 05:00:21,696 - INFO - Hourly reports generated at 2026-08-17 05:00:21.693610
+2026-08-17 06:00:21,717 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 06:00:21,721 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 06:00:21,723 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 06:00:21,723 - INFO - Hourly reports generated at 2026-08-17 06:00:21.715185
+2026-08-17 07:00:21,738 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 07:00:21,741 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 07:00:21,741 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 07:00:21,742 - INFO - Hourly reports generated at 2026-08-17 07:00:21.737609
+2026-08-17 08:00:21,769 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 08:00:21,772 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 08:00:21,774 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 08:00:21,774 - INFO - Hourly reports generated at 2026-08-17 08:00:21.767989
+2026-08-17 09:00:21,793 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 09:00:21,797 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 09:00:21,799 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 09:00:21,799 - INFO - Hourly reports generated at 2026-08-17 09:00:21.790878
+2026-08-17 10:00:21,818 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 10:00:21,822 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 10:00:21,824 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 10:00:21,825 - INFO - Hourly reports generated at 2026-08-17 10:00:21.816229
+2026-08-17 11:00:21,847 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 11:00:21,851 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 11:00:21,853 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 11:00:21,853 - INFO - Hourly reports generated at 2026-08-17 11:00:21.844675
+2026-08-17 12:00:21,873 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 12:00:21,877 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 12:00:21,879 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 12:00:21,879 - INFO - Hourly reports generated at 2026-08-17 12:00:21.870768
+2026-08-17 13:00:21,896 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 13:00:21,900 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 13:00:21,902 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 13:00:21,903 - INFO - Hourly reports generated at 2026-08-17 13:00:21.894340
+2026-08-17 14:00:21,926 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 14:00:21,930 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 14:00:21,932 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 14:00:21,932 - INFO - Hourly reports generated at 2026-08-17 14:00:21.924028
+2026-08-17 15:00:21,947 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 15:00:21,951 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 15:00:21,953 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 15:00:21,953 - INFO - Hourly reports generated at 2026-08-17 15:00:21.944731
+2026-08-17 16:00:21,970 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 16:00:21,971 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 16:00:21,972 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 16:00:21,972 - INFO - Hourly reports generated at 2026-08-17 16:00:21.969125
+2026-08-17 17:00:21,990 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 17:00:21,994 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 17:00:21,996 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 17:00:21,996 - INFO - Hourly reports generated at 2026-08-17 17:00:21.988017
+2026-08-17 18:00:22,018 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 18:00:22,022 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 18:00:22,024 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 18:00:22,024 - INFO - Hourly reports generated at 2026-08-17 18:00:22.015985
+2026-08-17 19:00:22,042 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 19:00:22,046 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 19:00:22,048 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 19:00:22,048 - INFO - Hourly reports generated at 2026-08-17 19:00:22.040615
+2026-08-17 20:00:22,076 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 20:00:22,080 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 20:00:22,082 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 20:00:22,082 - INFO - Hourly reports generated at 2026-08-17 20:00:22.073551
+2026-08-17 21:00:22,105 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 21:00:22,106 - INFO - Fetched camera list: ['ppe_test_cam1']
+2026-08-17 21:00:22,106 - INFO - KPI report skipped. Cameras: 1, Alerts: 0
+2026-08-17 21:00:22,106 - INFO - Hourly reports generated at 2026-08-17 21:00:22.104208

@@ -1,0 +1,141 @@
+.objectOfInterest {
+  width: 100%;
+
+  .paragah {
+    width: 160px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 15px;
+  }
+
+  .labelBorder {
+    margin: 5px;
+    font-size: 16px;
+    padding: 10px;
+    width: 120px;
+    height: 100px;
+    background-color: #8bc34a;
+    box-shadow: var(--shadow-sm);
+    text-transform: capitalize;
+    border-radius: var(--radius-lg);
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .image-container {
+    position: relative;
+    margin-top: 1rem !important;
+  }
+
+  .show-more-info {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem !important;
+  }
+
+  .desktop {
+    width: 30%;
+    display: flex;
+    align-items: center;
+  }
+
+  // Same pattern as the Kreport/KPI Report search bar (.aa-search-bar):
+  // the blue pill is the *outer* box, the white bar floats inside it, and
+  // the icon is simply absolute-positioned in the reserved space — no
+  // fixed heights or negative-margin overlap tricks to keep in sync.
+  .search-bar {
+    // Kept wide (unlike KPI Report/Alert Report's compact bar) — this one
+    // has 5 filter fields instead of 4, so the compact size cramped it.
+    width: clamp(320px, 94vw, 1400px);
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 6px;
+
+    .main-content {
+      background-color: var(--color-surface);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: var(--radius-pill);
+      width: calc(100% - 64px);
+      padding: 0;
+      flex-wrap: wrap;
+
+      .inner-content {
+        cursor: pointer;
+        flex: 1 1 176px;
+        max-width: 220px;
+        min-width: 150px;
+        padding: 12px 16px;
+      }
+    }
+
+    .searchIcon {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  .activeTab {
+    background: var(--color-primary-tint);
+    color: var(--color-primary-dark);
+    border-radius: var(--radius-pill);
+  }
+
+  .middle-line {
+    background: var(--color-border-strong);
+    max-width: 1px;
+    min-height: 51px;
+    max-height: 51px;
+  }
+
+  .btn-color {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 8px 18px;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    background: var(--color-surface);
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      background: var(--color-primary);
+      color: white;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .headerCls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row !important;
+      width: 92% !important;
+      padding-right: 15px;
+    }
+  }
+}
+
+
+//used by truck
+.model-radius_1 {
+  .MuiPaper-rounded {
+    border-radius: var(--radius-md);
+    overflow-y: scroll !important;
+    height: 390px;
+  }
+}

@@ -1,0 +1,111 @@
+#custom-report-table-y-container {
+
+  overflow-y: auto;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  width: 100%;
+  font-size: 14px;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 8px;
+
+  scrollbar-color: #8cbbdd transparent;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #8cbbdd;
+    border-radius: 20px;
+    border: 0px solid transparent;
+  }
+
+  tr.shown,
+  tr.hidden {
+    background-color: var(--color-primary-soft);
+    display: table-row;
+  }
+
+  tr.hidden {
+    display: none;
+  }
+
+  tbody tr:hover {
+    background-color: var(--color-primary-soft);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  table th,
+  table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--color-border);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  td.td-link-style {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+
+  td.cam-name-style {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--color-text);
+  }
+
+  td.No-Alerts-Captured {
+    text-decoration: underline;
+    color: var(--color-text-muted);
+  }
+
+  .alertname-items-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .alertname-item-one {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+
+    .alertname-item-two {
+      flex-grow: 2;
+      flex-shrink: 0;
+      flex-basis: 0;
+
+    }
+  }
+
+  img.alert-named-icon {
+    max-width: 24px;
+    max-height: 24px;
+    margin-right: 3px;
+  }
+
+  table thead {
+    background-color: var(--color-table-header);
+
+    th {
+      font-weight: 600;
+      color: var(--color-table-header-text);
+      border-bottom: 2px solid var(--color-table-header-border);
+    }
+  }
+
+}

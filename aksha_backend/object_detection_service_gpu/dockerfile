@@ -1,0 +1,32 @@
+# object_detection_service_gpu — GPU/TRT YOLOv10 ONNX inference worker.
+# Consumes raw frames from Kafka (raw_frame), runs ORT GPU/TRT inference,
+# publishes detection results to object_detection_results.
+# Base: CUDA 11.8 + cuDNN 8 on Ubuntu 22.04 — matches onnxruntime-gpu 1.18 requirements.
+FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install Python + OpenCV runtime dependencies.
+# libcufft-11-8: required by onnxruntime-gpu for GPU memory allocation.
+RUN apt-get update && \
+    apt-get install -y \
+    python3 \
+    python3-pip \
+    libgl1 \
+    libglib2.0-0 \
+    libcufft-11-8 && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /code
+
+# Copy model files and labels alongside requirements — available at both pip install
+# and runtime without needing a separate COPY layer.
+COPY requirements.txt coco.names yolov10.onnx ./
+
+RUN pip3 install --upgrade pip
+RUN pip3 install --no-cache-dir -r /code/requirements.txt
+
+# Copy application code last — most frequently changed layer, keeps above layers cached.
+COPY ./app /code/app
+
+CMD ["python3", "app/main.py"]

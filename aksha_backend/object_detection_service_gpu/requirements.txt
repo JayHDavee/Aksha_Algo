@@ -1,0 +1,8 @@
+# opencv-python-headless: no GUI deps — saves ~50 MB vs full opencv-python in the container
+opencv-python-headless==4.10.0.84
+# onnxruntime-gpu 1.18 targets CUDA 11.8 — matches the base image (nvidia/cuda:11.8.0)
+# For CUDA 12.x use onnxruntime-gpu from the MSFT private feed (see deepstream_batch dockerfile)
+onnxruntime-gpu==1.18.0
+# numpy pinned to 1.26.x — last series before 2.0 ABI break; compatible with onnxruntime-gpu 1.18
+numpy==1.26.4
+kafka-python==2.0.2

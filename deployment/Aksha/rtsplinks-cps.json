@@ -1,0 +1,212 @@
+{
+    "rtsp://admin:pcmpl%40123@192.168.50.12:554/Streaming/Channels/101": {
+        "cam_name": "cam1",
+        "rtsp_id": "1",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.13:554/Streaming/Channels/101": {
+        "cam_name": "cam2",
+        "rtsp_id": "2",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.14:554/Streaming/Channels/101": {
+        "cam_name": "cam3",
+        "rtsp_id": "3",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.15:554/Streaming/Channels/101": {
+        "cam_name": "cam4",
+        "rtsp_id": "4",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.16:554/Streaming/Channels/101": {
+        "cam_name": "cam5",
+        "rtsp_id": "5",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.17:554/Streaming/Channels/101": {
+        "cam_name": "cam6",
+        "rtsp_id": "6",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.18:554/Streaming/Channels/101": {
+        "cam_name": "cam7",
+        "rtsp_id": "7",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.19:554/Streaming/Channels/101": {
+        "cam_name": "cam8",
+        "rtsp_id": "8",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.20:554/Streaming/Channels/101": {
+        "cam_name": "cam9",
+        "rtsp_id": "9",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.21:554/Streaming/Channels/101": {
+        "cam_name": "cam10",
+        "rtsp_id": "10",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.22:554/Streaming/Channels/101": {
+        "cam_name": "cam11",
+        "rtsp_id": "11",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.23:554/Streaming/Channels/101": {
+        "cam_name": "cam12",
+        "rtsp_id": "12",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.24:554/Streaming/Channels/101": {
+        "cam_name": "cam13",
+        "rtsp_id": "13",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.25:554/Streaming/Channels/101": {
+        "cam_name": "cam14",
+        "rtsp_id": "14",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.26:554/Streaming/Channels/101": {
+        "cam_name": "cam15",
+        "rtsp_id": "15",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.27:554/Streaming/Channels/101": {
+        "cam_name": "cam16",
+        "rtsp_id": "16",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.28:554/Streaming/Channels/101": {
+        "cam_name": "cam17",
+        "rtsp_id": "17",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.29:554/Streaming/Channels/101": {
+        "cam_name": "cam18",
+        "rtsp_id": "18",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.30:554/Streaming/Channels/101": {
+        "cam_name": "cam19",
+        "rtsp_id": "19",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.31:554/Streaming/Channels/101": {
+        "cam_name": "cam20",
+        "rtsp_id": "20",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.32:554/Streaming/Channels/101": {
+        "cam_name": "cam21",
+        "rtsp_id": "21",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.34:554/Streaming/Channels/101": {
+        "cam_name": "cam22",
+        "rtsp_id": "22",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.35:554/Streaming/Channels/101": {
+        "cam_name": "cam23",
+        "rtsp_id": "23",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.36:554/Streaming/Channels/101": {
+        "cam_name": "cam24",
+        "rtsp_id": "24",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.37:554/Streaming/Channels/101": {
+        "cam_name": "cam25",
+        "rtsp_id": "25",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.38:554/Streaming/Channels/101": {
+        "cam_name": "cam26",
+        "rtsp_id": "26",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.39:554/Streaming/Channels/101": {
+        "cam_name": "cam27",
+        "rtsp_id": "27",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.40:554/Streaming/Channels/101": {
+        "cam_name": "cam28",
+        "rtsp_id": "28",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.41:554/Streaming/Channels/101": {
+        "cam_name": "cam29",
+        "rtsp_id": "29",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.43:554/Streaming/Channels/101": {
+        "cam_name": "cam30",
+        "rtsp_id": "30",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.44:554/Streaming/Channels/101": {
+        "cam_name": "cam31",
+        "rtsp_id": "31",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.45:554/Streaming/Channels/101": {
+        "cam_name": "cam32",
+        "rtsp_id": "32",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.46:554/Streaming/Channels/101": {
+        "cam_name": "cam33",
+        "rtsp_id": "33",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.47:554/Streaming/Channels/101": {
+        "cam_name": "cam34",
+        "rtsp_id": "34",
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://admin:pcmpl%40123@192.168.50.48:554/Streaming/Channels/101": {
+        "cam_name": "cam35",
+        "rtsp_id": "35",
+        "running_status": false,
+        "FPS": 5.0
+    }
+}

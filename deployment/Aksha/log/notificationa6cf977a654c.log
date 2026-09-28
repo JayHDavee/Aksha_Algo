@@ -1,0 +1,219 @@
+2026-08-12 19:20:31,902 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:20:31,902 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:20:31,903 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:20:32,123 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:20:32,160 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:20:32,160 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:20:32,161 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:20:32,833 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:20:32,834 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:21:03,227 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7a2888473e7f17af8e40, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:21:03,228 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:21:33,523 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7a2888473e7f17af8e40, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:21:33,523 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:21:38,876 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:21:38,876 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:21:38,876 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:21:39,086 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:21:39,086 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:21:39,086 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:21:39,086 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:21:39,158 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:21:39,158 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:22:09,460 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7a6b932924634c48b3d9, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:22:09,461 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:22:39,639 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7a6b932924634c48b3d9, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:22:39,639 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:22:45,569 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:22:45,569 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:22:45,569 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:22:45,792 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:22:45,792 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:22:45,792 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:22:45,793 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:22:45,878 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:22:45,878 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:23:16,178 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7aadb241f48f94422f35, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:23:16,179 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:23:46,455 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7aadb241f48f94422f35, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:23:46,455 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:23:51,074 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:23:51,074 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:23:51,074 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:23:51,293 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:23:51,294 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:23:51,294 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:23:51,294 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:23:51,368 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:23:51,368 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:24:21,656 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7aefe3892df419f9977e, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:24:21,656 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:24:51,926 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7aefe3892df419f9977e, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:24:51,927 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:24:56,930 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:24:56,930 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:24:56,930 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:24:57,155 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:24:57,156 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:24:57,156 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:24:57,157 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:24:57,257 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:24:57,257 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:25:27,574 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7b3178eaa02e8bf023f3, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:25:27,575 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:25:57,855 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7b3178eaa02e8bf023f3, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:25:57,856 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:26:02,606 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:26:02,607 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:26:02,607 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:26:02,834 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:26:02,834 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:26:02,835 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:26:02,835 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:26:02,897 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:26:02,898 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:26:33,225 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7b726d7b3fe3fce87767, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:26:33,226 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:27:03,336 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7b726d7b3fe3fce87767, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:27:03,336 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:27:07,391 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:27:07,391 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:27:07,391 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:27:07,604 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:27:07,605 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:27:07,605 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:27:07,606 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:27:07,701 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:27:07,701 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:27:37,974 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7bb36cb5ef84207add3b, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:27:37,975 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:28:08,292 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7bb36cb5ef84207add3b, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:28:08,293 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:28:12,946 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:28:12,946 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:28:12,946 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:28:13,155 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:28:13,155 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:28:13,155 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:28:13,155 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:28:13,219 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:28:13,219 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:28:43,459 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7bf5ee7a43e165b7f082, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:28:43,459 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:29:13,624 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7bf5ee7a43e165b7f082, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:29:13,624 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:29:18,124 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:29:18,125 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:29:18,125 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:29:18,347 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:29:18,348 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:29:18,348 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:29:18,349 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:29:18,445 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:29:18,475 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:29:48,733 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7c363dfb97c9a728695a, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:29:48,733 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:30:19,011 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a7c7c363dfb97c9a728695a, topology_type: Unknown, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno -3] Temporary failure in name resolution (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-08-12 19:30:19,011 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:30:25,485 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:30:25,485 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:30:25,485 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:30:25,926 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:30:25,986 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:30:25,986 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:30:25,987 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:30:26,063 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:30:26,064 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:30:51,989 - notificationa6cf977a654c - INFO - Resource_Data is None — no email config found
+2026-08-12 19:30:51,990 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:30:51,991 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: 'NoneType' object has no attribute 'get'
+2026-08-12 19:30:51,991 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:30:57,613 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:30:57,614 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:30:57,614 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:30:57,850 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:30:57,850 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:30:57,851 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:30:57,852 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:30:57,934 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:30:57,934 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:30:57,945 - notificationa6cf977a654c - INFO - Resource_Data is None — no email config found
+2026-08-12 19:30:57,946 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:30:57,946 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: 'NoneType' object has no attribute 'get'
+2026-08-12 19:30:57,946 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:31:02,593 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:31:02,593 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:31:02,593 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:31:02,825 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:31:02,825 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:31:02,826 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:31:02,827 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:31:02,922 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:31:02,922 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:31:02,934 - notificationa6cf977a654c - INFO - Resource_Data is None — no email config found
+2026-08-12 19:31:02,934 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:31:02,934 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: 'NoneType' object has no attribute 'get'
+2026-08-12 19:31:02,934 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:31:07,520 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:31:07,521 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:31:07,521 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:31:07,749 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:31:07,750 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:31:07,750 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:31:07,751 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:31:07,850 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:31:07,850 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:31:07,861 - notificationa6cf977a654c - INFO - Resource_Data is None — no email config found
+2026-08-12 19:31:07,861 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:31:07,862 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: 'NoneType' object has no attribute 'get'
+2026-08-12 19:31:07,862 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:31:14,473 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:31:14,473 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:31:14,474 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:31:14,687 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:31:14,687 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:31:14,688 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:31:14,688 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:31:14,781 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:31:14,781 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:31:14,793 - notificationa6cf977a654c - INFO - Resource_Data is None — no email config found
+2026-08-12 19:31:14,793 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:31:14,794 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: 'NoneType' object has no attribute 'get'
+2026-08-12 19:31:14,794 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:31:19,561 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:31:19,561 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:31:19,561 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:31:19,772 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:31:19,772 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:31:19,773 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:31:19,773 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:31:19,905 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:31:19,906 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:31:19,926 - notificationa6cf977a654c - INFO - Resource_Data is None — no email config found
+2026-08-12 19:31:19,926 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:31:19,926 - notificationa6cf977a654c - INFO - Connection to Resource Collection failed: 'NoneType' object has no attribute 'get'
+2026-08-12 19:31:19,927 - notificationa6cf977a654c - ERROR - MongoDB error: local variable 'sender' referenced before assignment
+2026-08-12 19:31:26,170 - notificationa6cf977a654c - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-08-12 19:31:26,171 - notificationa6cf977a654c - INFO - Starting Notification Service
+2026-08-12 19:31:26,171 - notificationa6cf977a654c - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-08-12 19:31:26,387 - notificationa6cf977a654c - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-08-12 19:31:26,388 - notificationa6cf977a654c - INFO - NotificationUtils initialised
+2026-08-12 19:31:26,388 - notificationa6cf977a654c - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-08-12 19:31:26,388 - notificationa6cf977a654c - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-08-12 19:31:26,493 - notificationa6cf977a654c - INFO - MongoDB connected | db=Aksha
+2026-08-12 19:31:26,493 - notificationa6cf977a654c - INFO - notif_setup_email | reading Resource collection
+2026-08-12 19:31:26,510 - notificationa6cf977a654c - INFO - Email config loaded | recipients=['your_actual_email@example.com'] | sender=your_actual_email@example.com
+2026-08-12 19:31:27,960 - notificationa6cf977a654c - WARNING - Could not download keys.yaml: The specified blob does not exist.
+RequestId:9d7880ad-001e-0044-3263-2a1040000000
+Time:2026-08-12T14:01:26.9152859Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:9d7880ad-001e-0044-3263-2a1040000000
+Time:2026-08-12T14:01:26.9152859Z</Message></Error>
+2026-08-12 19:31:27,961 - notificationa6cf977a654c - INFO - threadId read from app.config: 19f8e7ef6b77a459
+2026-08-12 19:31:27,962 - notificationa6cf977a654c - INFO - notif_setup_telegram | service_status=True
+2026-08-12 19:31:27,964 - notificationa6cf977a654c - INFO - Telegram service configured | chat_ids=[]
+2026-08-12 19:31:27,964 - notificationa6cf977a654c - INFO - Notification setup complete | recipients=1 | sender=your_actual_email@example.com | threadId=19f8e7ef6b77a459 | telegram_service_status=True
+2026-08-12 19:31:27,964 - notificationa6cf977a654c - INFO - Notification worker pool ready | workers=8 | queue_maxsize=50
+2026-08-12 19:31:27,965 - notificationa6cf977a654c - INFO - _poll_kafka task created — entering message dispatch loop
+2026-08-12 19:31:27,965 - notificationa6cf977a654c - INFO - _poll_kafka started | input_topic=notification_service | queue_maxsize=50

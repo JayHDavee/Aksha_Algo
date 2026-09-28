@@ -1,0 +1,13 @@
+# numpy pinned to 1.24.x — last series compatible with onnxruntime-gpu 1.19 on Python 3.10
+numpy==1.24.4
+kafka-python==2.0.2
+# scikit-image provides structural_similarity for the SSIM prefilter fallback path
+scikit-image==0.21.0
+requests==2.32.3
+pymongo==4.6.0
+fastapi==0.111.0
+uvicorn==0.30.1
+# PyTurboJPEG wraps libturbojpeg (installed via apt) for ~3× faster JPEG encoding than cv2
+PyTurboJPEG==1.7.1
+# onnx needed for _patch_topk_negative_axis; onnxruntime-gpu installed separately (CUDA 12 feed)
+onnx>=1.14.0

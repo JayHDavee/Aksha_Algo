@@ -1,0 +1,24 @@
+2026-07-29 18:54:45,301 - notification845be334abf2 - INFO - Notification service starting | KAFKA=broker:9092 | MONGODB_URI=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | main_dir=/Aksha | WORKER_COUNT=8 | QUEUE_MAXSIZE=50
+2026-07-29 18:54:45,302 - notification845be334abf2 - INFO - Starting Notification Service
+2026-07-29 18:54:45,303 - notification845be334abf2 - INFO - Creating Kafka producer and consumer | server=broker:9092 | input_topic=notification_service
+2026-07-29 18:54:45,528 - notification845be334abf2 - INFO - Connected to Kafka successfully | input=notification_service | output=notification_results
+2026-07-29 18:54:45,553 - notification845be334abf2 - INFO - NotificationUtils initialised
+2026-07-29 18:54:45,553 - notification845be334abf2 - INFO - NotificationUtils created | whatsapp=False | telegram=True | slack=False
+2026-07-29 18:54:45,553 - notification845be334abf2 - INFO - Read threadId from config: 19f8e7ef6b77a459
+2026-07-29 18:54:50,265 - notification845be334abf2 - INFO - MongoDB connected | db=Aksha
+2026-07-29 18:54:50,265 - notification845be334abf2 - INFO - notif_setup_email | reading Resource collection
+2026-07-29 18:54:50,367 - notification845be334abf2 - INFO - Email config loaded | recipients=['anvay011006@gmail.com'] | sender=anvay011006@gmail.com
+2026-07-29 18:54:50,982 - notification845be334abf2 - WARNING - Could not download keys.yaml: The specified blob does not exist.
+RequestId:f9fe3e9d-a01e-0000-025d-1f9a7f000000
+Time:2026-07-29T13:24:50.4690239Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:f9fe3e9d-a01e-0000-025d-1f9a7f000000
+Time:2026-07-29T13:24:50.4690239Z</Message></Error>
+2026-07-29 18:54:50,984 - notification845be334abf2 - INFO - threadId read from app.config: 19f8e7ef6b77a459
+2026-07-29 18:54:50,984 - notification845be334abf2 - INFO - notif_setup_telegram | service_status=True
+2026-07-29 18:54:50,988 - notification845be334abf2 - INFO - Telegram service configured | chat_ids=[]
+2026-07-29 18:54:50,988 - notification845be334abf2 - INFO - Notification setup complete | recipients=1 | sender=anvay011006@gmail.com | threadId=19f8e7ef6b77a459 | telegram_service_status=True
+2026-07-29 18:54:50,988 - notification845be334abf2 - INFO - Notification worker pool ready | workers=8 | queue_maxsize=50
+2026-07-29 18:54:50,988 - notification845be334abf2 - INFO - _poll_kafka task created — entering message dispatch loop
+2026-07-29 18:54:50,989 - notification845be334abf2 - INFO - _poll_kafka started | input_topic=notification_service | queue_maxsize=50

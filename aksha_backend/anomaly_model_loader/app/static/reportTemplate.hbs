@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Report</title>
+    <style type="text/css">
+      * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family:
+      Arial, sans-serif; background-color: #f4f4f4; color: #333; } .container {
+      margin: 0 auto; padding: 20px; background-color: white;
+      border-radius: 8px}
+      .report-header { display: flex; justify-content: space-between;
+      align-items: center; margin-bottom: 20px; } .logo { width: 200px; /*
+      Adjust logo size */ height: auto; } h1 { font-size: 2rem; text-align:
+      center; flex-grow: 1; color: black; } .report-date { font-size: 1rem;
+      color: #777; text-align: right; } .camera-report, .graph-section { margin:
+      20px 0; } h2 { font-size: 1.5rem; margin-bottom: 10px; color: #444; }
+      table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+      table th, table td { border: 1px solid #555; /* Darker border */ padding:
+      10px; text-align: left; } table th { background-color: #f4f4f4; color:
+      black; } table td { background-color: #fff; } .graph-section canvas {
+      width: 100%; height: auto; } footer { text-align: center; margin-top:
+      20px; } footer p { font-size: 0.8rem; color: #777; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="report-header">
+        <img src="data:image/png;base64,{{akshalogo}}" alt="Logo" class="logo" />
+        <h1>Daily Report</h1>
+        <p class="report-date">{{reportDate}}</p>
+      </header>
+
+      <section class="camera-report">
+        <h2>Camera Object Class Count</h2>
+        <table id="cameraTable">
+          <thead>
+            <tr>
+              <th rowspan="2">Date</th>
+              {{#each cameraHeaders}}
+                <th colspan="{{colspan}}">{{camera}}</th>
+              {{/each}}
+            </tr>
+            <tr>
+              {{#each cameraHeaders}}
+                {{#each objectClasses}}
+                  <th>{{this}}</th>
+                {{/each}}
+              {{/each}}
+            </tr>
+          </thead>
+          <tbody>
+            {{#each tableRows}}
+              <tr>
+                <td>{{date}}</td>
+                {{#each rowData}}
+                  <td>{{this}}</td>
+                {{/each}}
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </section>
+
+      <section class="graph-section">
+        <h2>Graph</h2>
+        <img id="graphImage" src="data:image/png;base64,{{graphBase64}}" alt="Graph Image" />
+      </section>
+
+      <footer>
+        <p>&copy; 2024, Aksha</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: controller
+  namespace: version201
+  labels:
+    app: controller
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: controller
+
+  template:
+    metadata:
+      labels:
+        app: controller
+
+    spec:
+      serviceAccountName: controller-sa
+
+      containers:
+      - name: controller
+        image: dockerhubalgo/controller-kube:24072026-2
+        imagePullPolicy: Always
+
+        ports:
+        - containerPort: 4000
+
+        env:
+        - name: KAFKA_BOOTSTRAP_SERVERS
+          value: aksha-kafka-kafka-bootstrap.kafka.svc.cluster.local:9092
+
+        - name: MONGODB_URI
+          value: mongodb://mongo:mongo@mongodb:27017/Aksha?authSource=admin&replicaSet=rs0
+
+        - name: AKSHA_PATH
+          value: /backend/Aksha
+
+        - name: AKSHA_PVC_NAME
+          value: aksha-pvc
+
+        - name: K8S_NAMESPACE
+          value: version201
+
+        - name: GPU_NODE_NAME
+          value: algo40
+
+        - name: MAX_BATCHES_PER_GPU_NODE
+          value: "0"
+
+        - name: AUTO_REBALANCE
+          value: "false"
+
+        - name: TZ
+          value: Asia/Kolkata
+
+        volumeMounts:
+        - name: aksha-storage
+          mountPath: /backend/Aksha
+
+      volumes:
+      - name: aksha-storage
+        persistentVolumeClaim:
+          claimName: aksha-pvc
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: controller
+  namespace: version201
+
+spec:
+  type: ClusterIP
+
+  selector:
+    app: controller
+
+  ports:
+    - port: 4000
+      targetPort: 4000

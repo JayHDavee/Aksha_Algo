@@ -1,0 +1,5 @@
+# opencv-python-headless: no GUI deps — saves ~50 MB vs full opencv-python in the container
+opencv-python-headless==4.10.0.84
+# onnxruntime CPU-only build — no CUDA dependency, works on any x86 host
+onnxruntime==1.19.2
+kafka-python==2.0.2

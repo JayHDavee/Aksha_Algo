@@ -1,0 +1,14 @@
+After-Hours Intrusion
+Counter Jump
+Loitering
+Restricted Area Entry
+Queue Buildup
+Occupancy Exceeded
+Showcase Left Open
+Cash Drawer Open
+Safe Door Open
+Camera Tampering
+Camera Offline
+Person Fall
+Bag Left Behind
+Face Concealment Indoors

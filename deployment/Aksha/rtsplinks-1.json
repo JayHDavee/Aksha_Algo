@@ -1,0 +1,315 @@
+{
+    "rtsp://algocam3:algo1234@192.168.1.155:554/stream2": {
+        "cam_name": "cam3-person-detection",
+        "rtsp_id": "3",
+        "running_status": true,
+        "batch_id": 1,
+        "source_id": 1
+    },
+    "rtsp://algocam4:algo1234@192.168.1.154:554/stream1": {
+        "cam_name": "cam4-helmet-detection",
+        "rtsp_id": "4",
+        "running_status": false,
+        "batch_id": 1
+    },
+    "rtsp://192.168.1.74:8554/test1": {
+        "cam_name": "test1",
+        "rtsp_id": "5",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test2": {
+        "cam_name": "test2",
+        "rtsp_id": "6",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test3": {
+        "cam_name": "test3",
+        "rtsp_id": "7",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test4": {
+        "cam_name": "test4",
+        "rtsp_id": "8",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test5": {
+        "cam_name": "test5",
+        "rtsp_id": "9",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test6": {
+        "cam_name": "test6",
+        "rtsp_id": "10",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test7": {
+        "cam_name": "test7",
+        "rtsp_id": "11",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test8": {
+        "cam_name": "test8",
+        "rtsp_id": "12",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test9": {
+        "cam_name": "test9",
+        "rtsp_id": "13",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test10": {
+        "cam_name": "test10",
+        "rtsp_id": "14",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test11": {
+        "cam_name": "test11",
+        "rtsp_id": "15",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test12": {
+        "cam_name": "test12",
+        "rtsp_id": "16",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test13": {
+        "cam_name": "test13",
+        "rtsp_id": "17",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test14": {
+        "cam_name": "test14",
+        "rtsp_id": "18",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test15": {
+        "cam_name": "test15",
+        "rtsp_id": "19",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test16": {
+        "cam_name": "test16",
+        "rtsp_id": "20",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test17": {
+        "cam_name": "test17",
+        "rtsp_id": "21",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test18": {
+        "cam_name": "test18",
+        "rtsp_id": "22",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test19": {
+        "cam_name": "test19",
+        "rtsp_id": "23",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test20": {
+        "cam_name": "test20",
+        "rtsp_id": "24",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test21": {
+        "cam_name": "test21",
+        "rtsp_id": "25",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test22": {
+        "cam_name": "test22",
+        "rtsp_id": "26",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test23": {
+        "cam_name": "test23",
+        "rtsp_id": "27",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test24": {
+        "cam_name": "test24",
+        "rtsp_id": "28",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test25": {
+        "cam_name": "test25",
+        "rtsp_id": "29",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test26": {
+        "cam_name": "test26",
+        "rtsp_id": "30",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test27": {
+        "cam_name": "test27",
+        "rtsp_id": "31",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test28": {
+        "cam_name": "test28",
+        "rtsp_id": "32",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test29": {
+        "cam_name": "test29",
+        "rtsp_id": "33",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test30": {
+        "cam_name": "test30",
+        "rtsp_id": "34",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test31": {
+        "cam_name": "test31",
+        "rtsp_id": "35",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test32": {
+        "cam_name": "test32",
+        "rtsp_id": "36",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test33": {
+        "cam_name": "test33",
+        "rtsp_id": "37",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test34": {
+        "cam_name": "test34",
+        "rtsp_id": "38",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test35": {
+        "cam_name": "test35",
+        "rtsp_id": "39",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test36": {
+        "cam_name": "test36",
+        "rtsp_id": "40",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test37": {
+        "cam_name": "test37",
+        "rtsp_id": "41",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test38": {
+        "cam_name": "test38",
+        "rtsp_id": "42",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test39": {
+        "cam_name": "test39",
+        "rtsp_id": "43",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test40": {
+        "cam_name": "test40",
+        "rtsp_id": "44",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test41": {
+        "cam_name": "test41",
+        "rtsp_id": "45",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test42": {
+        "cam_name": "test42",
+        "rtsp_id": "46",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test43": {
+        "cam_name": "test43",
+        "rtsp_id": "47",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test44": {
+        "cam_name": "test44",
+        "rtsp_id": "48",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test45": {
+        "cam_name": "test45",
+        "rtsp_id": "49",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test46": {
+        "cam_name": "test46",
+        "rtsp_id": "50",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test47": {
+        "cam_name": "test47",
+        "rtsp_id": "51",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test48": {
+        "cam_name": "test48",
+        "rtsp_id": "52",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test49": {
+        "cam_name": "test49",
+        "rtsp_id": "53",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test50": {
+        "cam_name": "test50",
+        "rtsp_id": "54",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test51": {
+        "cam_name": "test51",
+        "rtsp_id": "55",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test52": {
+        "cam_name": "test52",
+        "rtsp_id": "56",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test53": {
+        "cam_name": "test53",
+        "rtsp_id": "57",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test54": {
+        "cam_name": "test54",
+        "rtsp_id": "58",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test55": {
+        "cam_name": "test55",
+        "rtsp_id": "59",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test56": {
+        "cam_name": "test56",
+        "rtsp_id": "60",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test57": {
+        "cam_name": "test57",
+        "rtsp_id": "61",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test58": {
+        "cam_name": "test58",
+        "rtsp_id": "62",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test59": {
+        "cam_name": "test59",
+        "rtsp_id": "63",
+        "running_status": false
+    },
+    "rtsp://192.168.1.74:8554/test60": {
+        "cam_name": "test60",
+        "rtsp_id": "64",
+        "running_status": false
+    }
+}

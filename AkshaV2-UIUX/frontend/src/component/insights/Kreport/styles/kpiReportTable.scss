@@ -1,0 +1,73 @@
+
+.kpi-table-wrapper {
+    width: 100%;
+    overflow-x: auto;   
+    padding: 20px 0;
+  }
+  .kpi-report-table-container {
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 0;
+  }
+  
+  /* MAIN TABLE */
+  .kpi-table {
+    width: 98%;
+    margin: 0px auto;
+    border-collapse: collapse;
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    overflow: visible;
+    box-shadow: var(--shadow-md);
+
+    th {
+      padding: 12px 14px;
+      background: var(--color-table-header);
+      color: var(--color-table-header-text);
+      font-weight: 600;
+      text-align: left;
+      border-bottom: 2px solid var(--color-table-header-border);
+    }
+
+    td {
+      padding: 10px 14px;
+      border: 1px solid var(--color-border);
+      vertical-align: middle;
+      font-size: 14px;
+    }
+
+    .camera-row {
+      background-color: #fafbfd;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .camera-row:hover {
+      background-color: var(--color-primary-soft);
+    }
+
+    .frame-row {
+      background: var(--color-surface);
+    }
+
+    .image-link {
+      color: var(--color-primary);
+      font-weight: 500;
+      text-decoration: underline;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .image-link:hover {
+      color: var(--color-primary-dark);
+    }
+  }
+  /* FULL-SCREEN MODAL IMAGE OVERRIDE */
+  .modal-image {
+    width: 95vw !important;
+    height: 95vh !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+  

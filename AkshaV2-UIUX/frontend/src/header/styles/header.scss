@@ -1,0 +1,226 @@
+/* Typography and Icons */
+.userName {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.icon-styled {
+  font-size: 15px;
+}
+
+.anchor-style {
+  color: #000;
+}
+
+a.anchor-style:focus,
+a.anchor-style:hover {
+  color: inherit !important;
+  background: inherit !important;
+}
+
+/* Images */
+.user-manual-img {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  padding: 7px;
+  box-sizing: content-box;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
+}
+
+/* Camera-directory header icon — a boxicons glyph (not a raster image) so it
+   stays crisp at this size and matches the line-icon weight used everywhere
+   else (table row actions, help icon) instead of the old busy multi-shape PNG. */
+.setting-icon-style {
+  width: 37px;
+  height: 37px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--color-text);
+  cursor: pointer;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
+}
+
+.logo-chip {
+  display: inline-flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 4px 10px;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.aksha-logo-img {
+  // The source image is a 1:1 square (icon + wordmark stacked inside it) —
+  // equal width/height keeps it undistorted instead of squashing it into
+  // a wide rectangle.
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: block;
+}
+
+/* Layout */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 20px;
+}
+
+.setting-active-link {
+  position: relative;
+  height: 2px;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: var(--radius-pill);
+  background: #ffffff;
+  top: 40px;
+}
+
+.pdf-outer-style {
+  min-height: 500px;
+}
+
+.user-profile-dropdown {
+  background-color: rgba(255, 255, 255, 0.94);
+  padding: 4px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s ease;
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+  }
+}
+
+.profile-model-custom {
+  padding: 0 !important;
+  min-width: 100% !important;
+}
+
+.flex-main-info-custom {
+  margin-top: 0 !important;
+  display: block !important;
+}
+
+.admin-login-custom {
+  color: #000 !important;
+}
+
+.btn-reset-pass-custom {
+  max-width: 144px !important;
+}
+
+/* Header Layout */
+.headerCls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row !important;
+  width: 100% !important;
+  padding-right: 15px;
+  padding-left: 16px;
+}
+
+.headerCls.objectOfInterest {
+  width: 92%;
+}
+
+/* Green Tick */
+.green-teek {
+  height: 25px;
+  width: 25px;
+  left: 38.2%;
+  top: 2px;
+  text-align: center;
+  display: inline;
+  padding: 2px 5px 5px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.green-teek:hover {
+  overflow: visible;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+}
+
+/* Responsive Breakpoints */
+@media only screen and (min-width: 360px) and (max-width: 799px) and (orientation: portrait) {
+  .headerCls {
+    padding-right: 8px;
+  }
+
+  .green-teek {
+    width: fit-content;
+    height: fit-content;
+    left: 6.2% !important;
+    padding: 5px;
+  }
+
+  .css-vg8xv8-MuiButtonBase-root-MuiIconButton-root {
+    display: flex;
+    max-width: 60px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) and (orientation: portrait) {
+  .css-1kwt6pw-MuiPaper-root-MuiAppBar-root {
+    width: 100% !important;
+  }
+
+  .green-teek {
+    left: 57% !important;
+    padding: 7px;
+    top: 3px;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+  .green-teek {
+    left: 36.2% !important;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1535px) {
+  .green-teek {
+    left: 39.2% !important;
+    padding: 7px;
+    top: 12px;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+  .green-teek {
+    left: 39.2% !important;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 1990px) {
+  .green-teek {
+    left: 40.2% !important;
+  }
+}

@@ -1,0 +1,142 @@
+/* ---------------- MODAL CLOSE BUTTON ---------------- */
+
+.add-camera-modal .ant-modal-close {
+    right: 1.5rem;
+    top: 1.4rem;
+    background: #0a57eb;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.add-camera-modal .anticon-close {
+    color: #fff;
+    position: relative;
+    top: -4px;
+}
+
+.add-camera-modal .ant-modal-close-x {
+    width: 44px !important;
+    height: 44px !important;
+}
+
+
+/* ---------------- SCROLLBAR ---------------- */
+
+.camera-list-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.camera-list-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.camera-list-scroll::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+    border-radius: 20px;
+}
+
+.camera-list-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* ---------------- FORM WRAPPER FIX ---------------- */
+
+.add-camera-step-form {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+
+/* ---------------- STEP ITEMS ---------------- */
+
+.add-camera-step-form .step-items {
+    display: inline-flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* ---------------- GREEN INDICATOR FIX ---------------- */
+
+/* parent of green-teek should be step-item */
+.step-item {
+    position: relative;
+}
+
+.green-teek {
+    height: 16px;
+    width: 16px;
+    background: red;
+    position: absolute;
+    top: 6px;
+    right: -6px;
+    /* relative to step */
+    border-radius: 50%;
+    z-index: 1025;
+    left: auto;
+}
+
+
+/* ---------------- MODAL Z INDEX ---------------- */
+
+.ant-modal-wrap {
+    z-index: 1335 !important;
+}
+
+
+/* ---------------- RIGHT CONTENT ---------------- */
+
+@media only screen and (min-width: 800px) {
+    .right-content.camera {
+        margin-top: 15px !important;
+    }
+}
+
+
+/* ---------------- MOBILE FIXES ---------------- */
+
+@media only screen and (max-width: 600px) {
+
+    .add-camera-step-form .step-items {
+        margin-top: 29px !important;
+    }
+
+    .green-teek {
+        top: 3px;
+        right: -4px;
+    }
+}
+
+
+/* ---------------- TABLET BREAKPOINT ---------------- */
+
+@media only screen and (min-width: 768px) and (max-width: 850px) {
+
+    .green-teek {
+        top: 4px;
+        right: -5px;
+    }
+}
+
+
+/* ---------------- LARGE SCREENS ---------------- */
+
+@media only screen and (min-width: 1600px) {
+
+    .add-camera-step-form {
+        max-width: 1400px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .add-camera-step-form {
+        max-width: 1000px;
+    }
+}

@@ -1,0 +1,43 @@
+# nvinfer primary GIE config — YOLOv10 TRT FP16
+# DeepStream 8.0 / RTX 3050 (Ampere sm86)
+#
+# Engine is built on first run (~3-4 min) and cached. Subsequent starts load instantly.
+# DS 8.0 auto-generates the engine filename from the ONNX name: yolov10.onnx_b10_gpu0_fp16.engine
+# model-engine-file must match this auto-generated name or DS will rebuild every restart.
+
+[property]
+gpu-id=0
+net-scale-factor=0.0039215697906911373
+
+onnx-file=/Aksha/trt_cache/yolov10.onnx
+model-engine-file=/Aksha/trt_cache/yolov10.onnx_b10_gpu0_fp16.engine
+
+labelfile-path=/code/app/coco.names
+
+# batch-size=10: each pod handles 10 cameras (MAX_CAMERAS=10 in docker-compose).
+# TRT allocates workspace for the max batch — batch=10 uses ~300-500MB vs ~2GB for batch=40.
+# Leaving enough VRAM for NVDEC decoder buffer pools (each camera ~100MB on RTX 3050).
+# batched-push-timeout on nvstreammux fires inference even when batch is not full.
+batch-size=10
+
+# network-mode=2: FP16 — Tensor Cores on Ampere/Turing GPUs.
+# Switch to 1 for FP32 only if detection quality degrades on a specific model.
+network-mode=2
+
+num-detected-classes=80
+
+# interval=0: run inference on every frame reaching nvinfer.
+# Frame rate is throttled upstream by nvurisrcbin drop-frame-interval.
+interval=0
+
+gie-unique-id=1
+
+# output-tensor-meta=1: expose raw tensor output as NvDsInferTensorMeta user metadata.
+# Required by _parse_tensors() in main.py to read YOLOv10 [N,300,6] output.
+output-tensor-meta=1
+
+process-mode=1
+network-type=100
+
+[class-attrs-all]
+threshold=0.35

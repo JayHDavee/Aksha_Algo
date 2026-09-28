@@ -1,0 +1,33 @@
+.object-of-interest-outer-wrapper {
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 145px;
+  }
+  li {
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 600ms;
+  }
+  li:hover {
+    background-color: var(--color-primary-tint);
+  }
+  li.active {
+    background-color: var(--color-primary-tint);
+    color: var(--color-primary-dark);
+    font-weight: 600;
+  }
+  p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .model-radius .MuiPaper-rounded {
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    overflow-y: scroll ! important;
+    height: 350px;
+  }
+}

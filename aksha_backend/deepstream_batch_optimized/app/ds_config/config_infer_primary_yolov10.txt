@@ -1,0 +1,35 @@
+# nvinfer primary GIE config for YOLOv10 TRT FP16 inference.
+# Used by DeepStreamBatchService._build_pipeline() via pgie.set_property("config-file-path", ...).
+# TRT engine is built on first run and cached at model-engine-file path — subsequent starts are fast.
+
+[property]
+gpu-id=0
+net-scale-factor=0.0039215697906911373
+
+onnx-file=/Aksha/trt_cache/yolov10.onnx
+model-engine-file=/Aksha/trt_cache/yolov10.onnx_b16_gpu0_fp16.engine
+
+labelfile-path=/code/app/coco.names
+
+# batch-size=16: 6 pods × 10 cams × 3fps × 300ms = ~9 frames/batch — fits within 16.
+# workspace ~256MB vs 1GB for batch=64 — no contiguous allocation OOM on RTX 2070.
+# 6 pods × ~500MB each = ~3GB total — plenty of headroom in 8GB VRAM.
+batch-size=16
+
+# network-mode=2: FP16 — Tensor Cores on Turing/Ampere+ GPUs.
+# Set to 1 for FP32 on older GPUs without FP16.
+network-mode=2
+
+num-detected-classes=80
+
+# interval=0: infer on every frame reaching nvinfer.
+# Frame rate is controlled by nvurisrcbin drop-frame-interval upstream.
+interval=0
+
+gie-unique-id=1
+output-tensor-meta=1
+process-mode=1
+network-type=100
+
+[class-attrs-all]
+threshold=0.35

@@ -1,0 +1,17 @@
+db.alerts.find({ alert_type: "PPE_VIOLATION" }).sort({ _id: -1 }).limit(1).pretty()
+use Aksha
+db.alerts.getIndexes()
+db.config.find({ Camera_Name: "ppe_test_cam1" }).pretty()
+db.Resource.find().pretty()
+use Aksha
+db.alerts.createIndex({ alert_type: 1, status: 1 })
+db.alerts.createIndex({ alert_type: 1, severity: 1 })
+db.alerts.createIndex({ alert_type: 1, cam_name: 1 })
+db.alerts.createIndex({ alert_type: 1, timestamp: -1 })
+db.config.insertOne({ rtsp_id: 101, Rtsp_Link: 'rtsp://192.168.1.73:8554/test1', Camera_Name: 'ppe_test_cam1', Description: 'PPE Test Camera 1', Feature: ['Live'], Priority: 'High', Status: 'creating', Email_Auto_Alert: false, Display_Auto_Alert: false, Email_Alert: false, Display_Alert: false, FPS: 1, Alerts: [], Active: true, Live: true, Surveillance_Status: 'start', PausedTime: 'null', group_id: 0, createdAt: new Date(), updatedAt: new Date(), __v: 0 })
+db.Resource.find().pretty()
+db.Resource.insertOne({ notification_email: ["anvay011006@gmail.com"], username: "default", new_email: "anvay011006@gmail.com" })
+db.Resource.deleteMany({})
+db.Resource.find().pretty()
+db.Resource.insertOne({ notification_email: ["your_actual_email@example.com"], username: "default", new_email: "your_actual_email@example.com" })
+use Aksha

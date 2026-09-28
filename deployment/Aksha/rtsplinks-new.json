@@ -1,0 +1,198 @@
+{
+    "rtsp://dheeraj.kumar:Sharada2024@192.168.1.243:554/Streaming/Channels/101": {
+        "cam_name": "cam1",
+        "rtsp_id": "1",
+        "batch_id": 1,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://dheeraj.kumar:Sharada2024@192.168.1.243:554/Streaming/Channels/102": {
+        "cam_name": "cam1-1",
+        "rtsp_id": "15",
+        "batch_id": 2,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://dheeraj.kumar:Sharada2024@192.168.1.243:554/Streaming/Channels/201": {
+        "cam_name": "cam2",
+        "rtsp_id": "2",
+        "batch_id": 3,
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://dheeraj.kumar:Sharada2024@192.168.1.243:554/Streaming/Channels/202": {
+        "cam_name": "cam2-1",
+        "rtsp_id": "16",
+        "batch_id": 4,
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://dheeraj.kumar:Sharada2024@192.168.1.243:554/Streaming/Channels/301": {
+        "cam_name": "cam3",
+        "rtsp_id": "3",
+        "batch_id": 5,
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://dheeraj.kumar:Sharada2024@192.168.1.243:554/Streaming/Channels/302": {
+        "cam_name": "cam3-1",
+        "rtsp_id": "17",
+        "batch_id": 6,
+        "running_status": false,
+        "FPS": 5.0
+    },
+    "rtsp://dheeraj.kumar:Sharada2024@192.168.1.243:554/Streaming/Channels/401": {
+        "cam_name": "cam4",
+        "rtsp_id": "4",
+        "batch_id": 7,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://dheeraj.kumar:Sharada2024@192.168.1.243:554/Streaming/Channels/402": {
+        "cam_name": "cam4-1",
+        "rtsp_id": "18",
+        "batch_id": 8,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://dheeraj.kumar:Sharada2024@192.168.1.243:554/Streaming/Channels/501": {
+        "cam_name": "cam5",
+        "rtsp_id": "5",
+        "batch_id": 9,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://dheeraj.kumar:Sharada2024@192.168.1.243:554/Streaming/Channels/502": {
+        "cam_name": "cam5-1",
+        "rtsp_id": "19",
+        "batch_id": 10,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://dheeraj.kumar:Sharada2024@192.168.1.243:554/Streaming/Channels/601": {
+        "cam_name": "cam6",
+        "rtsp_id": "6",
+        "batch_id": 1,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://dheeraj.kumar:Sharada2024@192.168.1.243:554/Streaming/Channels/602": {
+        "cam_name": "cam6-1",
+        "rtsp_id": "20",
+        "batch_id": 2,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/101": {
+        "cam_name": "cam1260",
+        "rtsp_id": "7",
+        "batch_id": 3,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/102": {
+        "cam_name": "cam1260-1",
+        "rtsp_id": "21",
+        "batch_id": 4,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/201": {
+        "cam_name": "cam1261",
+        "rtsp_id": "8",
+        "batch_id": 5,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/202": {
+        "cam_name": "cam1261-1",
+        "rtsp_id": "22",
+        "batch_id": 6,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/301": {
+        "cam_name": "cam1262",
+        "rtsp_id": "9",
+        "batch_id": 7,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/302": {
+        "cam_name": "cam1262-1",
+        "rtsp_id": "23",
+        "batch_id": 8,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/401": {
+        "cam_name": "cam1263",
+        "rtsp_id": "10",
+        "batch_id": 9,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/402": {
+        "cam_name": "cam1263-1",
+        "rtsp_id": "24",
+        "batch_id": 10,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/501": {
+        "cam_name": "cam1264",
+        "rtsp_id": "11",
+        "batch_id": 1,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/502": {
+        "cam_name": "cam1264-1",
+        "rtsp_id": "25",
+        "batch_id": 2,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/601": {
+        "cam_name": "cam1265",
+        "rtsp_id": "12",
+        "batch_id": 3,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/602": {
+        "cam_name": "cam1265-1",
+        "rtsp_id": "26",
+        "batch_id": 4,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/701": {
+        "cam_name": "cam1266",
+        "rtsp_id": "13",
+        "batch_id": 5,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/702": {
+        "cam_name": "cam1266-1",
+        "rtsp_id": "27",
+        "batch_id": 6,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/801": {
+        "cam_name": "cam1267",
+        "rtsp_id": "14",
+        "batch_id": 7,
+        "running_status": true,
+        "FPS": 5.0
+    },
+    "rtsp://admin:Sharada%242024@192.168.1.242:554/Streaming/Channels/802": {
+        "cam_name": "cam1267-1",
+        "rtsp_id": "28",
+        "batch_id": 8,
+        "running_status": true,
+        "FPS": 5.0
+    }
+}

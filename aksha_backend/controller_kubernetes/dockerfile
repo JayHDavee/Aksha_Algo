@@ -1,0 +1,28 @@
+FROM python:3.10-slim-bullseye
+
+# Install system dependencies for OpenCV, FFmpeg, Cairo, etc.
+RUN apt-get update && apt-get install -y \
+    ffmpeg \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgl1-mesa-glx \
+    libgomp1 \
+    libcairo2 \
+    libpango-1.0-0 \
+    libpangocairo-1.0-0 \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /usr/src/app
+
+# Upgrade pip first
+RUN pip install --upgrade pip
+
+COPY requirements.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+EXPOSE 4000
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "4000"]

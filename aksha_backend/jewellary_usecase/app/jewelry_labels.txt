@@ -1,0 +1,13 @@
+person
+supine person
+helmet
+no_helmet
+car
+bicycle
+truck
+motorbike
+backpack
+handbag
+gate_open
+gate_closed
+fork_lift

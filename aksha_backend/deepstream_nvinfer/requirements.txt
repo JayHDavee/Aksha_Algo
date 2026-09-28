@@ -1,0 +1,13 @@
+# numpy: 1.26.x — required for Python 3.12 (DS 8.0 base); 1.24.x does not support Python 3.12
+numpy==1.26.4
+# kafka-python 2.0.2 breaks on Python 3.12 (kafka.vendor.six.moves removed)
+# kafka-python-ng is the maintained fork with Python 3.12 support, same API
+kafka-python-ng==2.2.3
+requests==2.32.3
+pymongo==4.6.0
+fastapi==0.111.0
+uvicorn==0.30.1
+# PyTurboJPEG wraps libturbojpeg (installed via apt) for faster JPEG encoding than cv2
+PyTurboJPEG==1.7.1
+# onnx: only needed by patch_models.py at image build time (TopK axis fix for TRT)
+onnx>=1.14.0

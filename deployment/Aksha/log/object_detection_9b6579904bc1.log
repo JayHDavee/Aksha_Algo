@@ -1,0 +1,4 @@
+2026-07-14 08:52:56,385 - object_detection_9b6579904bc1 - INFO - [STARTUP] KAFKA_BOOTSTRAP_SERVERS=broker:9092 in_docker=True
+2026-07-14 08:52:56,622 - object_detection_9b6579904bc1 - INFO - [STARTUP] partitions_assigned=set()
+2026-07-14 08:52:56,623 - object_detection_9b6579904bc1 - INFO - [MODEL] loading yolov10.onnx
+2026-07-14 08:52:56,794 - object_detection_9b6579904bc1 - INFO - [MODEL] loaded ok provider=CPU

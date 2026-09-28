@@ -1,0 +1,63 @@
+.range-picker-search-bar .rdrDefinedRangesWrapper {
+  display: none;
+}
+
+.range-picker-search-bar span.rdrMonthAndYearPickers {
+  display: none;
+}
+
+.range-picker-search-bar .rdrMonthName {
+  text-align: center;
+}
+
+.range-picker-search-bar .rdrNextPrevButton,
+.range-picker-search-bar .rdrNextPrevButton:hover {
+  background-color: transparent;
+}
+
+.range-picker-search-bar .rdrMonthAndYearWrapper {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  left: 10%;
+}
+
+.range-picker-search-bar .rdrEndEdge,
+.range-picker-search-bar .rdrStartEdge {
+  background: var(--color-primary);
+  border-radius: var(--radius-pill);
+  z-index: 1;
+}
+
+.range-picker-search-bar .rdrDayNumber {
+  z-index: 1;
+}
+
+.range-picker-search-bar .rdrInRange {
+  background-color: var(--color-primary-tint);
+  color: var(--color-primary-dark);
+}
+
+.range-picker-search-bar .rdrDay:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span {
+  color: var(--color-primary-dark);
+}
+
+.range-picker-search-bar span.rdrInRange::before {
+  content: " ";
+  background: var(--color-primary-tint);
+  position: relative;
+  left: -8px;
+  padding-top: 14px;
+  padding-bottom: 3px;
+  padding-left: 14px;
+  padding-right: 64px;
+  z-index: 0;
+}
+
+.range-picker-search-bar .rdrDayPassive {
+  visibility: hidden;
+}
+
+.range-picker-search-bar .rdrCalendarWrapper {
+  font-size: 15px;
+}

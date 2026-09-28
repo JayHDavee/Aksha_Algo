@@ -1,0 +1,97 @@
+# DeepStream 6.3 optimized batch inference service
+# Base image: NVIDIA DeepStream 6.3 with Triton Inference Server + CUDA 12 + GStreamer + nvinfer
+# Adds: pyds Python bindings, CUDA-enabled OpenCV 4.10 (built from source), libturbojpeg
+# Key upgrade over deepstream_batch: nvinfer TRT FP16 (C++) replaces Python ORT — 3-5× faster
+FROM nvcr.io/nvidia/deepstream:6.3-gc-triton-devel
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Kolkata
+# Pin timezone early so any package that reads /etc/localtime gets the right offset
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# System deps + build tools for CUDA OpenCV + libturbojpeg
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3-gi \
+    python3-gi-cairo \
+    gir1.2-gst-plugins-base-1.0 \
+    gir1.2-gstreamer-1.0 \
+    libglib2.0-0 \
+    libgl1 \
+    cmake \
+    git \
+    libpng-dev \
+    libjpeg-turbo8-dev \
+    libtiff-dev \
+    libeigen3-dev \
+    libturbojpeg-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Prepend CUDA libs so OpenCV's runtime CUDA calls resolve correctly
+ENV LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH}
+
+# Install pyds — DeepStream 6.3 Python bindings.
+# Pre-built wheel from NVIDIA: https://github.com/NVIDIA-AI-IOT/deepstream_python_apps
+# Version 1.1.8 matches DeepStream 6.3.
+# NOTE: cannot import pyds at build time — libcuda.so.1 is only available at runtime.
+RUN pip3 install --no-cache-dir \
+    https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/releases/download/v1.1.8/pyds-1.1.8-py3-none-linux_x86_64.whl
+
+# Build OpenCV 4.10.0 with CUDA for RTX 2070 (SM 7.5).
+# Cached by Docker — only rebuilds if the base image or the apt layer above changes.
+# CUDA_ARCH_BIN=7.5 only: smaller binary, faster build, fixed-GPU container needs no PTX fallback.
+# Disabled modules (calib3d, features2d, flann, ml, objdetect, photo, stitching, video, gapi):
+#   not used by this service — cuts build time and image size significantly.
+#   gapi is disabled specifically because it pulls in videoio as a transitive dep.
+# PYTHON3_PACKAGES_PATH is set explicitly — without it cmake may install cv2
+#   to a path that the container's Python interpreter does not search.
+RUN PYSITE=$(python3 -c "import site; print(site.getsitepackages()[0])") \
+    && git clone --depth=1 --branch 4.10.0 https://github.com/opencv/opencv.git /tmp/opencv \
+    && git clone --depth=1 --branch 4.10.0 https://github.com/opencv/opencv_contrib.git /tmp/opencv_contrib \
+    && cmake -B /tmp/opencv_build /tmp/opencv \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DOPENCV_EXTRA_MODULES_PATH=/tmp/opencv_contrib/modules \
+        -DWITH_CUDA=ON \
+        -DCUDA_ARCH_BIN="7.5" \
+        -DCUDA_ARCH_PTX="" \
+        -DWITH_CUDNN=OFF \
+        -DBUILD_opencv_python3=ON \
+        -DPYTHON3_EXECUTABLE=$(which python3) \
+        -DPYTHON3_PACKAGES_PATH="$PYSITE" \
+        -DBUILD_TESTS=OFF \
+        -DBUILD_PERF_TESTS=OFF \
+        -DBUILD_EXAMPLES=OFF \
+        -DBUILD_opencv_apps=OFF \
+        -DBUILD_opencv_calib3d=OFF \
+        -DBUILD_opencv_features2d=OFF \
+        -DBUILD_opencv_flann=OFF \
+        -DBUILD_opencv_ml=OFF \
+        -DBUILD_opencv_objdetect=OFF \
+        -DBUILD_opencv_photo=OFF \
+        -DBUILD_opencv_stitching=OFF \
+        -DBUILD_opencv_video=OFF \
+        -DBUILD_opencv_gapi=OFF \
+    && cmake --build /tmp/opencv_build -j$(nproc) \
+    && cmake --install /tmp/opencv_build \
+    && python3 -c "import cv2; print('cv2 OK:', cv2.__version__, '| CUDA devices:', cv2.cuda.getCudaEnabledDeviceCount())" \
+    && rm -rf /tmp/opencv /tmp/opencv_contrib /tmp/opencv_build
+
+WORKDIR /code
+
+COPY requirements.txt ./
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+# Copy application code and the TopK patch script
+# patch_models.py is run then removed — it must not persist in the final image
+COPY app/ ./app/
+COPY patch_models.py ./
+
+# Patch TopK axis=-1 → axis=1 in both ONNX models before nvinfer reads them.
+# TRT rejects negative axis values — same root cause as the ORT TRT EP issue.
+# Script is deleted after patching to keep the image clean.
+RUN python3 patch_models.py && rm patch_models.py
+
+# Copy application code last — this layer changes most often, keeping the
+# expensive OpenCV build and pip layers cached across development iterations
+EXPOSE 8080
+# Runs the FastAPI/uvicorn server directly (no shell wrapper needed)
+ENTRYPOINT ["python3", "app/main.py"]

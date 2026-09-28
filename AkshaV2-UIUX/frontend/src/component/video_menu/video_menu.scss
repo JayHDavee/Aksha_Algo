@@ -1,0 +1,46 @@
+.video_menu{
+    position: relative;
+
+    // Row of camera-tile actions (add alert, info, stop/start) pinned to
+    // the top-right corner of the tile.
+    .camera-tile-actions {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .add-alert-tile-btn,
+    .camera-info-btn,
+    .camera-stop-btn,
+    .camera-start-btn {
+        width: 32px;
+        height: 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.92);
+        color: var(--color-primary);
+        font-size: 18px;
+        cursor: pointer;
+        box-shadow: var(--shadow-sm);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+        &:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-1px);
+        }
+    }
+
+    .camera-stop-btn {
+        color: var(--color-danger);
+    }
+
+    .camera-start-btn {
+        color: var(--color-success);
+    }
+}

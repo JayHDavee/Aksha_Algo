@@ -1,0 +1,625 @@
+/*
+  Global Imports & Reset
+*/
+@use "bootstrap/scss/bootstrap";
+@use "./styles/tokens";
+@use "./styles/classyTable";
+@use "./styles/forms";
+@use "./styles/modals";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Inter", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-bg) !important;
+  color: var(--color-text);
+  padding: 0 !important;
+}
+
+body.removeScroll {
+  overflow: hidden !important;
+}
+
+body.remove-Y-Scroll {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+}
+
+/*
+  Modal Styling for Add Camera
+*/
+.alertbox-width {
+  // Was `overflow: hidden !important`, which clipped the step content
+  // (time pickers, Back/Save buttons) whenever it was taller than the
+  // modal — hiding it entirely instead of letting the modal scroll to it.
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.add-camera-modal {
+  // Right-sized dialog instead of the old near-fullscreen
+  // calc(100vw - 40px) treatment — this is a form/wizard modal
+  // (Add Alert, View Alert), not a full-page view.
+  max-width: min(1100px, 95vw);
+  margin: 24px auto;
+
+  .modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+    border: none;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+/*
+  Add Camera Step Form Styling
+*/
+.add-camera-step-form {
+  position: relative;
+  padding: 3px 0px;
+  margin-top: 0px;
+
+
+  .close-button i {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 24px;
+    background-color: var(--color-primary-tint);
+    color: var(--color-text);
+    padding: 3px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background-color: var(--color-danger-soft);
+      color: var(--color-danger);
+    }
+  }
+
+  .left-content {
+    padding-top: 0;
+
+
+    h2 {
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    span {
+      font-size: 17px;
+    }
+
+    .single-fleld {
+
+      select,
+      input,
+      textarea {
+        width: 60%;
+        padding: 5px 12px;
+        margin-bottom: 3px;
+        border: 1px solid #9d9d9d;
+        outline: none;
+
+      }
+
+      select {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      .selectallcameras-input {
+        width: 24px !important;
+        height: 24px !important;
+        margin-left: 1%;
+        margin-top: -5% !important;
+      }
+
+      .selectallcameras-label {
+        font-size: 16px !important;
+        position: relative !important;
+        top: -25px !important;
+      }
+    }
+  }
+
+  .NopersonAlert-label {
+    font-size: 16px !important;
+    position: relative !important;
+    top: 5px !important;
+  }
+
+  .selectedObjectofInter-input {
+    width: 24px !important;
+    height: 24px !important;
+    margin-left: 0.1%;
+  }
+
+  .step-items {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    // margin-bottom: 20px;
+
+    .item {
+      position: relative;
+      margin: 0 25px;
+
+      .icon {
+        padding: 9px 14px;
+        background: var(--color-surface);
+        border: 1px solid var(--color-border-strong);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: var(--color-text);
+        text-align: center;
+        margin: 0 auto 2px auto;
+        transition: background-color 0.15s ease, border-color 0.15s ease;
+
+        &.active {
+          background: var(--color-success);
+          border-color: var(--color-success);
+          color: #ffffff;
+        }
+      }
+
+      .line {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+        width: 70px;
+        height: 2px;
+        background-color: var(--color-border-strong);
+
+        &.active {
+          background-color: var(--color-success) !important;
+        }
+      }
+    }
+
+    .canceloutlined {
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .camera-name-label {
+    margin: 10px 0 0 0;
+    padding: 6px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--color-primary-soft);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    cursor: help;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background-color: var(--color-primary-tint);
+    }
+
+    b {
+      color: var(--color-text-muted);
+      font-weight: 600;
+    }
+
+    span {
+      color: var(--color-primary-dark);
+      font-weight: 600;
+    }
+  }
+
+  .img-edit-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+  }
+
+  .edit-buttom {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-primary);
+    background-color: var(--color-primary-soft);
+    border: 1px solid var(--color-primary-tint);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    &:hover {
+      background-color: var(--color-primary-tint);
+      box-shadow: var(--shadow-sm);
+    }
+  }
+
+  .alert-card {
+    border: 1px solid var(--color-border);
+    width: 100%;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+
+  }
+
+  .alert-header {
+    background-color: var(--color-primary-dark);
+    color: #fff;
+    padding: 7px 13px;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    // Flex + margin-left:auto on the trailing icon instead of hardcoded
+    // left/right pixel offsets — those assumed a fixed-width modal and
+    // broke (icon pushed off-screen or overlapping) on narrow viewports.
+    display: flex;
+    align-items: center;
+
+    .modal-alert-img {
+      width: 18px !important;
+      margin-right: 8px !important;
+      flex-shrink: 0;
+    }
+
+    .modal-Checks-img {
+      width: 22px !important;
+      margin-left: auto !important;
+      flex-shrink: 0;
+    }
+
+    .modal-pencil-img {
+      width: 22px !important;
+      padding-top: 4px !important;
+      margin-left: auto !important;
+      flex-shrink: 0;
+    }
+  }
+
+  .form-check-input {
+    width: 19px;
+    height: 19px;
+    background-color: var(--color-border-strong);
+    border-color: var(--color-border-strong);
+
+    &:checked {
+      background-color: var(--color-success);
+      border-color: var(--color-success);
+    }
+  }
+
+  .selected-days,
+  .selected-days-pg3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 14px;
+    text-align: center;
+
+    &.selected-days {
+      margin-bottom: 20px;
+    }
+
+    // Each day as a clean checkbox-over-label column instead of relying on
+    // Bootstrap's default float-based .form-check, which doesn't center
+    // and left almost no breathing room between days.
+    .day {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      min-width: 36px;
+
+      p {
+        margin-bottom: 0;
+        font-size: 13px;
+      }
+    }
+
+    .form-check {
+      margin: 0;
+      padding-left: 0;
+      min-height: auto;
+      display: flex;
+      justify-content: center;
+
+      .form-check-input {
+        float: none;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+/*
+  Bootstrap Button Overrides (used across insights, camera, login, profile screens)
+*/
+.btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  border-radius: var(--radius-sm) !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--color-primary-dark) !important;
+    border-color: var(--color-primary-dark) !important;
+  }
+
+  &:disabled {
+    background-color: var(--color-border-strong) !important;
+    border-color: var(--color-border-strong) !important;
+  }
+}
+
+.btn-outline-primary {
+  color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  border-radius: var(--radius-sm) !important;
+
+  &:hover {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+  }
+}
+
+.btn-danger {
+  background-color: var(--color-danger) !important;
+  border-color: var(--color-danger) !important;
+  border-radius: var(--radius-sm) !important;
+}
+
+/*
+  Utility and Button Classes
+*/
+.form-button-group {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+button.outlined-button,
+button.filled-button {
+  padding: 10px 19px;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+button.outlined-button {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: transparent;
+
+  &:hover {
+    background-color: var(--color-primary-tint);
+  }
+}
+
+button.filled-button {
+  margin-left: 30px;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+  }
+}
+
+.delete-alert-icon {
+  font-size: 24px !important;
+  margin-left: 10px !important;
+  color: var(--color-danger) !important;
+}
+
+/*
+  Miscellaneous Layout Helpers
+*/
+.edit-cam-length-one {
+  margin-top: 130px !important;
+}
+
+.item-not-empty-img {
+  width: 640px;
+  height: 360px;
+  object-fit: contain;
+}
+
+.margin-top-70 {
+  margin-top: 70px !important;
+}
+
+.margin-right-ten-perc {
+  margin-right: 10% !important;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-tag {
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-pill);
+  margin-bottom: 5px;
+  width: fit-content;
+  padding: 13px 17px;
+  margin-right: 10px;
+  background-color: var(--color-surface);
+
+  i {
+    font-size: 18px;
+  }
+}
+
+/*
+  Ant Design Component Tweaks
+*/
+.ant-select-selector,
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 45px !important;
+  padding: 7px 11px !important;
+  border-radius: var(--radius-sm) !important;
+}
+
+.ant-select-dropdown {
+  z-index: 1335 !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.ant-message {
+  z-index: 2000 !important;
+}
+
+.ant-btn-primary {
+  border: 1px solid var(--color-primary) !important;
+  background-color: var(--color-primary) !important;
+  border-radius: var(--radius-sm) !important;
+
+  &:hover {
+    background-color: var(--color-primary-dark) !important;
+    border-color: var(--color-primary-dark) !important;
+  }
+}
+
+/*
+  Mobile Specific Styles
+*/
+@media only screen and (max-width: 600px) {
+  #monitor-holiday-buttons button {
+    width: 72px !important;
+    font-size: 13px;
+  }
+
+  #monitor-holiday-buttons {
+    top: 5px;
+  }
+
+  .css-heg063-MuiTabs-flexContainer,
+  .search-bar {
+    overflow-x: scroll;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .add-camera-step-form .step-items {
+    max-width: 350px !important;
+  }
+
+  .line {
+    // width: 89px !important;
+    // left: 66px !important;
+  }
+
+  .autoalert-search-bar {
+    .desktop {
+      display: none !important;
+    }
+
+    .mobile-search {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 17px 20px;
+      background: #ebebeb;
+      border: 1px solid #c4c1c1;
+      margin-top: 8px;
+
+      .single_item {
+        margin-bottom: 15px;
+
+        label {
+          color: #000;
+          font-size: 17px;
+
+          span {
+            color: #f00;
+          }
+        }
+
+        .inner-content {
+          background: #fff;
+          height: 53px;
+          border-radius: 5px;
+          margin-top: 16px;
+
+          p {
+            padding-top: 14px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.alert-details-heading {
+  margin-top: -12px; // move slightly up
+}
+
+// Fixed-size, centered box for the AOI image/canvas so switching between
+// view mode (ImageBox) and edit mode (CanvasDraw2, a pixel-sized Konva
+// stage) never changes the rendered image size.
+.aoi-media-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow-x: auto;
+}

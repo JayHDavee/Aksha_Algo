@@ -1,0 +1,11 @@
+2026-08-13 00:18:57,827 - post_processor_b0cd95d337c3 - INFO - KafkaService init | consumer_topic=post_processing | producer_topic=live_update | notification_topic=notification_service | group=post-processor-group | kafka=broker:9092
+2026-08-13 00:18:57,838 - post_processor_b0cd95d337c3 - INFO - COCO classes loaded | count=13
+2026-08-13 00:18:57,924 - post_processor_b0cd95d337c3 - INFO - MongoDB client created | db=Aksha | uri=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+2026-08-13 00:18:57,925 - post_processor_b0cd95d337c3 - INFO - Redis client created | host=redis | port=6379
+2026-08-13 00:18:57,925 - post_processor_b0cd95d337c3 - INFO - NotificationService initialised
+2026-08-13 00:18:57,925 - post_processor_b0cd95d337c3 - INFO - NotificationService created with shared logger
+2026-08-13 00:18:57,925 - post_processor_b0cd95d337c3 - INFO - Starting Kafka consumer and producers
+2026-08-13 00:18:58,071 - post_processor_b0cd95d337c3 - INFO - Kafka consumer started | topic=post_processing | group=post-processor-group
+2026-08-13 00:18:58,076 - post_processor_b0cd95d337c3 - INFO - Kafka producer started | topic=live_update
+2026-08-13 00:18:58,080 - post_processor_b0cd95d337c3 - INFO - Kafka notification producer started | topic=notification_service
+2026-08-13 00:18:58,080 - post_processor_b0cd95d337c3 - INFO - Entering message processing loop | pipeline: post_processing → post_processor → live_update + notification_service | commit_every=10 | batch_size=10

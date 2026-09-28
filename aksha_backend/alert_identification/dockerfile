@@ -1,0 +1,14 @@
+# alert_identification — Kafka consumer that matches OD detections against alert rules.
+# Reads from object_detection_results, publishes enriched results to post_processing.
+# Depends on: Redis (config cache), MongoDB (alert config source), Kafka broker.
+FROM python:3.10-slim AS build
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy all source files (main.py, my_alert_filters.py)
+COPY . .
+
+CMD ["python", "main.py"]

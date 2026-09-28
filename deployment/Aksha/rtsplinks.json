@@ -1,0 +1,616 @@
+{
+    "rtsp://192.168.1.74:8554/test1": {
+        "cam_name": "cam1",
+        "rtsp_id": "1",
+        "batch_id": 1,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test2": {
+        "cam_name": "cam2",
+        "rtsp_id": "2",
+        "batch_id": 2,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test3": {
+        "cam_name": "cam3",
+        "rtsp_id": "3",
+        "batch_id": 3,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test4": {
+        "cam_name": "cam4",
+        "rtsp_id": "4",
+        "batch_id": 4,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test5": {
+        "cam_name": "cam5",
+        "rtsp_id": "5",
+        "batch_id": 5,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test6": {
+        "cam_name": "cam6",
+        "rtsp_id": "6",
+        "batch_id": 6,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test7": {
+        "cam_name": "cam7",
+        "rtsp_id": "7",
+        "batch_id": 7,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test8": {
+        "cam_name": "cam8",
+        "rtsp_id": "8",
+        "batch_id": 1,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test9": {
+        "cam_name": "cam9",
+        "rtsp_id": "9",
+        "batch_id": 2,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test10": {
+        "cam_name": "cam10",
+        "rtsp_id": "10",
+        "batch_id": 3,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test11": {
+        "cam_name": "cam11",
+        "rtsp_id": "11",
+        "batch_id": 4,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test12": {
+        "cam_name": "cam12",
+        "rtsp_id": "12",
+        "batch_id": 5,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test13": {
+        "cam_name": "cam13",
+        "rtsp_id": "13",
+        "batch_id": 1,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test14": {
+        "cam_name": "cam14",
+        "rtsp_id": "14",
+        "batch_id": 2,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test15": {
+        "cam_name": "cam15",
+        "rtsp_id": "15",
+        "batch_id": 3,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test16": {
+        "cam_name": "cam16",
+        "rtsp_id": "16",
+        "batch_id": 4,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test17": {
+        "cam_name": "cam17",
+        "rtsp_id": "17",
+        "batch_id": 5,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test18": {
+        "cam_name": "cam18",
+        "rtsp_id": "18",
+        "batch_id": 6,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test19": {
+        "cam_name": "cam19",
+        "rtsp_id": "19",
+        "batch_id": 7,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test20": {
+        "cam_name": "cam20",
+        "rtsp_id": "20",
+        "batch_id": 1,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test21": {
+        "cam_name": "cam21",
+        "rtsp_id": "21",
+        "batch_id": 2,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test22": {
+        "cam_name": "cam22",
+        "rtsp_id": "22",
+        "batch_id": 3,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test23": {
+        "cam_name": "cam23",
+        "rtsp_id": "23",
+        "batch_id": 4,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test24": {
+        "cam_name": "cam24",
+        "rtsp_id": "24",
+        "batch_id": 5,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test25": {
+        "cam_name": "cam25",
+        "rtsp_id": "25",
+        "batch_id": 6,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test26": {
+        "cam_name": "cam26",
+        "rtsp_id": "26",
+        "batch_id": 7,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test27": {
+        "cam_name": "cam27",
+        "rtsp_id": "27",
+        "batch_id": 1,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test28": {
+        "cam_name": "cam28",
+        "rtsp_id": "28",
+        "batch_id": 2,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test29": {
+        "cam_name": "cam29",
+        "rtsp_id": "29",
+        "batch_id": 3,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test30": {
+        "cam_name": "cam30",
+        "rtsp_id": "30",
+        "batch_id": 4,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test31": {
+        "cam_name": "cam31",
+        "rtsp_id": "31",
+        "batch_id": 5,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test32": {
+        "cam_name": "cam32",
+        "rtsp_id": "32",
+        "batch_id": 6,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test33": {
+        "cam_name": "cam33",
+        "rtsp_id": "33",
+        "batch_id": 7,
+        "running_staus": false,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test34": {
+        "cam_name": "cam34",
+        "rtsp_id": "34",
+        "batch_id": 1,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test35": {
+        "cam_name": "cam35",
+        "rtsp_id": "35",
+        "batch_id": 2,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test36": {
+        "cam_name": "cam36",
+        "rtsp_id": "36",
+        "batch_id": 3,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test37": {
+        "cam_name": "cam37",
+        "rtsp_id": "37",
+        "batch_id": 4,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test38": {
+        "cam_name": "cam38",
+        "rtsp_id": "38",
+        "batch_id": 5,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test39": {
+        "cam_name": "cam39",
+        "rtsp_id": "39",
+        "batch_id": 6,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test40": {
+        "cam_name": "cam40",
+        "rtsp_id": "40",
+        "batch_id": 4,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test41": {
+        "cam_name": "cam41",
+        "rtsp_id": "41",
+        "batch_id": 5,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test42": {
+        "cam_name": "cam42",
+        "rtsp_id": "42",
+        "batch_id": 6,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test43": {
+        "cam_name": "cam43",
+        "rtsp_id": "43",
+        "batch_id": 7,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test44": {
+        "cam_name": "cam44",
+        "rtsp_id": "44",
+        "batch_id": 1,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test45": {
+        "cam_name": "cam45",
+        "rtsp_id": "45",
+        "batch_id": 2,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test46": {
+        "cam_name": "cam46",
+        "rtsp_id": "46",
+        "batch_id": 3,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test47": {
+        "cam_name": "cam47",
+        "rtsp_id": "47",
+        "batch_id": 4,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test48": {
+        "cam_name": "cam48",
+        "rtsp_id": "48",
+        "batch_id": 5,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test49": {
+        "cam_name": "cam49",
+        "rtsp_id": "49",
+        "batch_id": 6,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test50": {
+        "cam_name": "cam50",
+        "rtsp_id": "50",
+        "batch_id": 7,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test51": {
+        "cam_name": "cam51",
+        "rtsp_id": "51",
+        "batch_id": 1,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test52": {
+        "cam_name": "cam52",
+        "rtsp_id": "52",
+        "batch_id": 2,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test53": {
+        "cam_name": "cam53",
+        "rtsp_id": "53",
+        "batch_id": 3,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test54": {
+        "cam_name": "cam54",
+        "rtsp_id": "54",
+        "batch_id": 4,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test55": {
+        "cam_name": "cam55",
+        "rtsp_id": "55",
+        "batch_id": 5,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test56": {
+        "cam_name": "cam56",
+        "rtsp_id": "56",
+        "batch_id": 6,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test57": {
+        "cam_name": "cam57",
+        "rtsp_id": "57",
+        "batch_id": 7,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test58": {
+        "cam_name": "cam58",
+        "rtsp_id": "58",
+        "batch_id": 1,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test59": {
+        "cam_name": "cam59",
+        "rtsp_id": "59",
+        "batch_id": 2,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test60": {
+        "cam_name": "cam60",
+        "rtsp_id": "60",
+        "batch_id": 3,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test61": {
+        "cam_name": "cam61",
+        "rtsp_id": "61",
+        "batch_id": 4,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test62": {
+        "cam_name": "cam62",
+        "rtsp_id": "62",
+        "batch_id": 5,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test63": {
+        "cam_name": "cam63",
+        "rtsp_id": "63",
+        "batch_id": 6,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test64": {
+        "cam_name": "cam64",
+        "rtsp_id": "64",
+        "batch_id": 7,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test65": {
+        "cam_name": "cam65",
+        "rtsp_id": "65",
+        "batch_id": 1,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test66": {
+        "cam_name": "cam66",
+        "rtsp_id": "66",
+        "batch_id": 2,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test67": {
+        "cam_name": "cam67",
+        "rtsp_id": "67",
+        "batch_id": 3,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test68": {
+        "cam_name": "cam68",
+        "rtsp_id": "68",
+        "batch_id": 4,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test69": {
+        "cam_name": "cam69",
+        "rtsp_id": "69",
+        "batch_id": 5,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test70": {
+        "cam_name": "cam70",
+        "rtsp_id": "71",
+        "batch_id": 6,
+        "running_status": true
+    },
+    "rtsp://192.168.1.74:8554/test71": {
+        "cam_name": "cam72",
+        "running_status": true,
+        "batch_id": 7,
+        "rtsp_id": "72"
+    },
+    "rtsp://192.168.1.74:8554/test72": {
+        "cam_name": "cam73",
+        "running_status": true,
+        "batch_id": 1,
+        "rtsp_id": "73"
+    },
+    "rtsp://192.168.1.74:8554/test74": {
+        "cam_name": "cam74",
+        "running_status": true,
+        "batch_id": 2,
+        "rtsp_id": "74"
+    },
+    "rtsp://192.168.1.74:8554/test75": {
+        "cam_name": "cam75",
+        "running_status": true,
+        "batch_id": 3,
+        "rtsp_id": "75"
+    },
+    "rtsp://192.168.1.74:8554/test76": {
+        "cam_name": "cam76",
+        "running_status": true,
+        "batch_id": 4,
+        "rtsp_id": "76"
+    },
+    "rtsp:///192.168.1.74:8554/test77": {
+        "cam_name": "cam77",
+        "running_status": true,
+        "batch_id": 8,
+        "rtsp_id": "77"
+    },
+    "rtsp:///192.168.1.74:8554/test78": {
+        "cam_name": "cam78",
+        "running_status": false,
+        "batch_id": 9,
+        "rtsp_id": "78"
+    },
+    "rtsp:///192.168.1.74:8554/test79": {
+        "cam_name": "cam79",
+        "running_status": false,
+        "batch_id": 10,
+        "rtsp_id": "79"
+    },
+    "rtsp:///192.168.1.74:8554/test71": {
+        "cam_name": "cam711",
+        "running_status": false,
+        "batch_id": 10,
+        "rtsp_id": "101"
+    },
+    "rtsp:///192.168.1.74:8554/test80": {
+        "cam_name": "cam80",
+        "running_status": false,
+        "batch_id": 8,
+        "rtsp_id": "80"
+    },
+    "rtsp:///192.168.1.74:8554/test81": {
+        "cam_name": "cam81",
+        "running_status": false,
+        "batch_id": 9,
+        "rtsp_id": "81"
+    },
+    "rtsp:///192.168.1.74:8554/test82": {
+        "cam_name": "cam82",
+        "running_status": false,
+        "batch_id": 10,
+        "rtsp_id": "82"
+    },
+    "rtsp:///192.168.1.74:8554/test83": {
+        "cam_name": "cam83",
+        "running_status": false,
+        "batch_id": 8,
+        "rtsp_id": "83"
+    },
+    "rtsp:///192.168.1.74:8554/test84": {
+        "cam_name": "cam84",
+        "running_status": false,
+        "batch_id": 9,
+        "rtsp_id": "84"
+    },
+    "rtsp:///192.168.1.74:8554/test85": {
+        "cam_name": "cam85",
+        "running_status": false,
+        "batch_id": 10,
+        "rtsp_id": "85"
+    },
+    "rtsp:///192.168.1.74:8554/test87": {
+        "cam_name": "cam86",
+        "running_status": false,
+        "batch_id": 8,
+        "rtsp_id": "86"
+    },
+    "rtsp:///192.168.1.74:8554/test88": {
+        "cam_name": "cam88",
+        "running_status": false,
+        "batch_id": 9,
+        "rtsp_id": "88"
+    },
+    "rtsp:///192.168.1.74:8554/test89": {
+        "cam_name": "cam89",
+        "running_status": false,
+        "batch_id": 10,
+        "rtsp_id": "89"
+    },
+    "rtsp:///192.168.1.74:8554/test90": {
+        "cam_name": "cam90",
+        "running_status": false,
+        "batch_id": 8,
+        "rtsp_id": "90"
+    },
+    "rtsp:///192.168.1.74:8554/test91": {
+        "cam_name": "cam91",
+        "running_status": false,
+        "batch_id": 8,
+        "rtsp_id": "90"
+    },
+    "rtsp:///192.168.1.74:8554/test92": {
+        "cam_name": "cam92",
+        "running_status": false,
+        "batch_id": 9,
+        "rtsp_id": "9"
+    },
+    "rtsp:///192.168.1.74:8554/test93": {
+        "cam_name": "cam93",
+        "running_status": false,
+        "batch_id": 10,
+        "rtsp_id": "93"
+    },
+    "rtsp:///192.168.1.74:8554/test94": {
+        "cam_name": "cam94",
+        "running_status": false,
+        "batch_id": 8,
+        "rtsp_id": "94"
+    },
+    "rtsp:///192.168.1.74:8554/test95": {
+        "cam_name": "cam95",
+        "running_status": false,
+        "batch_id": 9,
+        "rtsp_id": "95"
+    },
+    "rtsp:///192.168.1.74:8554/test96": {
+        "cam_name": "cam96",
+        "running_status": false,
+        "batch_id": 10,
+        "rtsp_id": "96"
+    },
+    "rtsp:///192.168.1.74:8554/test97": {
+        "cam_name": "cam97",
+        "running_status": false,
+        "batch_id": 8,
+        "rtsp_id": "97"
+    },
+    "rtsp:///192.168.1.74:8554/test98": {
+        "cam_name": "cam98",
+        "running_status": false,
+        "batch_id": 9,
+        "rtsp_id": "98"
+    },
+    "rtsp:///192.168.1.74:8554/test99": {
+        "cam_name": "cam99",
+        "running_status": false,
+        "batch_id": 10,
+        "rtsp_id": "99"
+    },
+    "rtsp:///192.168.1.74:8554/test100": {
+        "cam_name": "cam100",
+        "running_status": false,
+        "batch_id": 100,
+        "rtsp_id": "100"
+    },
+    "rtsp://192.168.1.73:8554/test1": {
+        "cam_name": "ppe_test_cam1",
+        "rtsp_id": "101",
+        "batch_id": 1,
+        "running_status": false,
+        "ppe_enabled": true
+    },
+    "rtsp://192.168.1.73:8554/test2": {
+        "cam_name": "ppe_test_cam2",
+        "rtsp_id": "102",
+        "batch_id": 1,
+        "running_status": true,
+        "ppe_enabled": true
+    },
+    "rtsp://172.21.208.1:8554/test1": {
+        "cam_name": "cam61",
+        "running_status": false,
+        "batch_id": 1
+    }
+}

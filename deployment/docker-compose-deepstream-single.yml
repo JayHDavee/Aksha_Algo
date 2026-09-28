@@ -1,0 +1,438 @@
+version: "3.8"
+
+# DeepStream Single-Camera Compose
+# ----------------------------------
+# One deepstream_service container per camera (managed by controller).
+# Each container handles one RTSP stream independently:
+#   RTSP → NVDEC (hw decode) → GPU resize → SSIM prefilter → YOLOv10 TRT → Kafka
+#
+# Designed for: up to 18-19 cameras @ 1fps on RTX 2070 (8GB VRAM, 4 CPU cores)
+#   VRAM: ~278MB per camera session × 18 = ~5GB (3GB headroom)
+#   TRT engine is built once by the first camera and cached to /Aksha/trt_cache
+#   All subsequent cameras load the cached engine — fast startup after first boot.
+#
+# Cameras are managed via controller POST /Surveillance with deployment_mode=deepstream_single
+# Static cam blocks below are examples — remove/duplicate as needed.
+#
+# RTSP_ID    : numeric ID used for reference image filename ({RTSP_ID}.jpg)
+# RTSP_CODEC : h264 (default) or h265
+# FPS        : frames per second sent to Kafka (1 = 1fps, 0.5 = 1 frame every 2s)
+# SSIM_THRESH: 0.95 = skip frame if scene changed less than 5%
+
+services:
+
+  react_frontend:
+    container_name: react_frontend
+    networks:
+      - aksha-net
+    stdin_open: true
+    tty: true
+    ports:
+      - 3000:3000
+    environment:
+      - TZ=Asia/Kolkata
+      - CHOKIDAR_USEPOLLING=true
+      - WDS_SOCKET_PORT=0
+      - VITE_BASE_URL=ws://node_backend:5000
+    image: dockerhubalgo/aksha_refactor_frontend:16052026-1
+    restart: always
+    volumes:
+      - /app/node_modules
+      - ./Aksha:/usr/src/docker-react-sample/src/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - ./Aksha/app.config
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  node_backend:
+    container_name: node_backend
+    networks:
+      - aksha-net
+    image: dockerhubalgo/go_backend:27032026
+    restart: always
+    ports:
+      - 5000:5000
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    volumes:
+      - /backend/node_modules
+      - ./Aksha:/backend/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      TZ: Asia/Kolkata
+      AKSHA_PATH: /backend/Aksha
+      DATABASE: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  controller:
+    container_name: api_service
+    image: dockerhubalgo/controller:24052026
+    networks:
+      - aksha-net
+    restart: always
+    ports:
+      - 4000:4000
+    environment:
+      - TZ=Asia/Kolkata
+      - AKSHA_PATH=/Aksha
+      - HOST_AKSHA_PATH=/Aksha
+      - HOST_MACHINE_AKSHA_PATH=${HOST_MACHINE_AKSHA_PATH}
+    volumes:
+      - ./Aksha:/Aksha
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  mongodb:
+    networks:
+      - aksha-net
+    image: dockerhubalgo/aksha_database:latest
+    container_name: mongodb
+    hostname: mongodb
+    restart: always
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=mongo
+      - MONGO_INITDB_DATABASE=Aksha
+      - MONGO_REPLICA_SET_NAME=rs0
+    volumes:
+      - ./Aksha/backup:/data/db
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 27017:27017
+    healthcheck:
+      test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongo -u $${MONGO_INITDB_ROOT_USERNAME} -p $${MONGO_INITDB_ROOT_PASSWORD} --quiet) -eq 1
+      interval: 10s
+      start_period: 30s
+    command: "--bind_ip_all --keyFile keyfile --replSet rs0"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"
+
+
+  kafka_broker:
+    container_name: broker
+    image: apache/kafka:latest
+    networks:
+      - aksha-net
+    restart: always
+    ports:
+      - 9092:9092
+      - 9093:9093
+    environment:
+      TZ: Asia/Kolkata
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: "broker,controller"
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,PLAINTEXT_HOST://0.0.0.0:9093,CONTROLLER://0.0.0.0:9094
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:9092,PLAINTEXT_HOST://localhost:9093
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT,CONTROLLER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@broker:9094
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      # 10 partitions — matches max consumer replicas
+      KAFKA_NUM_PARTITIONS: 10
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_LOG_RETENTION_HOURS: 2
+      KAFKA_LOG_RETENTION_BYTES: 536870912
+      KAFKA_LOG_SEGMENT_BYTES: 134217728
+      KAFKA_LOG_RETENTION_CHECK_INTERVAL_MS: 60000
+      KAFKA_HEAP_OPTS: "-Xmx1G -Xms512m"
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"
+
+
+  redis:
+    container_name: redis
+    image: redis:8.4-rc1-alpine3.22
+    networks:
+      - aksha-net
+    restart: always
+    ports:
+      - 6379:6379
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  # ---------------------------------------------------------------
+  # DeepStream single-camera containers — one per camera
+  # Controller creates these dynamically via POST /Surveillance.
+  # The blocks below are static examples for manual deployment.
+  #
+  # TRT engine is built on first start and cached at /Aksha/trt_cache.
+  # All cameras share the same cache — only the first camera pays the
+  # build cost (5–15 min); subsequent cameras start in seconds.
+  # ---------------------------------------------------------------
+
+  deepstream_cam1:
+    container_name: deepstream_cam1
+    image: dockerhubalgo/deepstream_service:24052026
+    networks:
+      - aksha-net
+    restart: always
+    runtime: nvidia
+    depends_on:
+      kafka_broker:
+        condition: service_started
+      mongodb:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      CAMERA_NAME: cam1
+      RTSP_ID: "1"
+      RTSP_URL: ${CAM1_RTSP_URL}
+      OUTPUT_WIDTH: "640"
+      OUTPUT_HEIGHT: "360"
+      FPS: "1"
+      OBJECT_DETECTION: "true"
+      SSIM_THRESH: "0.95"
+      RTSP_CODEC: h264
+      ENABLE_GPU: "true"
+      ENABLE_TENSORRT: "true"
+      TRT_CACHE_PATH: /Aksha/trt_cache
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      AKSHA_PATH: /Aksha
+      NVIDIA_VISIBLE_DEVICES: all
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+
+  deepstream_cam2:
+    container_name: deepstream_cam2
+    image: dockerhubalgo/deepstream_service:24052026
+    networks:
+      - aksha-net
+    restart: always
+    runtime: nvidia
+    depends_on:
+      kafka_broker:
+        condition: service_started
+      mongodb:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      CAMERA_NAME: cam2
+      RTSP_ID: "2"
+      RTSP_URL: ${CAM2_RTSP_URL}
+      OUTPUT_WIDTH: "640"
+      OUTPUT_HEIGHT: "360"
+      FPS: "1"
+      OBJECT_DETECTION: "true"
+      SSIM_THRESH: "0.95"
+      RTSP_CODEC: h264
+      ENABLE_GPU: "true"
+      ENABLE_TENSORRT: "true"
+      TRT_CACHE_PATH: /Aksha/trt_cache
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      AKSHA_PATH: /Aksha
+      NVIDIA_VISIBLE_DEVICES: all
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+
+  # ---------------------------------------------------------------
+  # Downstream consumers — scaled for 18-19 cameras @ 1fps
+  #
+  # alert_identification: 10 replicas
+  # post_processor:       10 replicas
+  # notification:          5 replicas
+  # ---------------------------------------------------------------
+
+  alert_identification:
+    image: dockerhubalgo/alert_identification:24052026
+    networks:
+      - aksha-net
+    restart: always
+    deploy:
+      replicas: 10
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      kafka_broker:
+        condition: service_started
+      redis:
+        condition: service_started
+      mongodb:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      CROWD_THRESHOLD: 6
+      AKSHA_PATH: /Aksha
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+
+  post_processor:
+    image: dockerhubalgo/post_processor:24052026
+    networks:
+      - aksha-net
+    restart: always
+    deploy:
+      replicas: 10
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      kafka_broker:
+        condition: service_started
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      TZ: Asia/Kolkata
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+
+  retention_service:
+    container_name: retention_service
+    image: dockerhubalgo/retention_service:24052026
+    networks:
+      - aksha-net
+    restart: always
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha/
+      RETENTION_DAYS: 10
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  notification:
+    image: dockerhubalgo/notification:24052026
+    networks:
+      - aksha-net
+    restart: always
+    deploy:
+      replicas: 5
+      restart_policy:
+        condition: on-failure
+    environment:
+      TZ: Asia/Kolkata
+      KAFKA_BOOTSTRAP_SERVERS: broker:9092
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+      AKSHA_PATH: /Aksha
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+
+  anomaly_model_loader:
+    container_name: anomaly_model_loader
+    image: dockerhubalgo/anamoly_model_loader:24052026
+    networks:
+      - aksha-net
+    restart: always
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Kolkata
+      CAMERA_NAME: global
+      AKSHA_PATH: /Aksha
+      MONGODB_URI: mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+    volumes:
+      - ./Aksha:/Aksha
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+networks:
+  aksha-net:
+    name: aksha-net
+    driver: bridge

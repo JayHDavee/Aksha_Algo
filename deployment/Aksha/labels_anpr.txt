@@ -1,0 +1,16 @@
+person
+supine person
+helmet
+no helmet
+car
+bicycle
+truck
+motorbike
+backpack
+handbag
+gate open
+gate closed
+fork lift
+number plate
+license plate
+vehicle

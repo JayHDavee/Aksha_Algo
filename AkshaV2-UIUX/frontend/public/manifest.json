@@ -1,0 +1,37 @@
+{
+  "short_name": "Aksha",
+  "name": "Aksha - AlgoAnalytics",
+  "description": "Aksha Video Surveillance System",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "AkshaLogo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "screenshots": [
+    {
+     "src": "/pwa/live-spotlight-slowed.gif",
+      "sizes": "1152x648",
+      "type": "image/gif",
+      "form_factor": "wide",
+      "label": "Wonder Widgets"
+    },
+    {
+     "src": "/pwa/alerts.png",
+      "sizes": "1830x978",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Wonder Widgets"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2b5797",
+  "background_color": "#ffffff"
+}

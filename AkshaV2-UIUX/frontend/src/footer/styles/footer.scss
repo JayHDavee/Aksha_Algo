@@ -1,0 +1,25 @@
+.app-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 8px 0px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-text-muted);
+  background-color: var(--color-surface);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.app-footer p {
+  margin: 0px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.app-footer img {
+  height: 60px;
+  opacity: 1;
+}

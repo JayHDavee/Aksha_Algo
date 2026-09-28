@@ -1,0 +1,12 @@
+2026-08-10 23:26:15,836 - alert_identification_75aa9765fb8c - INFO - Alert identification service starting | pipeline: object_detection_results → alert_identification → post_processing | KAFKA=broker:9092 | REDIS=redis:6379 | MONGO=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false | frame_path_enable=False
+2026-08-10 23:26:15,836 - alert_identification_75aa9765fb8c - INFO - KafkaAlertService init | consumer_topic=object_detection_results | producer_topic=post_processing | group=alert-service-group | kafka=broker:9092
+2026-08-10 23:26:15,836 - alert_identification_75aa9765fb8c - INFO - Redis client created | host=redis | port=6379
+2026-08-10 23:26:17,033 - alert_identification_75aa9765fb8c - INFO - MongoDB client created | db=Aksha | collection=Alerts | uri=mongodb://mongo:mongo@mongodb/Aksha?authSource=admin&tls=false
+2026-08-10 23:26:17,034 - alert_identification_75aa9765fb8c - INFO - ThreadPoolExecutor created | max_workers=10
+2026-08-10 23:26:17,034 - alert_identification_75aa9765fb8c - INFO - Starting KafkaAlertService
+2026-08-10 23:26:17,034 - alert_identification_75aa9765fb8c - INFO - Starting Kafka consumer and producer
+2026-08-10 23:26:37,559 - alert_identification_75aa9765fb8c - INFO - Kafka consumer started | topic=object_detection_results | group=alert-service-group
+2026-08-10 23:26:37,609 - alert_identification_75aa9765fb8c - INFO - Kafka producer started | topic=post_processing
+2026-08-10 23:26:37,610 - alert_identification_75aa9765fb8c - INFO - Topic partition count | topic=post_processing | partitions=4
+2026-08-10 23:26:37,787 - alert_identification_75aa9765fb8c - INFO - Camera partition map built | count=1 | map={'ppe_test_cam1': 0}
+2026-08-10 23:26:37,787 - alert_identification_75aa9765fb8c - INFO - Entering message processing loop | pipeline: object_detection_results → alert_identification → post_processing | commit_every=10

@@ -1,0 +1,19 @@
+# Use official AWS Lambda Node.js 20 runtime base image
+FROM public.ecr.aws/lambda/nodejs:20-x86_64
+
+# Set Lambda's working directory
+WORKDIR /var/task
+
+# Install only production dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy all source files
+COPY . .
+
+# Build TypeScript -> JavaScript
+RUN npx tsc
+
+# Set the Lambda handler: file.function
+# This will call `lambdaHandler` in `dist/app.js`
+CMD ["dist/app.lambdaHandler"]

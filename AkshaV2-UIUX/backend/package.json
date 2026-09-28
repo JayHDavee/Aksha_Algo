@@ -1,0 +1,80 @@
+{
+  "name": "akshabackend",
+  "version": "1.0.0",
+  "description": "To run the codebase locally:",
+  "main": "dist/index.js",
+  "bin": {
+    "akshabackend": "dist/bundle.js"
+  },
+  "engines": {
+    "node": "17.0.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc && esbuild src/index.ts --bundle --platform=node --outfile=dist/bundle.js",
+    "build:tsc": "tsc",
+    "build:esbuild": "esbuild src/index.ts --bundle --platform=node --outfile=dist/bundle.js --format=cjs --target=node17",
+    "clean": "rimraf dist",
+    "type-check": "tsc --noEmit",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/swapnilharkanth/akshabackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/swapnilharkanth/akshabackend/issues"
+  },
+  "homepage": "https://gitlab.com/swapnilharkanth/akshabackend#readme",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "debug": "^4.3.4",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "helmet": "^6.0.1",
+    "jose": "^5.3.0",
+    "moment": "^2.29.3",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.3.5",
+    "multer": "^1.4.5-lts.1",
+    "node-schedule": "^2.1.1",
+    "node-watch": "^0.7.3",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.19",
+    "@types/debug": "^4.1.12",
+    "@types/express": "^5.0.3",
+    "@types/helmet": "^4.0.0",
+    "@types/jest": "^30.0.0",
+    "@types/moment": "^2.13.0",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^20.19.25",
+    "@types/node-schedule": "^2.1.6",
+    "@types/socket.io": "^3.0.1",
+    "@types/supertest": "^6.0.3",
+    "esbuild": "^0.20.2",
+    "jest": "^30.2.0",
+    "mockingoose": "^2.16.2",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.5",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": []
+}

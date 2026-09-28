@@ -1,0 +1,32 @@
+# Controller service — Docker-based camera deployment orchestrator (FastAPI, port 4000).
+# Manages deepstream_service / deepstream_batch / frame_reader containers via the Docker SDK.
+# Also hosts the /Insight (heatmap), /ImageAnalysis, and /AlertReportAnalyzer LLM endpoints.
+FROM python:3.10-slim-bullseye
+
+# Install system dependencies for OpenCV, FFmpeg, Cairo (cairosvg), and Pango (cairosvg fonts)
+RUN apt-get update && apt-get install -y \
+    ffmpeg \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgl1-mesa-glx \
+    libgomp1 \
+    libcairo2 \
+    libpango-1.0-0 \
+    libpangocairo-1.0-0 \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /usr/src/app
+
+RUN pip install --upgrade pip
+
+COPY requirements.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy entire project so app/ package and .env are both available at runtime
+COPY . .
+
+EXPOSE 4000
+# Run as a module so relative imports (from . import insight) resolve correctly
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "4000"]

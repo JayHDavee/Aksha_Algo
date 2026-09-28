@@ -1,0 +1,17 @@
+# object_detection_service — CPU-only YOLOv10 ONNX inference worker.
+# Consumes raw frames from Kafka (raw_frame), runs ORT inference, publishes
+# detection results to object_detection_results.
+# For GPU/TRT variant see object_detection_service_gpu.
+FROM python:3.10-slim AS build
+
+WORKDIR /code
+
+# Copy model files and labels alongside requirements so they are available at
+# both install time and runtime without an extra COPY layer.
+COPY requirements.txt coco.names yolov10.onnx ./
+RUN pip install --no-cache-dir -r /code/requirements.txt
+
+# Copy application code last — most frequently changed layer, keeps above layers cached.
+COPY ./app /code/app
+
+CMD ["python", "app/main.py"]

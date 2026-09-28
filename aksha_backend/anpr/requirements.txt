@@ -1,0 +1,8 @@
+opencv-python-headless==4.8.1.78
+ultralytics==8.0.20
+easyocr==1.7.0
+numpy==1.24.4
+pymongo==4.5.0
+requests==2.32.0
+kafka-python==2.0.2
+onnxruntime==1.19.2
